@@ -1,10 +1,10 @@
-# Questions to ask yourself....
-To write a quality readme, you have to ask yourself several questions:
-
 # Who did the project:
 [Aleksander Cornette](https://github.com/1A1eks)
+
 [Mahmoud Abdo](https://github.com/MahmoudAbdo90)
+
 [Locky Bounthieng](https://github.com/LockyBounty)
+
 [Thomas Nelis](https://github.com/NelisThomas)
 
 # What is it?
