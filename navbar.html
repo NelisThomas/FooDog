@@ -7,16 +7,47 @@
     <title>navbar only</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="desktop.css" />
+    <style>
+    
+        nav {
+            text-align: center;
+        }
 
+        nav > a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #title {
+            text-align: center;
+            margin-top: 0;
+            margin-left: 70px;
+        }
+
+        .topSocial {
+            float: right;
+        }
+
+    </style>
 </head>
 
 <body>
-    <nav>
-        <a href="#nutrition.html">NUTRITION</a>
-        <a href="#wellness.html">WELLNESS</a>
-        <a href="#lifestyle.html">LIFESTYLE</a>
-        <a href="#community.html">COMMUNITY</a>
-    </nav>
+    <header>
+        <div>
+            <div><img class="topSocial" src="images/Social-media/search_logo.svg" /></div>
+            <div><img class="topSocial" id="instagram" src="images/Social-media/instagram_logo.svg" /></div>
+            <div><img class="topSocial" src="images/Social-media/twitter-logo-silhouette.svg" /></div>
+            <div><img class="topSocial" src="images/Social-media/facebook_logo.svg" /></div>
+            <br>
+        </div>
+            <h1 id="title">FooDog</h1>
+        <nav>
+            <a href="#nutrition.html">NUTRITION</a>
+            <a href="#wellness.html">WELLNESS</a>
+            <a href="#lifestyle.html">LIFESTYLE</a>
+            <a href="#community.html">COMMUNITY</a>
+        </nav>
+    </header>
 
     <script src="main.js"></script>
 </body>
