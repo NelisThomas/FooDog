@@ -20,12 +20,60 @@ body {
     max-width: 100%;
     height: 100%;
     background: darkgreen;
-
+    
+}
+.main-section{
+    max-width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
 footer{
     max-width: 100%;
     height: 20%;
-    background: #3C4045;
+    display: flex;
+    flex-direction: column;
     
+    
+    
+}
+.footer-row1{
+    max-width: 100%;
+    height: 80%;
+    background: rgb(53, 57, 61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer-row1 > div {
+    padding : 10px;
+}
+.footer-row2{
+    max-width: 100%;
+    height: 20%;
+    background: #26282b;
+    display: flex;
+}
+.popular-col {
+
+}
+.popular-row1 {
+    display:flex;
+flex-direction: row;
+}
+.instagram {
+    height: 120px;
+    width: 120px;
+    padding : 5px;
+    flex-wrap: wrap;
+    display : flex;
+}
+.instagram-col div{
+width : 40px;
+height : 40px;
+display:flex;
+border : 1px solid black;
+
 }
