@@ -25,7 +25,35 @@
         }
 
         .topSocial {
+        }
+
+        .topSocialDiv {
             float: right;
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 65%;
         }
 
     </style>
@@ -34,10 +62,10 @@
 <body>
     <header>
         <div>
-            <div><img class="topSocial" src="images/Social-media/search_logo.svg" /></div>
-            <div><img class="topSocial" id="instagram" src="images/Social-media/instagram_logo.svg" /></div>
-            <div><img class="topSocial" src="images/Social-media/twitter-logo-silhouette.svg" /></div>
-            <div><img class="topSocial" src="images/Social-media/facebook_logo.svg" /></div>
+            <div class="topSocialDiv"><img class="topSocial" id="searchTrigger" src="images/Social-media/search_logo.svg" style="height:20px;width:20px;"/></div>
+            <div class="topSocialDiv"><img class="topSocial" id="instagram" src="images/Social-media/instagram_logo.svg" style="height:20px;width:20px;"/></div>
+            <div class="topSocialDiv"><img class="topSocial" src="images/Social-media/twitter-logo-silhouette.svg" style="height:20px;width:20px;"/></div>
+            <div class="topSocialDiv"><img class="topSocial" src="images/Social-media/facebook_logo.svg" style="height:20px;width:20px;"/></div>
             <br>
         </div>
             <h1 id="title">FooDog</h1>
@@ -49,7 +77,32 @@
         </nav>
     </header>
 
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+
     <script src="main.js"></script>
+       <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("searchTrigger");
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
 </body>
 
 </html>
