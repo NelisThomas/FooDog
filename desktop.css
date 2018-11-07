@@ -130,8 +130,8 @@ flex-direction: row;
     justify-content: space-between;
 }
     .container-instagram div {
-        width: 55px;
-        height: 55px;
+        width: 31%;
+        height: 31%;
         display: flex;
         border: 1px solid black;
         
