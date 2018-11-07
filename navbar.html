@@ -11,17 +11,22 @@
     
         nav {
             text-align: center;
+
         }
 
         nav > a {
             text-decoration: none;
             color: black;
+            margin-left: 2em;
+        }
+
+        nav:first-child {
+            margin-left: 0;
         }
 
         #title {
             text-align: center;
-            margin-top: 0;
-            margin-left: 70px;
+            margin-left: 220px;
         }
 
         .topSocial {
@@ -31,6 +36,11 @@
             float: right;
             max-width: 50px;
             max-height: 50px;
+            margin-right: 25px;
+        }
+
+        #searchTrigger {
+            margin-right: 50px;
         }
 
         .modal {
@@ -61,14 +71,11 @@
 
 <body>
     <header>
-        <div>
-            <div class="topSocialDiv"><img class="topSocial" id="searchTrigger" src="images/Social-media/search_logo.svg" style="height:20px;width:20px;"/></div>
-            <div class="topSocialDiv"><img class="topSocial" id="instagram" src="images/Social-media/instagram_logo.svg" style="height:20px;width:20px;"/></div>
-            <div class="topSocialDiv"><img class="topSocial" src="images/Social-media/twitter-logo-silhouette.svg" style="height:20px;width:20px;"/></div>
-            <div class="topSocialDiv"><img class="topSocial" src="images/Social-media/facebook_logo.svg" style="height:20px;width:20px;"/></div>
-            <br>
-        </div>
-            <h1 id="title">FooDog</h1>
+            <h1 id="title">FooDog
+                <div class="topSocialDiv"><img class="topSocial" id="searchTrigger" src="images/Social-media/search_logo.svg" style="height:15px;width:15px;"/></div>
+                <div class="topSocialDiv"><img class="topSocial" id="instagram_top" src="images/Social-media/instagram_logo.svg" style="height:15px;width:15px;"/></div>
+                <div class="topSocialDiv"><img class="topSocial" id="twitter_top" src="images/Social-media/twitter-logo-silhouette.svg" style="height:15px;width:15px;"/></div>
+                <div class="topSocialDiv"><img class="topSocial" id="facebook_top" src="images/Social-media/facebook_logo.svg" style="height:20px;width:20px;"/></div></h1>
         <nav>
             <a href="#nutrition.html">NUTRITION</a>
             <a href="#wellness.html">WELLNESS</a>

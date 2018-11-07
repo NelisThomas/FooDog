@@ -13,13 +13,13 @@
 html{
     max-width: 100vw;
     height: 150vh;
-    background: yellow;
+    background: white;
 }
 
 body {
     min-width: 800px;
     height: 100%;
-    background: darkgreen;
+    background: white;
     
 }
 .main-section{
