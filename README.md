@@ -19,5 +19,10 @@ SCREENSHOTS WILL GO HERE
 ## What's in it?
 Its a website that makes requests to an external server in order to fetch information for articles and images displayed on the site.
 
+credit social media svg/img: 
+twitter: https://www.flaticon.com/free-icon/twitter-logo-silhouette_8800
+facebook and instagram: from wikipedia
+search logo / magnifying glass: from wikipedia
+
 ## Where did it come from? A client or an exercise to do in class... Specify!
 An exercise in class.
