@@ -1,0 +1,8 @@
+@media rules
+
+only screen and (max-width:991px)
+
+
+only screen and (max-width:767px)
+
+
