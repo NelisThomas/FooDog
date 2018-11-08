@@ -19,13 +19,23 @@
     
             nav {
                 text-align: center;
-    
+                display: flex;
+                justify-content: center;
             }
     
             nav > a {
+                display: block;
                 text-decoration: none;
-                color: black;
-                margin-left: 2em;
+                color: #242424;
+                padding: 0 20px;
+                line-height: 60px;
+                height: 60px;
+            }
+
+            nav > a:hover {
+                color: #424242;
+                text-decoration: none;
+                border-bottom: 2px solid orange;
             }
     
             #nutrition {
@@ -34,10 +44,15 @@
     
             #title {
                 text-align: center;
+                font-style: bold;
                 margin-left: 50px;
                 font-size: 3.25em;
                 color: #242424;
                 font-family: 'Crimson Text', serif;
+            }
+
+            #title:hover {
+                color: #424242;
             }
     
             .topSocial {
