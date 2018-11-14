@@ -1,7 +1,115 @@
-@media only screen and (max-width:780px) {
+html{
+    height: 100%;
+}
+body{
+    /* background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;*/
+    font-family: 'Open Sans', sans-serif;
 
-    [class*="col-"] {
-        width: 100%;
-    }
-    
+    /* font-family: "Crimson Text"; */
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    color: #242424;
+    font-size: 17px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#pagecontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#topContainer{
+    margin-bottom: 15px;
+    display: flex;  
+    flex-direction: column;  
+}
+
+#main-sideposts {
+    display: flex;
+}
+
+#sideposts2 {
+    display: inline-block;
+    max-width: 485px !important;
+}
+
+#sideposts1 {
+    display: inline-block;
+    max-width: 485px !important;
+}
+
+#mainarticle {
+    min-width: 470px;
+}
+
+.imageSquare{
+    width: 225px;
+    height: 225px;
+}
+
+.imagesContainer {
+    padding: 5px;
+    height: 300px;
+}
+
+#latestposts {
+    display: flex;
+    flex-direction: column;
+}
+
+.smallRightImage{
+    width: 100%;
+    height: auto;
+}
+
+img{
+    height: auto;
+    width: 100%;    
+}
+
+.mainArticleTitle{
+    font-weight: 900;
+    line-height: 1.4;
+    font-size: 20px;
+}
+.mainImage{
+    width: 100;
+}
+.secondaryArticleName{
+    font-weight: bold;
+    font-size: 9px;
+    text-align: left;
+    font-size: .83em;
+    line-height: 1.6;
+    font-weight: 900;
+}
+.tagName{
+    font-size: 9px;
+    color: #FF835E;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 5%;
+}
+.articleName{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.articleContent{
+    font-size: 11px;
+}
+.postsHeader{
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-top: 7%;
 }
