@@ -25,12 +25,12 @@ html {
     background: yellow;
 }
 
-@media screen and (min-width:600px){
+@media screen and (max-width:600px){
 
 body {
     min-width: 800px;
     height: auto;
-    background: darkgreen;
+    background: lavender;
 
 }
 
@@ -44,7 +44,7 @@ body {
 
 /*---------------------FOOTER PART1------------------------*/
 footer {
-    min-width: 100%;
+    min-width: 85%;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -137,9 +137,9 @@ footer img {
     flex-direction: row;
 }
 .img-rand-foot {
-    width: 62px;
-    height: 47px;
-    /* border:1px solid black; */
+    width: 65px;
+    height: 45px;
+    border:1px solid black;
 }
 .txt-rand-foot {
     max-width: 140px;
@@ -167,7 +167,7 @@ footer img {
     height: 200px;
     display: flex;
     padding-top:10px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .container-instagram div {
@@ -182,7 +182,7 @@ footer img {
 }
 /*---------------------FOOTER PART2------------------------*/
 .footer-row2 {
-    min-width: 100%;
+    width: 100%;
     height: 20%;
     background: #303336;
     display: flex;
@@ -254,4 +254,4 @@ footer img {
     bottom:2pc;
 
 }
-}/*<---------------------fin media screen pour desktop------*/
+}/*<---------------------fin media screen pour mobile------*/
