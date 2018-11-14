@@ -28,7 +28,7 @@
 
 }
 
-@media only screen and (min-width:769px) {
+@media only screen and (min-width:769px) and (max-width:1079px) {
 
     
     #main-sideposts {
@@ -60,4 +60,35 @@
     }
     
     
+}
+
+@media only screen and (min-width:1080px) {
+
+    #main-sideposts {
+        max-width: 780px !important;
     }
+
+    #main-sideposts2 {
+        max-width: 485px !important;
+    }
+
+    #topContainer{
+        margin-bottom: 15px;
+        max-width: 90%;
+         flex-direction: row; 
+    }
+    
+    #latestposts{
+        max-width: 780px !important;
+    }
+
+    .imageMain {
+        max-width: 780px;
+        max-height: 477px;
+    }
+
+    .subtitle {
+        font-size: .8em;
+        line-height: 16px;
+    }
+}
