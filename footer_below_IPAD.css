@@ -66,6 +66,7 @@
 
     .footer-title {
         width: 80%;
+        max-width: 436px;
         height: 30px;
         display: flex;
         justify-content: center; 
@@ -109,6 +110,7 @@
     /*-----------------zone1----------------*/
     .zone1 {
         width: 80%;
+        max-width: 436px;
         height: auto;
         display: flex;
         margin-top: 10%;
@@ -143,9 +145,12 @@
 
     /*-----------------zone2----------------*/
     .popular-col {
-        width: 80%;
+        width: 100%;
+        max-width: 436px;
         height: 100%;
-       
+       display:flex;
+       flex-direction: column;
+       justify-content: center;
 
     }
     
@@ -166,12 +171,14 @@
     }
 
     .container-popular div {
-        margin-bottom: 26px;
+        
     }
 
     .popular-row {
+        width: 100%;
         display: flex;
         flex-direction: row;
+        margin-bottom: 26px;
     }
 
     .img-rand-foot {
