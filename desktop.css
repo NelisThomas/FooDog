@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Crimson1";
+    src: url("fonts/CrimsonText-Regular.ttf") format('truetype');
+}
+
+@font-face {
+        font-family: "Open1";
+        src: url("fonts/OpenSans-Regular.ttf") format('truetype');
+        src: url("fonts/OpenSans-Bold.ttf") format('truetype');
+}
+
