@@ -39,18 +39,18 @@ body{
 }
 
 #sideposts2 {
-    display: inline-block;
-    max-width: 485px !important;
+    max-width: 485px ;
 }
 
 #sideposts1 {
-    display: inline-block;
-    max-width: 485px !important;
+    max-width: 485px ;
 }
 
 #mainarticle {
     min-width: 470px;
 }
+
+.mainArticleTitle
 
 .imageSquare{
     width: 225px;
@@ -74,17 +74,21 @@ body{
 
 img{
     height: auto;
-    width: 100%;    
+    width: 90%;    
+}
+
+p {
+    max-width: 80%;
 }
 
 .mainArticleTitle{
     font-weight: 900;
     line-height: 1.4;
     font-size: 20px;
+    text-align: center;
+    max-width: 80%;
 }
-.mainImage{
-    width: 100;
-}
+
 .secondaryArticleName{
     font-weight: bold;
     font-size: 9px;
@@ -104,9 +108,15 @@ img{
     text-transform: uppercase;
     font-weight: 900;
 }
+
 .articleContent{
     font-size: 11px;
 }
+
+.para {
+    max-width: 80%;
+}
+
 .postsHeader{
     font-size: 12px;
     font-weight: bolder;
