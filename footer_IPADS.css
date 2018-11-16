@@ -25,64 +25,9 @@
     padding: 0;
 }
 
-@media only screen and (min-width:1024px) {
-    /*-------IPAD PRO resolution 1024px and above -------*/
-    body {
-        width: 100%;
-        height: auto;
-        background: lightblue;
 
-    }
-    .zone1 {
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-        display: flex;
-        /* margin-top: 10%; */
-        margin-bottom: 10%;
-        flex-direction: column;
-        font-size:13px;
-        padding: 0 20px 0 20px;
-    }
-    .popular-col {
-        width: 100%;
-        max-width: 250px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        font-size: 12px;
-        padding: 0 20px 0 20px;
-    }
-    .instagram-col {
-        width:150%;
-        max-width: 250px;
-        height: 100%;
-        
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: column;
-        align-items: center;       
-        padding-bottom:10%;
-        padding: 0 20px 0 20px;
-        
-    }
-    .container-instagram {
-        /*keep the same measurement to make a perfect square (vw)*/
-        width: 96vw; 
-        max-width: 280px;
-        height: 96vw;
-        max-height: 280px;
-        display: flex;
-             
-        align-items: center;
-        justify-content: space-between;
-    }
 
-}
-
-@media only screen and (min-width:766px) {
+@media only screen and (min-width:765px) {
     /*-------IPAD resolution 768px -------*/
 
     html {
