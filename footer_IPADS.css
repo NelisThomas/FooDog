@@ -27,7 +27,7 @@
 
 
 
-@media only screen and (min-width:765px) {
+@media only screen and (min-device-width:765px ) and (max-device-width: 1024px){
     /*-------IPAD resolution 768px -------*/
 
     html {
@@ -105,7 +105,7 @@
         
         display: flex;
         justify-content: center;
-        align-items: baseline;
+        align-items: baseline;  /*<---Alignement des items par le titre*/
         font-size: 12px;
         flex-direction: row;
         flex-wrap: wrap;

@@ -25,7 +25,7 @@
     padding: 0;
 }
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:1025px) {
     /*-------IPAD PRO resolution 1024px and above -------*/
    
 
@@ -174,9 +174,7 @@
         height: 100%;
     }
 
-    .container-popular div {
-        
-    }
+    
 
     .popular-row {
         width: 100%;
@@ -201,7 +199,7 @@
 
     .instagram-col {
         width:100%;
-        max-width: 200px;
+        max-width: 280px;
         height: 100%;
         
         flex-wrap: wrap;
@@ -226,9 +224,9 @@
     .container-instagram {
         /*keep the same measurement to make a perfect square (vw)*/
         width: 100vw; 
-        max-width: 220px;
+        max-width: 280px;
         height: 100vw;
-        max-height: 220px;
+        max-height: 280px;
         display: flex;
              
         align-items: center;
