@@ -65,11 +65,11 @@
     }
 
     .footer-title {
-        width: 80%;
+        width: 100%;
         max-width: 436px;
         height: 30px;
         display: flex;
-        justify-content: center; 
+        justify-content: flex-start; 
         color: #AAAAAA;
         font-size: 12px;
         padding-left: 20px; 
@@ -97,24 +97,27 @@
     }
 
     .container-row1 {
-        width: 80%;
+        width: 100%;
+        max-width: 436px;
         display: flex;
-        justify-content: first baseline;
+        justify-content: flex-start;
         align-items: center;
-       
         font-size: 12px;
         flex-direction: column;
         flex-wrap: wrap;
+        padding: 0 10px 0 10px;
     }
 
     /*-----------------zone1----------------*/
     .zone1 {
-        width: 80%;
+        width: 100%;
         max-width: 436px;
         height: auto;
         display: flex;
         margin-top: 10%;
+        margin-bottom: 10%;
         flex-direction: column;
+        font-size:13px;
     }
 
     .container-category {
@@ -131,27 +134,25 @@
         padding-top: 15px;
         padding-bottom: 15px;
         border-bottom: 1px solid #42464B;
+    }
 
-
+    #special-one {
+        border-style: none;
     }
     ul {
         list-style-type: none;
       }
-
-/* 
-    .cat {
-        border-bottom: 1px solid #42464B;
-    } */
 
     /*-----------------zone2----------------*/
     .popular-col {
         width: 100%;
         max-width: 436px;
         height: 100%;
-       display:flex;
-       flex-direction: column;
-       justify-content: center;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 13px;
     }
     
     .container-popular {
@@ -162,8 +163,6 @@
         /* padding-right: 20px; */
 
     }
-
-    
 
     .popular-col img {
         max-width: 100%;
@@ -182,34 +181,36 @@
     }
 
     .img-rand-foot {
-        width: 65px;
-        height: 45px;
-        /* border:1px solid black; */
+        width: 100%;
+        max-width: 80px;
+        
+        max-height: 60px;
+        margin-right: 20px;
     }
 
     .txt-rand-foot {
-        max-width: 140px;
+        width: 100%;
     }
 
     /*-----------------zone3----------------*/
 
     .instagram-col {
-        width:80%;
-        
+        width:100%;
+        max-width: 436px;
         height: 100%;
         
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        
+        align-items: center;       
         padding-bottom:10%;
-        margin-left: auto;
-        margin-right:auto;
+        
+    }
+    .instagram-col h3 {
+       padding-left: 20px;
 
     }
     
-
     .instagram-col div {
         flex-wrap: wrap;
         display: flex;
@@ -217,13 +218,12 @@
     }
 
     .container-instagram {
-        width: 100%;
+        width: 96vw;
         max-width: 436px;
-        height: 78vw;
+        height: 96vw;
         max-height: 436px;
         display: flex;
-        
-        
+             
         align-items: center;
         justify-content: space-between;
     }
@@ -232,10 +232,9 @@
         width: 32.5%;
         height: 32.5%;
         display: flex;
-
+        
     }
     
-
     .container-instagram img {
         max-width: 100%;
         height: 100%;
@@ -244,7 +243,7 @@
     /*---------------------FOOTER PART2------------------------*/
     footer2 {
         width: 100%;
-        height: 30vh;
+        height: 25vh;
         background: #303336;
         display: flex;
         /* justify-content: center; */
@@ -252,35 +251,38 @@
         flex-direction: column;
         margin-top: -1px;
 
-        
-        
-
     }
 
     .footer-row2-1 {
         width: 100%;
         height: 50%;
-
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
-
-
+        /*padding: 13px 13px 13px 0;*/
     }
 
-    .footer-row2-1 div {
-        width: 3pc;
-        height: 3pc;
+        .footer-row2-1  {
+            display: flex;
+        }
+    .container-social {
+        display: flex;
+        max-width: 50vw;
+        height:37px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .container-social div {
+        width: 10vw;
+        height: 10vw;
         border-radius: 50%;
         background: rgb(65, 70, 75);
         display: flex;
-        margin: 13px;
+        margin:5px;
         justify-content: center;
         align-items: center;
-
-
     }
 
     .footer-row2-1 img {
@@ -302,14 +304,16 @@
         color: #AAAAAA;
     }
 
-    .footer-row2-2 div {
-        display: flex;
-        align-items: center;
-    }
+        .footer-row2-2 div {
+            display: flex;
+            align-items: center;
+            /*padding: 13px 0 13px 0;*/
+        }
+
 
     #go-up-icon {
-        width: 3pc;
-        height: 3pc;
+        width: 10vw;
+        height: 10vw;
         z-index: 10;
         background: url(images/arrowUp.png);
         background-size: cover;
@@ -317,7 +321,6 @@
         position: fixed;
         right: 1px;
         bottom: 1px;
-
     }
 }
 
