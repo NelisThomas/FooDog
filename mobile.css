@@ -1,6 +1,11 @@
 html{
     height: 100%;
 }
+
+#navbar {
+    border-bottom: 1px solid grey;
+}
+
 body{
     /* background-color: rgb(255, 255, 255);
     margin: 0;
@@ -21,17 +26,13 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    justify-content: center;
     margin: 0 auto;
-    height: 100%;
+    width: 90%;
 }
 
 #topContainer{
-    margin-bottom: 15px;
     display: flex;  
-    flex-direction: column;  
+    flex-direction: column;
 }
 
 #main-sideposts {
@@ -49,8 +50,6 @@ body{
 #mainarticle {
     min-width: 470px;
 }
-
-.mainArticleTitle
 
 .imageSquare{
     width: 225px;
@@ -98,11 +97,12 @@ p {
     font-weight: 900;
 }
 .tagName{
-    font-size: 9px;
+    font-size: 11px;
     color: #FF835E;
     text-transform: uppercase;
     font-weight: bolder;
     margin-top: 5%;
+    text-align: center;
 }
 .articleName{
     text-transform: uppercase;
@@ -122,4 +122,10 @@ p {
     font-weight: bolder;
     text-transform: capitalize;
     margin-top: 7%;
+}
+i {
+    font-size: 20px;
+}
+.left-articles {
+    width: 35%;
 }
