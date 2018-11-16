@@ -5,92 +5,278 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="header.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="responsive.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="searchResults.css" />
+    <!-- External Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>FooDog</title>
-  </head>
-  <body>
-    <div class="container">
-        <div id="topContainer" class="row">
-            <div class="col-7">
-                <img src="images/image.jpeg">
-                <p class="tagName">wellness</p>
-                <p class="mainArticleTitle">5 REASONS YOUR DOG IS VOMITING</p>
-            </div>
-            <div class="col">
-                <div class="row">
-                    <div class="col">
-                            <img class="img-fluid" src="images/image.jpeg">
-                            <p class="secondaryArticleName">TOP 14 FRESH SNACKS FOR DOGS</p>
-                    </div>
-                    <div class="col">
-                            <img class="img-fluid" src="images/image.jpeg">
-                            <p class="secondaryArticleName">WHY SKINNY DOGS LIVE LONGER</p>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col">
-                            <img class="img-fluid" src="images/image.jpeg">
-                            <p class="secondaryArticleName">THE 10 MOST DANGEROUS FOODS FOR DOGS</p>
-                    </div>
-                    <div class="col">
-                            <img class="img-fluid" src="images/image.jpeg">
-                            <p class="secondaryArticleName">THE HISTORY OF COMMERCIAL PET FOOD: A GREAT AMERICAN MARKETING STORY</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <p class="postsHeader">Latest Posts</p>
-            <div id="latestPosts" class="row">
-                <div class="col">
-                    <img class="img-fluid" src="images/image.jpeg">
-                    <p class="tagName">tagname</p>
-                    <p class="articleName">article name</p>
-                    <p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="images/image.jpeg">
-                    <p class="tagName">tagname</p>
-                    <p class="articleName">article name</p>
-                    <p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
-                </div>
-                <div class="w-100"></div>
-                <div class="col">
-                    <img class="img-fluid" src="images/image.jpeg">
-                    <p class="tagName">tagname</p>
-                    <p class="articleName">article name</p>
-                    <p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="images/image.jpeg">
-                    <p class="tagName">tagname</p>
-                    <p class="articleName">article name</p>
-                    <p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
-                </div>
-                <div class="w-100"></div>
-                <div class="col">
-                    <img class="img-fluid" src="images/image.jpeg">
-                    <p class="tagName">tagname</p>
-                    <p class="articleName">article name</p>
-                    <p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
-                </div>
-                <div class="col">
-                    <img class="img-fluid" src="images/image.jpeg">
-                    <p class="tagName">tagname</p>
-                    <p class="articleName">article name</p>
-                    <p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
-                </div>
-                <div class="w-100"></div>
-            </div>
-        </div>
+    <!-- CSS -->
+    <style>
+
+            nav {
+                text-align: center;
     
+            }
+    
+            nav > a {
+                text-decoration: none;
+                color: black;
+                margin-left: 2em;
+            }
+    
+            #nutrition {
+                margin-left: -5em ;
+            }
+    
+            #title {
+                text-align: center;
+                margin-left: 50px;
+                font-size: 3.25em;
+                color: #242424;
+                font-family: 'Crimson Text', serif;
+            }
+    
+            .topSocial {
+            }
+    
+            .topSocialDiv {
+                float: right;
+                max-width: 50px;
+                max-height: 50px;
+                margin-right: 15px;
+            }
+    
+            #searchTrigger {
+                margin-right: 50px;
+            }
+    
+        </style>
+</head>
+<body>
+    <header>
+        <h1 id="title">FooDog
+            <div class="topSocialDiv"><i class="fas fa-search"></i></div>
+            <div class="topSocialDiv"><i class="fab fa-instagram"></i></div>
+            <div class="topSocialDiv"><i class="fab fa-twitter"></i></div>
+            <div class="topSocialDiv"><i class="fab fa-facebook-f"></i></div>
+        </h1>
+        <nav id="navbar">
+            <a id="nutrition" href="#nutrition.html">NUTRITION</a>
+            <a href="#wellness.html">WELLNESS</a>
+            <a href="#lifestyle.html">LIFESTYLE</a>
+            <a href="#community.html">COMMUNITY</a>
+        </nav>
+    </header>
+    <div id="myModal" class="modal">
+            <div id=modalContainer class="modalContainer">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <input placeholder="Search and hit enter...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            
+    </div>
+        
+    <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("searchTrigger");
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modalContainer) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+            <script>
+                    (function() {
+                      var cx = '012948574888285971672:msvx9lhnzgu';
+                      var gcse = document.createElement('script');
+                      gcse.type = 'text/javascript';
+                      gcse.async = true;
+                      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                      var s = document.getElementsByTagName('script')[0];
+                      s.parentNode.insertBefore(gcse, s);
+                    })();
+                  </script>
+                  <gcse:search></gcse:search>
+        </div>
+
+        <!-- ----------------------------------------------------------------->
+
+        <!-- clean up shit in CSS
+         new breakpoints at: - (pictures max-width: 80%; ) - 480 - (watch centering and img-size?) - menu to mobile and watch margin-left title and subtitle - 780 - (only reducing main articles + img?) - 1080 - ok?
+         scaling pictures according to breakpoints
+         putting max on the p in featured and recent articles
+    
+         basically just put different names for the other pages so css doesn't overlap..
+         or divide it in basic and extra css.
+        
+        -->
+
+        <div id="pagecontainer">
+            <div id="topContainer" >
+                <div id="mainarticle" class="c">
+                    <a href="#"><img id="imageMain" src="images/image780p.jpg"></a>
+                    <p class="tagName">wellness</p>
+                    <p class="mainArticleTitle">5 REASONS YOUR DOG IS VOMITING</p>
+                </div>
+                <section id="main-sideposts">
+                    <div id="sideposts1" class="c">
+
+                        <div class="imagesContainer">
+                            <img class="imageSquare" src="images/imageSquare.jpg">
+                            <p class="subtitle">TOP 14 FRESH SNACKS FOR DOGS</p>
+                        </div>
+                        <div class="imagesContainer">
+                            <img class="imageSquare" src="images/imageSquare.jpg">
+                            <p class="subtitle">WHY SKINNY DOGS LIVE LONGER</p>
+                        </div>
+                    </div>
+                    <div id="sideposts2" class="c">
+                        <div class="imagesContainer">
+                            <img class="imageSquare" src="images/imageSquare.jpg">
+                            <p class="subtitle">THE 10 MOST DANGEROUS FOODS FOR DOGS</p>
+                        </div>
+                        <div class="imagesContainer">
+                            <img class="imageSquare" src="images/imageSquare.jpg">
+                            <p class="subtitle">THE HISTORY OF COMMERCIAL PET FOOD: A GREAT AMERICAN MARKETING STORY</p>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            <div class="split-line" ><h6>FEATURED POSTS</h6></div>
+            <div style="margin-left:auto;">
+                <div class="row" style="margin-bottom: 5%;width: 70%;">
+                    <div class="col" style="margin-bottom:6%">
+                        <a href="#"><img src="images/dog2.jpg" class="img-fluid"></a>
+                    </div>
+                    <div class="col" style="margin-bottom:6%;padding-left:4%">
+                        <h6 style="margin-bottom: 6%"><a href="#" class="nutrition-link">NUTRTION |</a></h6>
+                        <h4 style="margin-bottom: 6%"><a href="#" class="header-link">Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Provident, odit?</a></h4>
+                        <p style="line-height: 1"><a href="#" class="paragraph-link">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Exercitationem, facere. Vitae corrupti quos magnam
+                                maiores.</a></p>
+                        <div class="share-icon" style="margin-top: 7%; align-items: baseline; font-size: 13px;"><i class="fas fa-share" style="border: 1px solid #cbcbcb;border-radius:50%;padding:8px; font-size: 15px;"></i>
+                            SHARE</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="split-line"><h6>LATEST POSTS</h6></div>
+            <div class="last-section">
+                <div class="left">
+                    <div><a href="#"><img src="images/dog2.jpg"></a></div>
+                    <div style="text-align: center;max-width: 86%;margin-top: 5%"><a href="#"><h6>COMMUNITY</h6></a>
+                    <a href="#"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque a expedita numquam!</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div><a href="#"><img src="images/dog2.jpg"></a></div>
+                    <div style="text-align:center;max-width: 86%;margin-top: 5%"><a href="#"><h6>COMMUNITY</h6></a>
+                    <a href="#"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque a expedita numquam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------->
+    <footer>
+        <!-- <div class="footer-row0">
+                <div><b>CATEGORIES</b></div>
+                <div><b>POPULAR POSTS</b></div>
+                <div><b>INSTAGRAM</b></div>
+            </div> -->
+        <div class="footer-row1">
+
+            <div class="container-row1">
+                <div class="footer-title">CATAGORIES</div>
+                <div class="container-category">
+
+                    <div class="cat"><b>Community</b></div>
+                    <div class="cat"><b>Featured</b></div>
+                    <div class="cat"><b>Lifestyle</b></div>
+                    <div class="cat"><b>Nutrition</b></div>
+                    <div><b>Wellness</b></div>
+                </div>
+
+                <div class="popular-col">
+                    <div class="footer-title">POPULAR POSTS</div>
+                    <div class="container-popular">
+
+                        <div class="popular-row">
+                            <div class="img-rand-foot"><img src="images/dog1.jpg" /></div>
+                            <div class="txt-rand-foot"><b>5 reasons your dog is vomiting</b></div>
+                        </div>
+                        <div class="popular-row">
+                            <div class="img-rand-foot"><img src="images/dog1.jpg" /></div>
+                            <div class="txt-rand-foot"><b>text pafehfizhfzifuhz</b></div>
+                        </div>
+                        <div class="popular-row">
+                            <div class="img-rand-foot"><img src="images/dog1.jpg" /></div>
+                            <div class="txt-rand-foot"><b>text pour le fun et la gourmandise</b></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="instagram-col">
+                    <div class="footer-title">INSTAGRAM</div>
+                    <div class="container-instagram">
+                        <div><img src="images/dog2.jpg" /></div>
+                        <div><img src="images/dog2.jpg" /></div>
+                        <div><img src="images/dog2.jpg" /></div>
+                        <div><img src="images/dog2.jpg" /></div>
+                        <div><img src="images/dog2.jpg" /></div>
+                        <div><img src="images/dog2.jpg" /></div>
+                        <div><img src="images/dog2.jpg" /></div>
+                        <div><img src="images/dog2.jpg" /></div>
+                        <div><img src="images/dog2.jpg" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-row2">
+
+            <div><img src="images/Social-media/facebook_logo.svg" /></div>
+            <div><img src="images/Social-media/twitter-logo-silhouette.svg" /></div>
+            <div><img src="images/Social-media/instagram_logo.svg"></div>
+
+        </div>
+    </footer>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+ 
+    <script src="script.js"></script>
+</body>
 </html>

@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "Crimson1";
+    src: url("fonts/CrimsonText-Regular.ttf") format('truetype');
+}
+
+@font-face {
+        font-family: "Open1";
+        src: url("fonts/OpenSans-Regular.ttf") format('truetype');
+        src: url("fonts/OpenSans-Bold.ttf") format('truetype');
+}
+
+
+
+html{
+    height: 100%;
+}
+
+#navbar {
+    border-bottom: 1px solid grey;
+}
+
+body{
+    /* background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;*/
+    font-family: 'Open Sans', sans-serif;
+
+    /* font-family: "Crimson Text"; */
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    color: #242424;
+    font-size: 17px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#pagecontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+}
+
+#topContainer{
+    display: flex;  
+    flex-direction: column;
+}
+
+#main-sideposts {
+    display: flex;
+}
+
+#sideposts2 {
+    max-width: 485px ;
+}
+
+#sideposts1 {
+    max-width: 485px ;
+}
+
+#mainarticle {
+    min-width: 470px;
+}
+
+.imageSquare{
+    width: 225px;
+    height: 225px;
+}
+
+.imagesContainer {
+    padding: 5px;
+    height: 300px;
+}
+
+#latestposts {
+    display: flex;
+    flex-direction: column;
+}
+
+.smallRightImage{
+    width: 100%;
+    height: auto;
+}
+
+img{
+    height: auto;
+    width: 90%;    
+}
+
+.mainArticleTitle{
+    font-weight: 900;
+    line-height: 1.4;
+    font-size: 20px;
+    text-align: center;
+    max-width: 80%;
+}
+.subtitle {
+    margin-top: 5%;
+}
+
+.secondaryArticleName{
+    font-weight: bold;
+    font-size: 9px;
+    text-align: left;
+    font-size: .83em;
+    line-height: 1.6;
+    font-weight: 900;
+}
+.tagName{
+    font-size: 11px;
+    color: #FF835E;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 5%;
+    text-align: center;
+    max-width: 80%;
+}
+.articleName{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.articleContent{
+    font-size: 11px;
+}
+
+.para {
+    max-width: 80%;
+}
+
+.postsHeader{
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-top: 7%;
+}
+
+#searchResultHeader {
+    justify-content: center;
+}
+
+#searchResultsFor {
+    text-align: center;
+}
+
+#searchWord {
+    text-align: center;
+
+}
+
+.searchResultContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+.articleContainer {
+
+}
+
+.searchWord {
+}
+
+.searchResultHeader {
+}
+
+.articleTitle {
+    text-decoration: none;
+    text-align: left;
+}
+
+
+.articleTitle:hover {
+    border-bottom: 4px solid #FFA88E;
+}
+
+@media only screen and (min-width:769px) {
+    .searchResultContainer_big {
+        display: flex;
+    }
+
+i {
+    font-size: 20px;
+}
+.left-articles {
+    width: 35%;
+}
+
+.last-section {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-bottom: 10%;
+}
+.split-line {
+    margin-bottom: 2%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.split-line:after {
+    content: "";
+    border-top: 2px solid grey;
+    margin: 1px 30% 5px 8px;
+    flex: 1 0 20px;
+}
