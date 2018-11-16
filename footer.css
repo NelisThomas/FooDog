@@ -80,14 +80,8 @@ font-size:10px;
 }
 .container-row1{
     display: flex;
-    
-    
-    
-    
     font-size:12px;
-    flex-direction:row;
-    
-    
+    flex-direction:row;    
 }
 
 .container-category {
