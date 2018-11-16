@@ -25,7 +25,66 @@
     padding: 0;
 }
 
+@media only screen and (min-width:1024px) {
+    /*-------IPAD PRO resolution 1024px and above -------*/
+    body {
+        width: 100%;
+        height: auto;
+        background: lightblue;
+
+    }
+    .zone1 {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        display: flex;
+        /* margin-top: 10%; */
+        margin-bottom: 10%;
+        flex-direction: column;
+        font-size:13px;
+        padding: 0 20px 0 20px;
+    }
+    .popular-col {
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 12px;
+        padding: 0 20px 0 20px;
+    }
+    .instagram-col {
+        width:150%;
+        max-width: 250px;
+        height: 100%;
+        
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+        padding-bottom:10%;
+        padding: 0 20px 0 20px;
+        
+    }
+    .container-instagram {
+        /*keep the same measurement to make a perfect square (vw)*/
+        width: 96vw; 
+        max-width: 280px;
+        height: 96vw;
+        max-height: 280px;
+        display: flex;
+             
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
 @media only screen and (min-width:766px) {
+    /*-------IPAD resolution 768px -------*/
+
     html {
         
     }
@@ -50,7 +109,7 @@
         width: 100%;
         height: 100%;
         
-        max-height: 447px;
+        /* max-height: 447px; */
         display: flex;
         flex-direction: row;
 
@@ -105,13 +164,13 @@
         font-size: 12px;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 0 20px 0 20px;
+        /* padding: 0 20px 0 20px; */
     }
 
     /*-----------------zone1----------------*/
     .zone1 {
         width: 100%;
-        max-width: 246px;
+        max-width: 200px;
         height: auto;
         display: flex;
         margin-top: 10%;
@@ -147,13 +206,13 @@
     /*-----------------zone2----------------*/
     .popular-col {
         width: 100%;
-        max-width: 246px;
+        max-width: 250px;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        font-size: 13px;
+        font-size: 12px;
         padding: 0 15px 0 15px;
     }
     
@@ -187,7 +246,7 @@
         max-width: 80px;
         
         max-height: 60px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .txt-rand-foot {
@@ -198,7 +257,7 @@
 
     .instagram-col {
         width:100%;
-        max-width: 246px;
+        max-width: 200px;
         height: 100%;
         
         flex-wrap: wrap;
@@ -222,10 +281,10 @@
 
     .container-instagram {
         /*keep the same measurement to make a perfect square (vw)*/
-        width: 96vw; 
-        max-width: 246px;
-        height: 96vw;
-        max-height: 246px;
+        width: 100vw; 
+        max-width: 220px;
+        height: 100vw;
+        max-height: 220px;
         display: flex;
              
         align-items: center;
@@ -248,6 +307,7 @@
     footer2 {
         width: 100%;
         height: 25vh;
+        max-height: 142px;
         background: #303336;
         display: flex;
         /* justify-content: center; */
@@ -273,14 +333,18 @@
         }
     .container-social {
         display: flex;
-        max-width: 50vw;
+        width: 80%;
+        max-width: 670px; 
         height:37px;
         padding-top:10px;
         padding-bottom:10px;
+        justify-content: flex-end;
     }
     .container-social div {
         width: 5vw;
         height: 5vw;
+        max-width: 40px;
+        max-height: 40px;
         border-radius: 50%;
         background: rgb(65, 70, 75);
         display: flex;
@@ -318,13 +382,16 @@
     #go-up-icon {
         width: 5vw;
         height: 5vw;
+        max-width: 40px;
+        max-height: 40px;
         z-index: 10;
         background: url(images/arrowUp.png);
         background-size: cover;
         border-radius: 2px;
         position: fixed;
-        right: 1px;
-        bottom: 1px;
+        
+        right: 40px;
+        bottom: 40px;
     }
 }
 
