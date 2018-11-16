@@ -13,8 +13,7 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: white; /* Fallback color */
-    filter: opacity(0.5);
+    background-color: #eeeeeeee; /* Fallback color */
 }
 
 /* Modal Content */
