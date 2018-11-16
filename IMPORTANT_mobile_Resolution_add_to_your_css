@@ -1,0 +1,31 @@
+
+Resolution for responsivity :
+
+Add to your .css files
+
+===========================
+Little mobile devices
+==========================
+
+@media only screen and (max-width:765px) {
+    html {
+        
+        /* background: yellow; */
+    }
+
+=============================
+Big mobile devices
+===========================
+
+
+@media only screen and (min-device-width:765px ) and (max-device-width: 1024px){
+    /*-------IPAD resolution 768px -------*/
+
+================
+Desktop
+==========
+
+
+@media only screen and (min-width:1025px) {
+    /*-------IPAD PRO resolution 1024px and above -------*/
+   
