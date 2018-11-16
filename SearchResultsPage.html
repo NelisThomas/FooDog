@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="searchResults.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     
     <script src="main.js"></script>
 </head>
@@ -14,23 +15,14 @@
 <button id="myBtn">Open Modal</button>
 
 <div id="myModal" class="modal">
-
+    <div id=modalContainer class="modalContainer">
         <!-- Modal content -->
         <div class="modal-content">
-                <script>
-                        (function() {
-                          var cx = '012948574888285971672:msvx9lhnzgu';
-                          var gcse = document.createElement('script');
-                          gcse.type = 'text/javascript';
-                          gcse.async = true;
-                          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                          var s = document.getElementsByTagName('script')[0];
-                          s.parentNode.insertBefore(gcse, s);
-                        })();
-                      </script>
-                      <gcse:search></gcse:search>
+            <input placeholder="Search and hit enter...">
+            <i class="fas fa-search"></i>
         </div>
-        
+    </div>
+    
 </div>
 
 <script>
@@ -47,7 +39,7 @@
         
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
-            if (event.target == modal) {
+            if (event.target == modalContainer) {
                 modal.style.display = "none";
             }
         }
