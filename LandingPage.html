@@ -5,79 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="header.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="responsive.css" />
     <!-- External Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>FooDog</title>
-    <!-- CSS -->
-    <style>
-    
-            nav {
-                text-align: center;
-    
-            }
-    
-            nav > a {
-                text-decoration: none;
-                color: black;
-                margin-left: 2em;
-            }
-    
-            #nutrition {
-                margin-left: -5em ;
-            }
-    
-            #title {
-                text-align: center;
-                margin-left: 50px;
-                font-size: 3.25em;
-                color: #242424;
-                font-family: 'Crimson Text', serif;
-            }
-    
-            .topSocial {
-            }
-    
-            .topSocialDiv {
-                float: right;
-                max-width: 50px;
-                max-height: 50px;
-                margin-right: 15px;
-            }
-    
-            #searchTrigger {
-                margin-right: 50px;
-            }
-    
-            .modal {
-                display: none; /* Hidden by default */
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Sit on top */
-                padding-top: 100px; /* Location of the box */
-                left: 0;
-                top: 0;
-                width: 100%; /* Full width */
-                height: 100%; /* Full height */
-                overflow: auto; /* Enable scroll if needed */
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-            }
-            
-            /* Modal Content */
-            .modal-content {
-                background-color: #fefefe;
-                margin: auto;
-                padding: 20px;
-                border: 1px solid #888;
-                width: 65%;
-            }
-    
-        </style>
+
 </head>
   <body>
     <header>
@@ -85,8 +23,9 @@
                 <div class="topSocialDiv"><img class="topSocial" id="searchTrigger" src="images/Social-media/search_logo.svg" style="height:15px;width:15px;"/></div>
                 <div class="topSocialDiv"><img class="topSocial" id="instagram_top" src="images/Social-media/instagram_logo.svg" style="height:15px;width:15px;"/></div>
                 <div class="topSocialDiv"><img class="topSocial" id="twitter_top" src="images/Social-media/twitter-logo-silhouette.svg" style="height:15px;width:15px;"/></div>
-                <div class="topSocialDiv"><img class="topSocial" id="facebook_top" src="images/Social-media/facebook_logo.svg" style="height:20px;width:20px;"/></div></h1>
-        <nav>
+                <div class="topSocialDiv"><img class="topSocial" id="facebook_top" src="images/Social-media/facebook_logo.svg" style="height:20px;width:20px;"/></div>
+            </h1>
+        <nav id="navbar">
             <a id="nutrition" href="#nutrition.html">NUTRITION</a>
             <a href="#wellness.html">WELLNESS</a>
             <a href="#lifestyle.html">LIFESTYLE</a>
@@ -96,81 +35,109 @@
     
     <div id="myModal" class="modal">
     <div class="modal-content">
-        <p>Some text in the Modal..</p>
+            <script>
+                    (function() {
+                      var cx = '012948574888285971672:msvx9lhnzgu';
+                      var gcse = document.createElement('script');
+                      gcse.type = 'text/javascript';
+                      gcse.async = true;
+                      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                      var s = document.getElementsByTagName('script')[0];
+                      s.parentNode.insertBefore(gcse, s);
+                    })();
+                  </script>
+                  <gcse:search></gcse:search>
         </div>
     </div>
-    <div class="container">
-        <div id="topContainer" class="row">
-            <div class="col-7">
-                <img src="images/image.jpeg">
+
+ <!-- ----------------------------------------------------------------->
+
+<!-- clean up shit in CSS
+     new breakpoints at: - (pictures max-width: 80%; ) - 480 - (watch centering and img-size?) - menu to mobile and watch margin-left title and subtitle - 780 - (only reducing main articles + img?) - 1080 - ok?
+     scaling pictures according to breakpoints
+     putting max on the p in featured and recent articles
+
+     basically just put different names for the other pages so css doesn't overlap..
+     or divide it in basic and extra css.
+    
+    -->
+
+    <div id="pagecontainer">
+        <div id="topContainer" class="">
+            <div id="mainarticle" class="c">
+                <img id = "imageMain" src="images/image780p.jpg">
                 <p class="tagName">wellness</p>
                 <p class="mainArticleTitle">5 REASONS YOUR DOG IS VOMITING</p>
             </div>
-            <div class="col">
-                <div class="row">
-                    <div class="col">
-                            <img class="img-fluid" src="images/image.jpeg">
-                            <p class="secondaryArticleName">TOP 14 FRESH SNACKS FOR DOGS</p>
+            <section id="main-sideposts">
+            <div id="sideposts1" class="c">
+                
+                    <div class="imagesContainer">
+                            <img class="imageSquare" src="images/imageSquare.jpg" >
+                            <p class="subtitle">TOP 14 FRESH SNACKS FOR DOGS</p>
                     </div>
-                    <div class="col">
-                            <img class="img-fluid" src="images/image.jpeg">
-                            <p class="secondaryArticleName">WHY SKINNY DOGS LIVE LONGER</p>
+                    <div class="imagesContainer">
+                            <img class="imageSquare" src="images/imageSquare.jpg">
+                            <p class="subtitle">WHY SKINNY DOGS LIVE LONGER</p>
                     </div>
-                    <div class="w-100"></div>
-                    <div class="col">
-                            <img class="img-fluid" src="images/image.jpeg">
-                            <p class="secondaryArticleName">THE 10 MOST DANGEROUS FOODS FOR DOGS</p>
-                    </div>
-                    <div class="col">
-                            <img class="img-fluid" src="images/image.jpeg">
-                            <p class="secondaryArticleName">THE HISTORY OF COMMERCIAL PET FOOD: A GREAT AMERICAN MARKETING STORY</p>
-                    </div>
-                </div>
             </div>
+            <div id="sideposts2" class="c">
+                    <div class="imagesContainer">
+                            <img class="imageSquare" src="images/imageSquare.jpg">
+                            <p class="subtitle">THE 10 MOST DANGEROUS FOODS FOR DOGS</p>
+                    </div>
+                    <div class="imagesContainer">
+                            <img class="imageSquare" src="images/imageSquare.jpg">
+                            <p class="subtitle">THE HISTORY OF COMMERCIAL PET FOOD: A GREAT AMERICAN MARKETING STORY</p>
+                    </div>
+                
+            </div>
+        </section>
         </div>
-            <p class="postsHeader">Latest Posts</p>
-            <div id="latestPosts" class="row">
-                <div class="col">
-                    <img class="img-fluid" src="images/image.jpeg">
-                    <p class="tagName">tagname</p>
-                    <p class="articleName">article name</p>
-                    <p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
+        <section>
+            <p class="header">Latest Posts</p>
+            <div id="latestPosts" class="">
+                <div class="c">
+                    <img class="imageMain" src="images/image480p.jpg">
+                    <p class="">tagname</p>
+                    <p class="">article name</p>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
                 </div>
-                <div class="col">
-                    <img class="img-fluid" src="images/image.jpeg">
-                    <p class="tagName">tagname</p>
-                    <p class="articleName">article name</p>
-                    <p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
+                <div class="c">
+                    <img class="imageMain" src="images/image480p.jpg">
+                    <p class="">tagname</p>
+                    <p class="">article name</p>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
                 </div>
-                <div class="w-100"></div>
-                <div class="col">
-                    <img class="img-fluid" src="images/image.jpeg">
-                    <p class="tagName">tagname</p>
-                    <p class="articleName">article name</p>
-                    <p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
+                <div class="c">
+                    <img class="imageMain" src="images/image480p.jpg">
+                    <p class="">tagname</p>
+                    <p class="">article name</p>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
                 </div>
-                <div class="col">
-                    <img class="img-fluid" src="images/image.jpeg">
-                    <p class="tagName">tagname</p>
-                    <p class="articleName">article name</p>
-                    <p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
+                <div class="c">
+                    <img class="imageMain" src="images/image480p.jpg">
+                    <p class="">tagname</p>
+                    <p class="">article name</p>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
                 </div>
-                <div class="w-100"></div>
-                <div class="col">
-                    <img class="img-fluid" src="images/image.jpeg">
-                    <p class="tagName">tagname</p>
-                    <p class="articleName">article name</p>
-                    <p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
+                <div class="c">
+                    <img class="imageMain" src="images/image480p.jpg">
+                    <p class="">tagname</p>
+                    <p class="">article name</p>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
                 </div>
-                <div class="col">
-                    <img class="img-fluid" src="images/image.jpeg">
-                    <p class="tagName">tagname</p>
-                    <p class="articleName">article name</p>
-                    <p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
+                <div class="c">
+                    <img class="imageMain" src="images/image480p.jpg">
+                    <p class="">tagname</p>
+                    <p class="">article name</p>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi quidem odit praesentium corporis!</p>
                 </div>
-                <div class="w-100"></div>
             </div>
+        </section>
     </div>
+
+ <!-- ----------------------------------------------------------------->
     <footer>
             <!-- <div class="footer-row0">
                 <div><b>CATEGORIES</b></div>
@@ -234,29 +201,8 @@
             </div>
         </footer>
     
-    <script>
-            // Get the modal
-            var modal = document.getElementById('myModal');
-            
-            // Get the button that opens the modal
-            var btn = document.getElementById("searchTrigger");
-            
-            // When the user clicks the button, open the modal 
-            btn.onclick = function() {
-                modal.style.display = "block";
-            }
-            
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-            </script>
+ 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,153 @@
+@media only screen and (max-width:480px) {
+
+    #instagram_top, #twitter_top, #facebook_top, #navbar {
+        display: none;
+    }
+
+    #sideposts1 {
+        max-width: 45% !important;
+    }
+
+    #sideposts2 {
+        max-width: 45% !important;
+    }
+    #topContainer{
+        margin-bottom: 15px;
+    }
+    
+    #latestposts{
+        max-width: 90% !important;
+    }
+    
+    .imageMain {
+        max-width: 90% ;
+        max-height: 90%;
+    }  
+
+    .imagesContainer{
+        max-width: 90%;
+        overflow: hidden;
+    }
+
+    .para {
+        max-width: 90%;
+    }
+
+    .subtitle {
+        font-size: .8em;
+        line-height: 16px;
+        text-align: center;
+        max-width: 200px;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+    #instagram_top, #twitter_top, #facebook_top, #navbar {
+        display: none;
+    }
+    
+#main-sideposts {
+    max-width: 485px !important;
+}
+
+#main-sideposts2 {
+    max-width: 485px !important;
+}
+
+#topContainer{
+    margin-bottom: 15px;
+}
+
+#latestposts{
+    max-width: 485px !important;
+}
+
+.imageMain {
+    max-width: 480px;
+    max-height: 275px;
+}
+.subtitle {
+    font-size: .8em;
+    line-height: 16px;
+    text-align: center;
+    max-width: 200px;
+}
+
+}
+
+@media only screen and (min-width:769px) and (max-width:1079px) {
+
+    
+    #sideposts1 {
+        max-width: 245px !important;
+    }
+
+    #sideposts2 {
+        max-width: 245px !important;
+    }
+
+    #topContainer{
+        margin-bottom: 15px;
+        max-width: 90%;
+         flex-direction: row; 
+    }
+    
+    #latestposts{
+        max-width: 780px !important;
+    }
+
+    .imageMain {
+        max-width: 80%;
+        max-width: 780px;
+        max-height: 477px;
+    }
+    
+    /* .imageSquare {
+        width: 80% ;
+        height: 80%;
+    }  */
+
+    .subtitle {
+        font-size: .8em;
+        line-height: 16px;
+        text-align: center;
+        max-width: 200px;
+    }
+    
+    
+}
+
+@media only screen and (min-width:1080px) {
+
+    #main-sideposts {
+        max-width: 780px !important;
+    }
+
+    #main-sideposts2 {
+        max-width: 485px !important;
+    }
+
+    #topContainer{
+        margin-bottom: 15px;
+        max-width: 90%;
+        flex-direction: row; 
+    }
+    
+    #latestposts{
+        max-width: 780px !important;
+    }
+
+    .imageMain {
+        max-width: 80%;
+        max-width: 780px;
+        max-height: 477px;
+    }
+
+    .subtitle {
+        font-size: .8em;
+        line-height: 16px;
+        text-align: center;
+        max-width: 200px;
+    }
+}
