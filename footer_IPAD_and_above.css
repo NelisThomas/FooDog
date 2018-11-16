@@ -25,13 +25,10 @@
     padding: 0;
 }
 
-@media only screen and (max-width:765px) {
+@media only screen and (min-width:766px) {
     html {
         
-        /* background: yellow; */
     }
-
-
 
     body {
         width: 100%;
@@ -52,8 +49,10 @@
     footer {
         width: 100%;
         height: 100%;
+        
+        max-height: 447px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
 
 
         color: white;
@@ -62,12 +61,12 @@
         /* justify-content: center; */
         overflow: hidden;
         font-family: "Open1";
-        padding-top:30px;
+        /* padding-top:30px; */
     }
 
     .footer-title {
         width: 100%;
-        max-width: 436px;
+        max-width: 246px;
         height: 30px;
         display: flex;
         justify-content: flex-start; 
@@ -90,7 +89,7 @@
         height: 100%;
         display: flex;
         align-items: center;
-        align-content: flex-start;
+        
         justify-content: center;
 
         /* padding:10px; */
@@ -99,12 +98,12 @@
 
     .container-row1 {
         width: 100%;
-        max-width: 436px;
+        
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: center;
+        align-items: baseline;
         font-size: 12px;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         padding: 0 20px 0 20px;
     }
@@ -112,13 +111,14 @@
     /*-----------------zone1----------------*/
     .zone1 {
         width: 100%;
-        max-width: 436px;
+        max-width: 246px;
         height: auto;
         display: flex;
         margin-top: 10%;
         margin-bottom: 10%;
         flex-direction: column;
         font-size:13px;
+        padding: 0 15px 0 15px;
     }
 
     .container-category {
@@ -147,13 +147,14 @@
     /*-----------------zone2----------------*/
     .popular-col {
         width: 100%;
-        max-width: 436px;
+        max-width: 246px;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         font-size: 13px;
+        padding: 0 15px 0 15px;
     }
     
     .container-popular {
@@ -197,7 +198,7 @@
 
     .instagram-col {
         width:100%;
-        max-width: 436px;
+        max-width: 246px;
         height: 100%;
         
         flex-wrap: wrap;
@@ -205,6 +206,7 @@
         flex-direction: column;
         align-items: center;       
         padding-bottom:10%;
+        padding: 0 15px 0 15px;
         
     }
     .instagram-col h3 {
@@ -219,10 +221,11 @@
     }
 
     .container-instagram {
-        width: 96vw;
-        max-width: 436px;
+        /*keep the same measurement to make a perfect square (vw)*/
+        width: 96vw; 
+        max-width: 246px;
         height: 96vw;
-        max-height: 436px;
+        max-height: 246px;
         display: flex;
              
         align-items: center;
@@ -276,10 +279,8 @@
         padding-bottom:10px;
     }
     .container-social div {
-        width: 10vw;
-        max-width: 52px;
-        height: 10vw;
-        max-height: 52px;
+        width: 5vw;
+        height: 5vw;
         border-radius: 50%;
         background: rgb(65, 70, 75);
         display: flex;
@@ -315,10 +316,8 @@
 
 
     #go-up-icon {
-        width: 10vw;
-        max-width: 52px;
-        height: 10vw;
-        max-height: 52px;
+        width: 5vw;
+        height: 5vw;
         z-index: 10;
         background: url(images/arrowUp.png);
         background-size: cover;
