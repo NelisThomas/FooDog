@@ -64,7 +64,7 @@
 <body>
     <header>
         <h1 id="title">FooDog
-            <div class="topSocialDiv"><i class="fas fa-search"></i></div>
+            <div class="topSocialDiv" onclick="showModal()"><i class="fas fa-search"></i></div>
             <div class="topSocialDiv"><i class="fab fa-instagram"></i></div>
             <div class="topSocialDiv"><i class="fab fa-twitter"></i></div>
             <div class="topSocialDiv"><i class="fab fa-facebook-f"></i></div>
@@ -86,42 +86,7 @@
             </div>
             
     </div>
-        
-    <script>
-            // Get the modal
-            var modal = document.getElementById('myModal');
-            
-            // Get the button that opens the modal
-            var btn = document.getElementById("searchTrigger");
-            
-            // When the user clicks the button, open the modal 
-            btn.onclick = function() {
-                modal.style.display = "block";
-            }
-            
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modalContainer) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
     
-    <div id="myModal" class="modal">
-    <div class="modal-content">
-            <script>
-                    (function() {
-                      var cx = '012948574888285971672:msvx9lhnzgu';
-                      var gcse = document.createElement('script');
-                      gcse.type = 'text/javascript';
-                      gcse.async = true;
-                      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                      var s = document.getElementsByTagName('script')[0];
-                      s.parentNode.insertBefore(gcse, s);
-                    })();
-                  </script>
-                  <gcse:search></gcse:search>
-        </div>
 
         <!-- ----------------------------------------------------------------->
 
