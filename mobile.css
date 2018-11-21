@@ -114,7 +114,10 @@ a{
     text-decoration: none !important;
     color: black !important;
 }
-
+#searchResultDisplay{
+    text-align: center;
+    margin-top: 3%;
+}
 #nutrition {
     margin-left: -5em ;
 }
@@ -192,11 +195,14 @@ a{
 
 #searchResultsFor {
     text-align: center;
+    text-transform: capitalize;
+    color: #A9A8A9;
 }
 
 #searchWord {
     text-align: center;
-
+    text-transform: lowercase;
+    color: #A9A8A9;
 }
 
 .searchResultContainer {
