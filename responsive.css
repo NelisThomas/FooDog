@@ -30,11 +30,6 @@
         display: none !important;
     }
 
-    #mobileMenu {
-        display: inline-block;
-        visibility: visible;
-    }
-
     #sideposts1 {
         max-width: 45% !important;
     }
@@ -378,11 +373,6 @@
 
     #instagram_top, #twitter_top, #facebook_top, #navbar {
         display: none !important;
-    }
-
-    #mobileMenu {
-        display: inline-block;
-        visibility: visible;
     }
     
 #main-sideposts {
@@ -922,7 +912,7 @@ footer2 {
 
     .instagram-col {
         width:100%;
-        max-width: 270px;
+        max-width: 200px;
         height: 100%;
         
         flex-wrap: wrap;
@@ -947,9 +937,9 @@ footer2 {
     .container-instagram {
         /*keep the same measurement to make a perfect square (vw)*/
         width: 100vw; 
-        max-width: 250px;
+        max-width: 220px;
         height: 100vw;
-        max-height: 250px;
+        max-height: 220px;
         display: flex;
              
         align-items: center;
@@ -1061,7 +1051,6 @@ footer2 {
 }
 
 @media only screen and (min-width:1024px) {
-
 
     #main-sideposts {
         max-width: 780px !important;
