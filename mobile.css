@@ -125,8 +125,6 @@ nav > a {
 #title {
     display: flex;
     justify-content:space-between;
-    text-align: center;
-    margin-left: 50px;
     font-size: 3.25em;
     color: #242424;
     font-family: 'Crimson Text', serif;
@@ -136,15 +134,22 @@ nav > a {
     margin-right: 30%;
 } */
 
-.topSocialDiv {
-    float: right;
+#topSocialDiv {
+    display: flex;
+    flex-direction: row-reverse;
     max-width: 50px;
     max-height: 50px;
     margin-right: 15px;
 }
 
+#topSocialDiv > div {
+    margin-right: 15px;
+}
+
 #searchIcon {
     margin-right: 0px;
+    width: 100px;
+    max-width: 100px;
 }
 
 .mainArticleTitle{
