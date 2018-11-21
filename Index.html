@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="desktop.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="header.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="responsive.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="searchResults.css" />
@@ -20,55 +18,34 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>FooDog</title>
     <!-- CSS -->
-    <style>
-
-            nav {
-                text-align: center;
-    
-            }
-    
-            nav > a {
-                text-decoration: none;
-                color: black;
-                margin-left: 2em;
-            }
-    
-            #nutrition {
-                margin-left: -5em ;
-            }
-    
-            #title {
-                text-align: center;
-                margin-left: 50px;
-                font-size: 3.25em;
-                color: #242424;
-                font-family: 'Crimson Text', serif;
-            }
-    
-            .topSocial {
-            }
-    
-            .topSocialDiv {
-                float: right;
-                max-width: 50px;
-                max-height: 50px;
-                margin-right: 15px;
-            }
-    
-            #searchTrigger {
-                margin-right: 50px;
-            }
-    
-        </style>
 </head>
 <body>
     <header>
-        <h1 id="title">FooDog
-            <div class="topSocialDiv"><i class="fas fa-search"></i></div>
-            <div class="topSocialDiv"><i class="fab fa-instagram"></i></div>
-            <div class="topSocialDiv"><i class="fab fa-twitter"></i></div>
-            <div class="topSocialDiv"><i class="fab fa-facebook-f"></i></div>
-        </h1>
+        <div id="title">
+            <span id="mobileMenu">
+                <ul id="topbarBackground" style="max-height: 50px">
+                    <li><a  id="topbarButton" onclick="showExternalLinksClick()"><img src="images/Social-media/open-menu-01-512.png" style="height:15px;width:15px;" ></a></li>
+                    <span id="Links">
+                        <ol>
+                            <li><a href="" class="topbarred">external</a></li>
+                            <li><a href="" class="topbarred">links</a></li>            
+                            <li><a href="" class="topbarred">links</a></li>                    
+                            <li><a href="" class="topbarred">to</a></li>
+                            <li><a href="" class="topbarred">other</a></li>
+                            <li><a href="" class="topbarred">related</a></li>
+                            <li><a href="" class="topbarred">stuff</a></li>
+                            <li><a href="" class="topbarred">?</a></li>
+                            <li><a href="" class="topbarred" id="hardReset" onclick="doTheHardReset()">Hard Reset</a></li>
+                        </ol>
+                    </span>
+                </ul>
+            </span>
+            <span>FooDog</span>
+            <div class="topSocialDiv" id="searchIcon" onclick="showModal()"><i class="fas fa-search"></i></div>
+            <div class="topSocialDiv"><i id="instagram_top"></i></div>
+            <div class="topSocialDiv"><i id="twitter_top"></i></div>
+            <div class="topSocialDiv"><i id="facebook_top"></i></div>
+        </div>
         <nav id="navbar">
             <a id="nutrition" href="#nutrition.html">NUTRITION</a>
             <a href="#wellness.html">WELLNESS</a>
@@ -86,189 +63,149 @@
             </div>
             
     </div>
-        
-    <script>
-            // Get the modal
-            var modal = document.getElementById('myModal');
-            
-            // Get the button that opens the modal
-            var btn = document.getElementById("searchTrigger");
-            
-            // When the user clicks the button, open the modal 
-            btn.onclick = function() {
-                modal.style.display = "block";
-            }
-            
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modalContainer) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
-    
-    <div id="myModal" class="modal">
-    <div class="modal-content">
-            <script>
-                    (function() {
-                      var cx = '012948574888285971672:msvx9lhnzgu';
-                      var gcse = document.createElement('script');
-                      gcse.type = 'text/javascript';
-                      gcse.async = true;
-                      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                      var s = document.getElementsByTagName('script')[0];
-                      s.parentNode.insertBefore(gcse, s);
-                    })();
-                  </script>
-                  <gcse:search></gcse:search>
+
+<div id="pagecontainer">
+    <div id="topContainer" >
+        <div id="mainarticle" class="c">
+            <a href="#"><img id="imageMain" src="images/image780p.jpg"></a>
+            <p class="tagName">wellness</p>
+            <p class="mainArticleTitle">5 REASONS YOUR DOG IS VOMITING</p>
         </div>
+        <section id="main-sideposts">
+            <div id="sideposts1" class="c">
 
-        <!-- ----------------------------------------------------------------->
-
-        <!-- clean up shit in CSS
-         new breakpoints at: - (pictures max-width: 80%; ) - 480 - (watch centering and img-size?) - menu to mobile and watch margin-left title and subtitle - 780 - (only reducing main articles + img?) - 1080 - ok?
-         scaling pictures according to breakpoints
-         putting max on the p in featured and recent articles
-    
-         basically just put different names for the other pages so css doesn't overlap..
-         or divide it in basic and extra css.
-        
-        -->
-
-        <div id="pagecontainer">
-            <div id="topContainer" >
-                <div id="mainarticle" class="c">
-                    <a href="#"><img id="imageMain" src="images/image780p.jpg"></a>
-                    <p class="tagName">wellness</p>
-                    <p class="mainArticleTitle">5 REASONS YOUR DOG IS VOMITING</p>
+                <div class="imagesContainer">
+                    <img class="imageSquare" src="images/imageSquare.jpg">
+                    <p class="subtitle">TOP 14 FRESH SNACKS FOR DOGS</p>
                 </div>
-                <section id="main-sideposts">
-                    <div id="sideposts1" class="c">
-
-                        <div class="imagesContainer">
-                            <img class="imageSquare" src="images/imageSquare.jpg">
-                            <p class="subtitle">TOP 14 FRESH SNACKS FOR DOGS</p>
-                        </div>
-                        <div class="imagesContainer">
-                            <img class="imageSquare" src="images/imageSquare.jpg">
-                            <p class="subtitle">WHY SKINNY DOGS LIVE LONGER</p>
-                        </div>
-                    </div>
-                    <div id="sideposts2" class="c">
-                        <div class="imagesContainer">
-                            <img class="imageSquare" src="images/imageSquare.jpg">
-                            <p class="subtitle">THE 10 MOST DANGEROUS FOODS FOR DOGS</p>
-                        </div>
-                        <div class="imagesContainer">
-                            <img class="imageSquare" src="images/imageSquare.jpg">
-                            <p class="subtitle">THE HISTORY OF COMMERCIAL PET FOOD: A GREAT AMERICAN MARKETING STORY</p>
-                        </div>
-
-                    </div>
-                </section>
-            </div>
-            <div class="split-line" ><h6>FEATURED POSTS</h6></div>
-            <div style="margin-left:auto;">
-                <div class="row" style="margin-bottom: 5%;width: 70%;">
-                    <div class="col" style="margin-bottom:6%">
-                        <a href="#"><img src="images/dog2.jpg" class="img-fluid"></a>
-                    </div>
-                    <div class="col" style="margin-bottom:6%;padding-left:4%">
-                        <h6 style="margin-bottom: 6%"><a href="#" class="nutrition-link">NUTRTION |</a></h6>
-                        <h4 style="margin-bottom: 6%"><a href="#" class="header-link">Lorem, ipsum dolor sit amet
-                                consectetur adipisicing elit. Provident, odit?</a></h4>
-                        <p style="line-height: 1"><a href="#" class="paragraph-link">Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Exercitationem, facere. Vitae corrupti quos magnam
-                                maiores.</a></p>
-                        <div class="share-icon" style="margin-top: 7%; align-items: baseline; font-size: 13px;"><i class="fas fa-share" style="border: 1px solid #cbcbcb;border-radius:50%;padding:8px; font-size: 15px;"></i>
-                            SHARE</div>
-                    </div>
-
+                <div class="imagesContainer">
+                    <img class="imageSquare" src="images/imageSquare.jpg">
+                    <p class="subtitle">WHY SKINNY DOGS LIVE LONGER</p>
                 </div>
             </div>
-            <div class="split-line"><h6>LATEST POSTS</h6></div>
-            <div class="last-section">
-                <div class="left">
-                    <div><a href="#"><img src="images/dog2.jpg"></a></div>
-                    <div style="text-align: center;max-width: 86%;margin-top: 5%"><a href="#"><h6>COMMUNITY</h6></a>
-                    <a href="#"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque a expedita numquam!</p>
-                    </div>
+            <div id="sideposts2" class="c">
+                <div class="imagesContainer">
+                    <img class="imageSquare" src="images/imageSquare.jpg">
+                    <p class="subtitle">THE 10 MOST DANGEROUS FOODS FOR DOGS</p>
                 </div>
-                <div class="right">
-                    <div><a href="#"><img src="images/dog2.jpg"></a></div>
-                    <div style="text-align:center;max-width: 86%;margin-top: 5%"><a href="#"><h6>COMMUNITY</h6></a>
-                    <a href="#"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque a expedita numquam!</p>
-                    </div>
+                <div class="imagesContainer">
+                    <img class="imageSquare" src="images/imageSquare.jpg">
+                    <p class="subtitle">THE HISTORY OF COMMERCIAL PET FOOD: A GREAT AMERICAN MARKETING STORY</p>
                 </div>
+
+            </div>
+        </section>
+    </div>
+    <div class="split-line" >FEATURED POSTS</div>
+    <div>
+        <div class="row" style="margin-bottom: 5%;width: 100%;">
+            <div class="col" style="margin-bottom:6%">
+                <a href="#"><img src="images/dog2.jpg" class="img-fluid"></a>
+            </div>
+            <div class="col" style="margin-bottom:6%;padding-left:4%">
+                <a href="#"  class="tagName">NUTRTION |</a>
+                <h4><a href="#" class="header-link">Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Provident, odit?</a></h4>
+                <p style="line-height: 1"><a href="#" class="paragraph-link">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Exercitationem, facere. Vitae corrupti quos magnam
+                        maiores.</a></p>
+                <div class="share-icon" style="margin-top: 7%; align-items: baseline; font-size: 13px;"><i class="fas fa-share" style="border: 1px solid #cbcbcb;border-radius:50%;padding:8px; font-size: 15px;"></i>
+                    SHARE</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="split-line">LATEST POSTS</div>
+    <div class="last-section">
+        <div class="left latestPost">
+            <div><a href="#"><img src="images/dog2.jpg"></a></div>
+            <div><a href="#"  class="tagName">COMMUNITY</a>
+            <a href="#"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque a expedita numquam!</p>
+            </div>
+        </div>
+        <div class="right latestPost">
+            <div><a href="#"><img src="images/dog2.jpg"></a></div>
+            <div><a href="#" class="tagName">COMMUNITY</a>
+            <a href="#"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque a expedita numquam!</p>
             </div>
         </div>
     </div>
+</div>
+    </div>
 
     <!-- ----------------------------------------------------------------->
-    <footer>
-        <!-- <div class="footer-row0">
-                <div><b>CATEGORIES</b></div>
-                <div><b>POPULAR POSTS</b></div>
-                <div><b>INSTAGRAM</b></div>
-            </div> -->
-        <div class="footer-row1">
-
-            <div class="container-row1">
-                <div class="footer-title">CATAGORIES</div>
-                <div class="container-category">
-
-                    <div class="cat"><b>Community</b></div>
-                    <div class="cat"><b>Featured</b></div>
-                    <div class="cat"><b>Lifestyle</b></div>
-                    <div class="cat"><b>Nutrition</b></div>
-                    <div><b>Wellness</b></div>
-                </div>
-
-                <div class="popular-col">
-                    <div class="footer-title">POPULAR POSTS</div>
-                    <div class="container-popular">
-
-                        <div class="popular-row">
-                            <div class="img-rand-foot"><img src="images/dog1.jpg" /></div>
-                            <div class="txt-rand-foot"><b>5 reasons your dog is vomiting</b></div>
-                        </div>
-                        <div class="popular-row">
-                            <div class="img-rand-foot"><img src="images/dog1.jpg" /></div>
-                            <div class="txt-rand-foot"><b>text pafehfizhfzifuhz</b></div>
-                        </div>
-                        <div class="popular-row">
-                            <div class="img-rand-foot"><img src="images/dog1.jpg" /></div>
-                            <div class="txt-rand-foot"><b>text pour le fun et la gourmandise</b></div>
+    <div id="footerContainedHere">
+            <footer>
+                    <div class="footer-row1">
+            
+                        <div class="container-row1">
+                            <div class="zone1">
+                                <div class="footer-title">CATAGORIES</div>
+                                <div class="container-category">
+                                    <ul>
+                                    <li><b>Community</b></li>
+                                    <li><b>Featured</b></li>
+                                    <li><b>Lifestyle</b></li>
+                                    <li><b>Nutrition</b></li>
+                                    <li id="special-one"><b>Wellness</b></li>
+                                </ul>
+                                </div>
+                            </div>
+            
+                            <div class="popular-col">
+                                <div class="footer-title">POPULAR POSTS</div>
+                                <div class="container-popular">
+            
+                                    <article class="popular-row">
+                                        <div class="img-rand-foot"><img src="images/dog1.jpg" /></div>
+                                        <div class="txt-rand-foot"><b>5 reasons your dog is vomiting</b></div>
+                                    </article>
+                                    <article class="popular-row">
+                                        <div class="img-rand-foot"><img src="images/dog1.jpg" /></div>
+                                        <div class="txt-rand-foot"><b>Top 14 Fresh Snacks for Dogs </b></div>
+                                    </article>
+                                    <article class="popular-row">
+                                        <div class="img-rand-foot"><img src="images/dog1.jpg" /></div>
+                                        <div class="txt-rand-foot"><b>The 11 Dog Food Label Tricks Every Owner Needs to Know</b></div>
+                                    </article>
+                                </div>
+                            </div>
+            
+                            <div class="instagram-col">
+                                <div class="footer-title">INSTAGRAM</div>
+                                <div class="container-instagram">
+                                    <div><img src="images/dog2.jpg" /></div>
+                                    <div><img src="images/dog2.jpg" /></div>
+                                    <div><img src="images/dog2.jpg" /></div>
+                                    <div><img src="images/dog2.jpg" /></div>
+                                    <div><img src="images/dog2.jpg" /></div>
+                                    <div><img src="images/dog2.jpg" /></div>
+                                    <div><img src="images/dog2.jpg" /></div>
+                                    <div><img src="images/dog2.jpg" /></div>
+                                    <div><img src="images/dog2.jpg" /></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="instagram-col">
-                    <div class="footer-title">INSTAGRAM</div>
-                    <div class="container-instagram">
-                        <div><img src="images/dog2.jpg" /></div>
-                        <div><img src="images/dog2.jpg" /></div>
-                        <div><img src="images/dog2.jpg" /></div>
-                        <div><img src="images/dog2.jpg" /></div>
-                        <div><img src="images/dog2.jpg" /></div>
-                        <div><img src="images/dog2.jpg" /></div>
-                        <div><img src="images/dog2.jpg" /></div>
-                        <div><img src="images/dog2.jpg" /></div>
-                        <div><img src="images/dog2.jpg" /></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </footer>
+                <footer2>
+                    <div class="footer-row2-1">
+                        <div class="container-social">
+                            <div><img src="images/Social-media/facebook1.png" /></div>
+                            <div><img src="images/Social-media/twitter1.png" /></div>
+                            <div><img src="images/Social-media/instagram1.png" /></div>
+                            </div>
+                        </div>
+                        <div class="footer-row2-2">
+                            <div>2017 &#169; The Farmer's Dog</div>
+                        </div>
+            </footer2>
+    </div>
+<div id="go-up-icon">
 
-        <div class="footer-row2">
-
-            <div><img src="images/Social-media/facebook_logo.svg" /></div>
-            <div><img src="images/Social-media/twitter-logo-silhouette.svg" /></div>
-            <div><img src="images/Social-media/instagram_logo.svg"></div>
-
-        </div>
-    </footer>
+</div>
 
 
     <!-- Optional JavaScript -->
@@ -278,5 +215,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
  
     <script src="script.js"></script>
+    <script>
+
+        var externalLinks = document.getElementById('Links');
+    function showExternalLinksClick() {
+            if (externalLinks.style.display === "block") {
+                externalLinks.style.display = "none";
+                topbarBackground.style.marginRight  = "1em";
+                topbarBackground.style.maxHeight = "50px";
+            } else {
+                externalLinks.style.display = "block";
+                topbarBackground.style.marginRight = "0em";
+                topbarBackground.style.maxHeight = "300px";
+            }
+          }</script>
 </body>
 </html>
