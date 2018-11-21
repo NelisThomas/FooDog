@@ -52,6 +52,16 @@ body{
     width: 90%;
 }
 
+#mobileMenu {
+    display: block;
+    visibility: hidden;
+}
+
+#Links {
+    display: none;
+    position: absolute;
+}
+
 #topContainer{
     display: flex;  
     flex-direction: column;
@@ -114,28 +124,42 @@ a{
     text-decoration: none !important;
     color: black !important;
 }
-
+#searchResultDisplay{
+    text-align: center;
+    margin-top: 3%;
+}
 #nutrition {
     margin-left: -5em ;
 }
 
 #title {
-    text-align: center;
-    margin-left: 50px;
+    display: flex;
+    justify-content:space-between;
     font-size: 3.25em;
     color: #242424;
     font-family: 'Crimson Text', serif;
 }
 
-.topSocialDiv {
-    float: right;
+/* #titleOfThePage {
+    margin-right: 30%;
+} */
+
+#topSocialDiv {
+    display: flex;
+    flex-direction: row-reverse;
     max-width: 50px;
     max-height: 50px;
     margin-right: 15px;
 }
 
-#searchTrigger {
-    margin-right: 50px;
+#topSocialDiv > div {
+    margin-right: 15px;
+}
+
+#searchIcon {
+    margin-right: 0px;
+    width: 100px;
+    max-width: 100px;
 }
 
 .mainArticleTitle{
@@ -192,11 +216,14 @@ a{
 
 #searchResultsFor {
     text-align: center;
+    text-transform: capitalize;
+    color: #A9A8A9;
 }
 
 #searchWord {
     text-align: center;
-
+    text-transform: lowercase;
+    color: #A9A8A9;
 }
 
 .searchResultContainer {

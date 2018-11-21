@@ -30,6 +30,11 @@
         display: none !important;
     }
 
+    #mobileMenu {
+        display: inline-block;
+        visibility: visible;
+    }
+
     #sideposts1 {
         max-width: 45% !important;
     }
@@ -373,6 +378,11 @@
 
     #instagram_top, #twitter_top, #facebook_top, #navbar {
         display: none !important;
+    }
+
+    #mobileMenu {
+        display: inline-block;
+        visibility: visible;
     }
     
 #main-sideposts {
@@ -1051,6 +1061,7 @@ footer2 {
 }
 
 @media only screen and (min-width:1024px) {
+
 
     #main-sideposts {
         max-width: 780px !important;
