@@ -266,7 +266,7 @@
         display: flex;
              
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .container-instagram div {
@@ -912,7 +912,7 @@ footer2 {
 
     .instagram-col {
         width:100%;
-        max-width: 200px;
+        max-width: 270px;
         height: 100%;
         
         flex-wrap: wrap;
@@ -937,9 +937,9 @@ footer2 {
     .container-instagram {
         /*keep the same measurement to make a perfect square (vw)*/
         width: 100vw; 
-        max-width: 220px;
+        max-width: 250px;
         height: 100vw;
-        max-height: 220px;
+        max-height: 250px;
         display: flex;
              
         align-items: center;
