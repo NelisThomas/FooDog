@@ -27,7 +27,7 @@
 @media only screen and (max-width:480px) {
 
     #instagram_top, #twitter_top, #facebook_top, #navbar {
-        display: none;
+        display: none !important;
     }
 
     #sideposts1 {
@@ -366,7 +366,7 @@
 @media only screen and (min-width:481px) and (max-width:764px) {
 
     #instagram_top, #twitter_top, #facebook_top, #navbar {
-        display: none;
+        display: none !important;
     }
     
 #main-sideposts {
