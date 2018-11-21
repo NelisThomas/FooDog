@@ -13,17 +13,58 @@
     <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="header.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="responsive.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="searchResults.css" />
     <!-- External Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>FooDog</title>
+    <!-- CSS -->
+    <style>
 
+            nav {
+                text-align: center;
+    
+            }
+    
+            nav > a {
+                text-decoration: none;
+                color: black;
+                margin-left: 2em;
+            }
+    
+            #nutrition {
+                margin-left: -5em ;
+            }
+    
+            #title {
+                text-align: center;
+                margin-left: 50px;
+                font-size: 3.25em;
+                color: #242424;
+                font-family: 'Crimson Text', serif;
+            }
+    
+            .topSocial {
+            }
+    
+            .topSocialDiv {
+                float: right;
+                max-width: 50px;
+                max-height: 50px;
+                margin-right: 15px;
+            }
+    
+            #searchTrigger {
+                margin-right: 50px;
+            }
+    
+        </style>
 </head>
 <body>
     <header>
         <h1 id="title">FooDog
-            <div class="topSocialDiv"><i class="fas fa-search"></i></div>
+            <div class="topSocialDiv" onclick="showModal()"><i class="fas fa-search"></i></div>
             <div class="topSocialDiv"><i class="fab fa-instagram"></i></div>
             <div class="topSocialDiv"><i class="fab fa-twitter"></i></div>
             <div class="topSocialDiv"><i class="fab fa-facebook-f"></i></div>
@@ -35,12 +76,17 @@
             <a href="#community.html">COMMUNITY</a>
         </nav>
     </header>
-    <div class="main-container">
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <p>Some text in the Modal..</p>
+    <div id="myModal" class="modal">
+            <div id=modalContainer class="modalContainer">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <input placeholder="Search and hit enter...">
+                    <i class="fas fa-search"></i>
+                </div>
             </div>
-        </div>
+            
+    </div>
+    
 
         <!-- ----------------------------------------------------------------->
 

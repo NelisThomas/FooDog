@@ -137,6 +137,51 @@ img{
     text-transform: capitalize;
     margin-top: 7%;
 }
+
+#searchResultHeader {
+    justify-content: center;
+}
+
+#searchResultsFor {
+    text-align: center;
+}
+
+#searchWord {
+    text-align: center;
+
+}
+
+.searchResultContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+.articleContainer {
+
+}
+
+.searchWord {
+}
+
+.searchResultHeader {
+}
+
+.articleTitle {
+    text-decoration: none;
+    text-align: left;
+}
+
+
+.articleTitle:hover {
+    border-bottom: 4px solid #FFA88E;
+}
+
+@media only screen and (min-width:769px) {
+    .searchResultContainer_big {
+        display: flex;
+    }
+
 i {
     font-size: 20px;
 }

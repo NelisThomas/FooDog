@@ -5,7 +5,7 @@ var modal = document.getElementById('myModal');
 var btn = document.getElementById("searchTrigger");
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
+function showModal () {
     modal.style.display = "block";
 }
 
