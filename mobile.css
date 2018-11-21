@@ -52,6 +52,16 @@ body{
     width: 90%;
 }
 
+#mobileMenu {
+    display: block;
+    visibility: hidden;
+}
+
+#Links {
+    display: none;
+    position: absolute;
+}
+
 #topContainer{
     display: flex;  
     flex-direction: column;
@@ -113,12 +123,18 @@ nav > a {
 }
 
 #title {
+    display: flex;
+    justify-content:space-between;
     text-align: center;
     margin-left: 50px;
     font-size: 3.25em;
     color: #242424;
     font-family: 'Crimson Text', serif;
 }
+
+/* #titleOfThePage {
+    margin-right: 30%;
+} */
 
 .topSocialDiv {
     float: right;
@@ -127,8 +143,8 @@ nav > a {
     margin-right: 15px;
 }
 
-#searchTrigger {
-    margin-right: 50px;
+#searchIcon {
+    margin-right: 0px;
 }
 
 .mainArticleTitle{
