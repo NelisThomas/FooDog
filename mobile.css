@@ -78,9 +78,12 @@ body{
 #sideposts1 {
     max-width: 485px ;
 }
+#imageMain{
+    max-width: 90vw;
+}
 
 #mainarticle {
-    min-width: 470px;
+    /* min-width: 470px; */
 }
 
 .imageSquare{
@@ -117,7 +120,14 @@ nav > a {
     color: black;
     margin-left: 2em;
 }
-
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+#searchResultDisplay{
+    text-align: center;
+    margin-top: 3%;
+}
 #nutrition {
     margin-left: -5em ;
 }
@@ -206,11 +216,14 @@ nav > a {
 
 #searchResultsFor {
     text-align: center;
+    text-transform: capitalize;
+    color: #A9A8A9;
 }
 
 #searchWord {
     text-align: center;
-
+    text-transform: lowercase;
+    color: #A9A8A9;
 }
 
 .searchResultContainer {
@@ -238,9 +251,16 @@ i {
 .last-section {
     display: flex;
     flex-direction: row;
-    width: 60%;
+    /* flex-wrap: wrap; */
+    width: 100%;
     margin-bottom: 10%;
 }
+.latestPost{
+    max-width: 45vw;
+    text-align: center;
+    min-width: 327px;
+}
+
 .split-line {
     margin-bottom: 2%;
     display: flex;
