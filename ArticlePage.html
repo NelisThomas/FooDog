@@ -5,10 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>article-Specific-Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="mobile.css" />
     <script src="main.js"></script>
+
+    <style>
+    #page{
+        width: 68%;
+        float: left;
+        margin-left: 6%;
+        margin-right: 2%;
+    }
+    .articlePageArticleName{
+        text-align: center;
+        max-width: 80%;
+    }
+    .articleDivider{
+        display: flex;
+        height: 32px;
+        border: 1px solid black;
+    }
+    .articleAuthorImg{
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+    }
+    </style>
+
 </head>
 <body>
-    
+    <div id="page">
+        <div class="articleTop">
+            <p class="tagName">tag name</p>
+            <p class="articlePageArticleName">article name</p>
+            <img class="articleMainImage" src="images/dog1.jpg">
+            <div class="articleDivider">
+                <img class="articleAuthorImg" src="images/image480p.jpg">
+                <p id="articleAuthor">by: THEFARMER'S DOG</p>
+                <div id="commentButton"></div>
+                <div class="articleSocialMediaContainer">
+                    <p>SHARE</p>
+                    <div id="articleFBButton"></div>
+                    <div id="articleTwitterButton"></div>
+                    <div id="articlePinterestButton"></div>
+                </div>
+            </div>
+        </div>
+        <div id="articleContent">
+
+        </div>
+        <div id="articleFooter">
+            <p>SHARE</p>
+            <div id="commentButton2"></div>
+            <div id="articleFBButton2"></div>
+            <div id="articleTwitterButton2"></div>
+            <div id="articlePinterestButton2"></div>
+        </div>
+        <div id="articleSuscribe">
+            <p>Subscribe to The Digest Newsletter</p>
+            <p>Get health and wellness tips about your dog delivered to your inbox.</p>
+            <input id="emailInput" type="text">
+            <button id="signUpButton"></button>
+        </div>
+        <div class="articleNextPrevContainer">
+            <div id="previousArticle">
+                <p>previous article</p>
+                <p id="previousArticleName">previous article name</p>
+            </div>
+            <div id="nextArticle">
+                <p>next article</p>
+                <p id="nextArticleName">next article name</p>
+            </div>
+        </div>
+        <div class="authorContainer">
+            <img id="articleAuthor">
+            <div class="flexCol">
+                <p id="authorName">author name</p>
+                <p id="authorDescription">author description</p>
+            </div>
+        </div>
+        <div id="youMightAlsoLike">
+            <div class="articleYouMightLike">
+                <img id="articleYouMightLikeImg">
+                <p id="articleYouMightLikeTitle">article title</p>
+            </div>
+            <div class="articleYouMightLike">
+                <img id="articleYouMightLikeImg">
+                <p id="articleYouMightLikeTitle">article title</p>
+            </div>
+            <div class="articleYouMightLike">
+                <img id="articleYouMightLikeImg">
+                <p id="articleYouMightLikeTitle">article title</p>
+            </div>
+        </div>
+        <div id="responseForm">
+            <p>Leave a response</p>
+            <textarea id="responseInput" placeholder="Write your comment here..."></textarea>
+            <div id="responseFormButtonContainer">
+                <textarea id="nameInput" placeholder="Name..."></textarea>
+                <textarea id="emailInput" placeholder="Email..."></textarea>
+                <textarea id="websiteInput" placeholder="Website..."></textarea>
+            </div>
+            <button id="submitResponseButton" value="LEAVE A COMMENT"></button>
+        </div>
+    </div>
 </body>
 </html>
