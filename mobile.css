@@ -68,9 +68,12 @@ body{
 #sideposts1 {
     max-width: 485px ;
 }
+#imageMain{
+    max-width: 90vw;
+}
 
 #mainarticle {
-    min-width: 470px;
+    /* min-width: 470px; */
 }
 
 .imageSquare{
@@ -106,6 +109,10 @@ nav > a {
     text-decoration: none;
     color: black;
     margin-left: 2em;
+}
+a{
+    text-decoration: none !important;
+    color: black !important;
 }
 
 #nutrition {
@@ -217,9 +224,16 @@ i {
 .last-section {
     display: flex;
     flex-direction: row;
-    width: 60%;
+    /* flex-wrap: wrap; */
+    width: 100%;
     margin-bottom: 10%;
 }
+.latestPost{
+    max-width: 45vw;
+    text-align: center;
+    min-width: 327px;
+}
+
 .split-line {
     margin-bottom: 2%;
     display: flex;

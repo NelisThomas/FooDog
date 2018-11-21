@@ -79,7 +79,13 @@
         display: flex;
         flex-direction: column;
     }
-
+    .last-section {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        width: 100%;
+        margin-bottom: 10%;
+    }
 
     /*---------------------FOOTER PART1------------------------*/
     footer {
