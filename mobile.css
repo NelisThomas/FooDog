@@ -55,11 +55,27 @@ body{
 #mobileMenu {
     display: block;
     visibility: hidden;
+    max-height: 60px;
+    width: 20px;
+    max-width: 20px;
+    overflow: visible;
+}
+
+#mobileSocialMedia {
+    display: flex;
 }
 
 #Links {
     display: none;
     position: absolute;
+    margin-left: -1em;
+    width: 100%;
+    background-color: white;
+}
+
+#Links > ol > li {
+    list-style: none;
+    text-align: left;
 }
 
 #topContainer{
