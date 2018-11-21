@@ -110,8 +110,9 @@ nav > a {
     color: black;
     margin-left: 2em;
 }
-a {
-    text-decoration: none;
+a{
+    text-decoration: none !important;
+    color: black !important;
 }
 
 #nutrition {
@@ -232,10 +233,17 @@ i {
 
 .last-section {
     display: flex;
-    flex-direction: column;
-    width: 90%;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width: 100%;
     margin-bottom: 10%;
 }
+.latestPost{
+    max-width: 45vw;
+    text-align: center;
+    min-width: 327px;
+}
+
 .split-line {
     margin-bottom: 2%;
     display: flex;
