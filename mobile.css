@@ -73,7 +73,7 @@ body{
 }
 
 #mainarticle {
-    min-width: 470px;
+    /* min-width: 470px; */
 }
 
 .imageSquare{
@@ -109,6 +109,9 @@ nav > a {
     text-decoration: none;
     color: black;
     margin-left: 2em;
+}
+a {
+    text-decoration: none;
 }
 
 #nutrition {
@@ -229,8 +232,8 @@ i {
 
 .last-section {
     display: flex;
-    flex-direction: row;
-    width: 60%;
+    flex-direction: column;
+    width: 90%;
     margin-bottom: 10%;
 }
 .split-line {
@@ -246,5 +249,4 @@ i {
     border-top: 2px solid grey;
     margin: 1px 30% 5px 8px;
     flex: 1 0 20px;
-}
 }
