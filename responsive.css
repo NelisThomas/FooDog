@@ -43,7 +43,7 @@
 
 @media only screen and (min-width:481px) and (max-width:768px) {
 
-    #instagram_top, #twitter_top, #facebook_top, #navbar {
+    .fa-instagram, .fa-facebook, .fa-twitter {
         display: none;
     }
     

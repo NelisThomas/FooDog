@@ -110,7 +110,7 @@ img{
     font-weight: 900;
 }
 .tagName{
-    font-size: 11px;
+    font-size: 2vh;
     color: #FF835E;
     text-transform: uppercase;
     font-weight: bolder;
