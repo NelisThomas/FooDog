@@ -1,15 +1,23 @@
 @font-face {
     font-family: "Crimson1";
     src: url("fonts/CrimsonText-Regular.ttf") format('truetype');
+    /*src: url("fonts/CrimsonText-SemiBold.ttf") format('truetype');*/
+    /*src: url("fonts/CrimsonText-SemiBoldItalic.ttf") format('truetype');*/
 }
 
 @font-face {
-        font-family: "Open1";
-        src: url("fonts/OpenSans-Regular.ttf") format('truetype');
-        src: url("fonts/OpenSans-Bold.ttf") format('truetype');
+    font-family: "CrimsonText";
+    src: url("fonts/CrimsonText-Regular.ttf") format('truetype');
+    /*src: url("fonts/CrimsonText-SemiBold.ttf") format('truetype');*/
+    /*src: url("fonts/CrimsonText-SemiBoldItalic.ttf") format('truetype');*/
 }
 
-
+@font-face {
+    font-family: "Open1";
+    src: url("fonts/OpenSans-Regular.ttf") format('truetype');
+    src: url("fonts/OpenSans-Bold.ttf") format('truetype');
+    /*src: url("fonts/OpenSans-SemiBoldItalic.ttf") format('truetype');*/
+}
 
 html{
     height: 100%;
@@ -91,6 +99,39 @@ body{
 img{
     height: auto;
     width: 90%;    
+}
+nav {
+    text-align: center;
+
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 2em;
+}
+
+#nutrition {
+    margin-left: -5em ;
+}
+
+#title {
+    text-align: center;
+    margin-left: 50px;
+    font-size: 3.25em;
+    color: #242424;
+    font-family: 'Crimson Text', serif;
+}
+
+.topSocialDiv {
+    float: right;
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 15px;
+}
+
+#searchTrigger {
+    margin-right: 50px;
 }
 
 .mainArticleTitle{
@@ -175,15 +216,9 @@ img{
     text-align: left;
 }
 
-
 .articleTitle:hover {
     border-bottom: 4px solid #FFA88E;
 }
-
-@media only screen and (min-width:769px) {
-    .searchResultContainer_big {
-        display: flex;
-    }
 
 i {
     font-size: 20px;
