@@ -136,10 +136,10 @@ nav > a {
     color: black;
     margin-left: 2em;
 }
-a{
+/* a{
     text-decoration: none !important;
     color: black !important;
-}
+} */
 #searchResultDisplay{
     text-align: center;
     margin-top: 3%;
@@ -257,9 +257,9 @@ a{
     border-bottom: 4px solid #FFA88E;
 }
 
-i {
+/* i {
     font-size: 20px;
-}
+} */
 .left-articles {
     width: 35%;
 }
