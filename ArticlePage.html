@@ -6,62 +6,70 @@
     <title>article-Specific-Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="mobile.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="articlePage.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="responsive.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="main.js"></script>
 
-    <style>
-    #page{
-        width: 68%;
-        float: left;
-        margin-left: 6%;
-        margin-right: 2%;
-    }
-    .articlePageArticleName{
-        text-align: center;
-        max-width: 80%;
-    }
-    .articleDivider{
-        display: flex;
-        height: 32px;
-        border: 1px solid black;
-    }
-    .articleAuthorImg{
-        border-radius: 50%;
-        height: 32px;
-        width: 32px;
-    }
-    </style>
+    
 
 </head>
 <body>
     <div id="page">
         <div class="articleTop">
             <p class="tagName">tag name</p>
-            <p class="articlePageArticleName">article name</p>
+            <h1 class="articlePageArticleName">article name</h1>
             <img class="articleMainImage" src="images/dog1.jpg">
             <div class="articleDivider">
-                <img class="articleAuthorImg" src="images/image480p.jpg">
-                <p id="articleAuthor">by: THEFARMER'S DOG</p>
-                <div id="commentButton"></div>
+                <div class="articleAuthorInfoContainer">
+                    <img class="articleAuthorImg" src="images/image480p.jpg">
+                    <p id="articleAuthor">by: THEFARMER'S DOG</p>
+                </div>
+                <div id="commentButton">
+                    <i class="fas fa-comment"></i>
+                    <p>COMMENT</p>
+                </div>
                 <div class="articleSocialMediaContainer">
-                    <p>SHARE</p>
-                    <div id="articleFBButton"></div>
-                    <div id="articleTwitterButton"></div>
-                    <div id="articlePinterestButton"></div>
+                    <p class="shareText">SHARE</p>
+                    <div id="articleFBButton" class="articleSocialBall">
+                            <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div id="articleTwitterButton" class="articleSocialBall">
+                            <i class="fab fa-twitter"></i>
+                    </div>
+                    <div id="articlePinterestButton" class="articleSocialBall">
+                            <i class="fab fa-pinterest"></i>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="articleContent">
-
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam saepe aut, perspiciatis nemo eveniet harum mollitia iure voluptas assumenda ratione minima, magni est et, recusandae rerum labore cumque! Tempora!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, obcaecati quidem delectus, iusto illo molestiae nesciunt maiores error laudantium, illum maxime dignissimos. Tempora hic repudiandae nam aspernatur, minus ea error!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eaque amet magnam ipsam illo ut deleniti eveniet odio, dolores accusantium commodi quia officiis sed ipsum, quasi iure nam rem! Cumque?</p>
         </div>
         <div id="articleFooter">
-            <p>SHARE</p>
-            <div id="commentButton2"></div>
-            <div id="articleFBButton2"></div>
-            <div id="articleTwitterButton2"></div>
-            <div id="articlePinterestButton2"></div>
+            <p class="shareText">SHARE</p>
+            <div id="commentButton2" class="articleFooterSocialButton">
+                <i class="fas fa-comment"></i>
+                <p>COMMENT</p>
+            </div>
+            <div id="articleFBButton" class="articleFooterSocialButton">
+                <i class="fab fa-facebook-f"></i>
+                <p>SHARE</p>
+            </div>
+            <div id="articleTwitterButton" class="articleFooterSocialButton">
+                <i class="fab fa-twitter"></i>
+                <p>TWEET</p>
+            </div>
+            <div id="articlePinterestButton" class="articleFooterSocialButton">
+                <i class="fab fa-pinterest"></i>
+                <p>PIN IT</p>
+            </div>
         </div>
-        <div id="articleSuscribe">
-            <p>Subscribe to The Digest Newsletter</p>
+        <div id="articleSubscribe">
+            <p id="articleSubscribeHeader">Subscribe to The Digest Newsletter</p>
             <p>Get health and wellness tips about your dog delivered to your inbox.</p>
             <input id="emailInput" type="text">
             <button id="signUpButton"></button>
