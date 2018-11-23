@@ -61,7 +61,7 @@ body {
     }
     .first-block-1-1 {
         width: 100%;
-        height: 70vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
     }
@@ -80,21 +80,25 @@ body {
     }
     .first-block-1-2{
         width: 100%;
-        height: 90vh;
+        height: 70vh;
         display: flex;
         flex-wrap:wrap;
+        justify-content: space-evenly;
+        align-items: center;
         
     }
     .first-block-1-2 article {
-        width: 33vw;
-        height: 33vw;
+        width: 45vw;
+        height: 43%;
+        max-height:100%;
         display: flex;
         flex-direction: column;
         justify-content: first baseline;
         align-items: center;
+        margin: 0 1% 20px 1%;
     }
     .block1-2-img {
-        width: 32vw;
+        max-width: 100%;
         height: 32vw;
         display: flex;
         
@@ -107,50 +111,94 @@ body {
         
     }
     
-    /**********************************************/
+    /**********************2nd************************/
     .second-block {
         width: 100%;
+        max-width: 95vw;
+        
         height: 100%;
         display: flex;
         flex-wrap:wrap;
+        justify-content: center;
     }
     
     .block2-1-container{
         width: 100%;
+        
         height: 90vh;
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
     }
     .article-dog {
-        width: 32vw;
+        max-width: 100%;
         height: 32vw;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        padding-right:10px;
+
     }
     .article-dog-img{
-        width: 32vw;
+        min-width: 32vw;
         height: 32vw;
         display: flex;
         padding-right: 10px;
         flex-direction: column;
     }
-    
+    .article-dog-txt{
+        max-width: 100%;
+        height: 32vw;
+        display: flex;
+        padding-right: 10px;
+        flex-direction: column;
+    }
+    .block2-2-container{
+        width: 100%;
+        
+    }
+    .block2-2-social-zone{
+        max-width: 100%;
+        
+        height: 30vw;
+        margin-bottom:80px;
+        
+    }
     .block2-2-social-zone div{
-        width: 300px;
+        width: 100%;
+        max-width: 442px;
         height: 42px;
+        margin-bottom: 2px;
+    
+    }
+    .facebook-rectangle {
+        margin-bottom: 10px;
+        background-color: #709CBF;
+    
+    }
+    .twitter-rectangle {
+        margin-bottom: 100px;
+        background-color: #1DA1F3;
     
     }
     .instagram-rectangle {
         margin-bottom: 100px;
+        background-color: #709CBF;
     
     }
     .publicity-img {
         width: 300px;
         height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
+    /*****************3rd******************/
     .third-block{
-        width: 753px;
-        height: 1646px;
+        width: 100%;
+        max-width: 95vw;
+        height: 100%;
     }
     .latest-posts-article-block{
         width:380px;
@@ -169,8 +217,9 @@ body {
         max-width:100%;
        
     }
+    /*****************4th****************/
     .fourth-block{
-        width:800px;
+        width:100%;
         height:84px;
         display: flex;
         justify-content: center;
