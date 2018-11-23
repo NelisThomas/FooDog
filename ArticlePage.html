@@ -24,7 +24,8 @@
             <div class="articleDivider">
                 <div class="articleAuthorInfoContainer">
                     <img class="articleAuthorImg" src="images/image480p.jpg">
-                    <p id="articleAuthor">by: THEFARMER'S DOG</p>
+                    <p class="mobileHide">By: </p>
+                    <p id="articleAuthor">THE FARMER'S DOG</p>
                 </div>
                 <div id="commentButton">
                     <i class="fas fa-comment"></i>
@@ -50,7 +51,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eaque amet magnam ipsam illo ut deleniti eveniet odio, dolores accusantium commodi quia officiis sed ipsum, quasi iure nam rem! Cumque?</p>
         </div>
         <div id="articleFooter">
-            <p class="shareText">SHARE</p>
+            <p class="shareText mobileHide">SHARE</p>
             <div id="commentButton2" class="articleFooterSocialButton">
                 <i class="fas fa-comment"></i>
                 <p>COMMENT</p>
@@ -71,49 +72,70 @@
         <div id="articleSubscribe">
             <p id="articleSubscribeHeader">Subscribe to The Digest Newsletter</p>
             <p>Get health and wellness tips about your dog delivered to your inbox.</p>
-            <input id="emailInput" type="text">
-            <button id="signUpButton"></button>
+            <div id="subscribeInputContainer">
+                <input id="emailInput" type="text" placeholder="Your email">
+                <div id="signUpButton"><p>SIGN UP</p></div>
+            </div>
         </div>
         <div class="articleNextPrevContainer">
-            <div id="previousArticle">
-                <p>previous article</p>
+            <div id="previousArticle" class="articleNextPrevButton">
+                <p><  previous article</p>
                 <p id="previousArticleName">previous article name</p>
             </div>
-            <div id="nextArticle">
-                <p>next article</p>
+            <div id="nextArticle" class="articleNextPrevButton">
+                <p>next article  ></p>
                 <p id="nextArticleName">next article name</p>
             </div>
         </div>
         <div class="authorContainer">
-            <img id="articleAuthor">
+            <img id="articleAuthorImg" src="images/dog2.jpg">
             <div class="flexCol">
                 <p id="authorName">author name</p>
-                <p id="authorDescription">author description</p>
+                <br>
+                <p id="authorDescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, nam. Repellendus minima eveniet dolorum dolorem possimus distinctio, quam ratione veritatis nam praesentium velit dolores? Quaerat magni aliquam ipsa laudantium quam.</p>
             </div>
         </div>
         <div id="youMightAlsoLike">
             <div class="articleYouMightLike">
-                <img id="articleYouMightLikeImg">
+                <img id="articleYouMightLikeImg" src="images/dog2.jpg">
                 <p id="articleYouMightLikeTitle">article title</p>
             </div>
             <div class="articleYouMightLike">
-                <img id="articleYouMightLikeImg">
+                <img id="articleYouMightLikeImg" src="images/dog2.jpg">
                 <p id="articleYouMightLikeTitle">article title</p>
             </div>
             <div class="articleYouMightLike">
-                <img id="articleYouMightLikeImg">
+                <img id="articleYouMightLikeImg" src="images/dog2.jpg">
                 <p id="articleYouMightLikeTitle">article title</p>
             </div>
         </div>
         <div id="responseForm">
-            <p>Leave a response</p>
+            <p id="leaveAResponse">Leave a response</p>
             <textarea id="responseInput" placeholder="Write your comment here..."></textarea>
             <div id="responseFormButtonContainer">
-                <textarea id="nameInput" placeholder="Name..."></textarea>
-                <textarea id="emailInput" placeholder="Email..."></textarea>
-                <textarea id="websiteInput" placeholder="Website..."></textarea>
+                <textarea id="nameInput" class="responseInput2" placeholder="Name..."></textarea>
+                <textarea id="emailInput2" class="responseInput2" placeholder="Email..."></textarea>
+                <textarea id="websiteInput" class="responseInput2" placeholder="Website..."></textarea>
             </div>
-            <button id="submitResponseButton" value="LEAVE A COMMENT"></button>
+            <div id="submitResponseButton" value="LEAVE A COMMENT"><p>Leave a comment</p></div>
+        </div>
+        <div id="popularArticles">
+            <div id="popularArticlesContainer">
+                <div id="popularTag">Popular</div>
+                <div class="popularArticle">
+                    <img class="popularArticleImg" src="images/dog1.jpg">
+                    <a class="popularArticleName">article name</a>
+                </div>
+                <div class="popularArticle">
+                    <img class="popularArticleImg" src="images/dog1.jpg">
+                    <a class="popularArticleName">article name</a>
+                </div>
+                <div class="popularArticle">
+                    <img class="popularArticleImg" src="images/dog1.jpg">
+                    <a class="popularArticleName">article name</a>
+                </div>
+                <div id="popularArticlesNextButton">Next>></div>
+            </div>
         </div>
     </div>
 </body>
