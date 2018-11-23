@@ -101,9 +101,7 @@ body{
     max-width: 90vw;
 }
 
-#mainarticle {
-    /* min-width: 470px; */
-}
+
 
 .imageSquare{
     width: 225px;
@@ -173,20 +171,17 @@ nav > a {
     width: 100px;
     max-width: 100px;
 }
-nav {
+/* nav {
     text-align: center;
 
-}
+} */
 
 nav > a {
     text-decoration: none;
     color: black;
     margin-left: 2em;
 }
-a{
-    text-decoration: none !important;
-    color: black !important;
-}
+
 #searchResultDisplay{
     text-align: center;
     margin-top: 3%;
