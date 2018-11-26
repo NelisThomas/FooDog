@@ -31,8 +31,8 @@ a {
 
 }
 
-  /**************************MOBILE*****************************/
-@media only screen and (max-width:765px) {
+/**************************MOBILE*****************************/
+@media only screen and (max-width:764px) {
 
     .block-title {
         width: 100%;
@@ -43,6 +43,7 @@ a {
         font-weight: bolder;
         margin: 0 3% 8% 3%;
     }
+
     .block-title::after {
         content: ' ';
         width: 45vw;
@@ -51,17 +52,20 @@ a {
         background-color: rgb(241, 238, 238);
         position: relative;
         margin-left: 5%;
-   margin-left: 5%; 
+        margin-left: 5%;
         margin-left: 5%;
     }
-    .latest-posts-excerp>p {
+
+    .latest-posts-excerp {
         /* SHOULD ONLY APPEARS FROM IPAD RESOLUTION */
         /* DO NOT DISPLAY BELOW IPAD RESOLUTION*/
         display: none;
     }
-    .article-dog-text-exerp{
-        display:none;
+
+    .article-dog-text-exerp {
+        display: none;
     }
+
     /*********MAIN BLOCK 1**********/
     .first-block {
         width: 100%;
@@ -71,6 +75,7 @@ a {
         flex-direction: column;
         flex-wrap: wrap;
     }
+
     .first-block-1-1 {
         width: 100%;
         height: 100%;
@@ -79,11 +84,12 @@ a {
         flex-direction: column;
         padding-bottom: 10%;
         text-align: center;
-        font-family: Open1;   
+        font-family: Open1;
     }
+
     .first-block-1-2 {
         width: 100%;
-    
+
         height: 100%;
         max-height: 130vh;
         display: flex;
@@ -91,18 +97,20 @@ a {
         justify-content: space-evenly;
         align-items: baseline;
         font-family: Open1;
-    
+
     }
+
     .first-block-1-2 article {
         width: 45vw;
         height: 100%;
         max-height: 45vh;
         display: flex;
         flex-direction: column;
-    
+
         align-items: center;
         margin: 0 1% 20px 1%;
     }
+
     .block1-2-img {
         width: 100%;
         max-width: 45vw;
@@ -110,19 +118,21 @@ a {
         max-height: 38vw;
         display: flex;
         padding-bottom: 2%;
-    
+
     }
+
     /*********MAIN BLOCK 2**********/
     .article-dog {
         max-width: 96%;
         height: 100%;
         max-height: 55vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding-bottom: 4%;
         margin: 0 0 4% 0;
         border-bottom: 1px solid rgb(241, 241, 241);
     }
+
     .article-dog-img {
         width: 100%;
         max-width: 29vw;
@@ -131,18 +141,31 @@ a {
         padding-right: 10px;
         flex-direction: column;
     }
-   
+
+    .block2-1-container {
+        width: 100%;
+        height: 100%;
+        /* max-height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0 3% 5% 3%;
+        
+    }
+
     .block2-2-container {
         width: 100%;
         max-width: 100%;
         height: 100%;
-        
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-    
+
+
     }
+
     .publicity-img {
         width: 100%;
         max-width: 70%;
@@ -151,12 +174,14 @@ a {
         justify-content: center;
         align-items: center;
     }
+
     .publicity-img img {
         width: 100%;
         max-width: 100%;
         height: 100%;
         display: flex;
     }
+
     /******** MAIN BLOCK 3 **********/
 
     .third-block article {
@@ -166,18 +191,58 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-    
+
         margin: 0 10px 20px 10px;
-       
+
     }
-    
 
+    .latest-posts-article-container {
+        width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
+    }
+
+    /************************ MAIN BLOCK 4 ***************************/
+    .fourth-block {
+        width: 100%;
+        max-width: 95vw;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        margin-bottom: 40px;
+
+    }
+
+    .pagination-block div {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #aaa;
+        color: #aaa;
+    }
+    .pagination-block {
+        width: 145px;
+        max-height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #aaa;
+    }
 }
-        /*******************************************************/
- /*********************** IPAD to below IPAD PRO **************************/
 
-@media only screen and (min-width:765px) and (max-width:1024px) {
+/*******************************************************/
+/*********************** IPAD to below IPAD PRO **************************/
+
+@media only screen and (min-width:765px) and (max-width:1023px) {
     /* body {
         background-color: orange;
     } */
@@ -201,13 +266,14 @@ a {
         position: relative;
         margin-left: 5%;
     }
+
     .latest-posts-excerp {
         /* SHOULD ONLY APPEARS FROM IPAD RESOLUTION */
         /* DO NOT DISPLAY BELOW IPAD RESOLUTION*/
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         text-align: center;
     }
 
@@ -220,6 +286,7 @@ a {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .first-block-1-1 {
         width: 100%;
         max-width: 55%;
@@ -231,6 +298,7 @@ a {
         text-align: center;
         font-family: Open1;
     }
+
     .first-block-1-2 {
         width: 100%;
         max-width: 43%;
@@ -243,6 +311,7 @@ a {
         font-family: Open1;
         padding-left: 10px;
     }
+
     .first-block-1-2 article {
         width: 100%;
         max-width: 18vw;
@@ -253,6 +322,7 @@ a {
         align-items: center;
         margin: 0 1% 20px 1%;
     }
+
     .block1-2-img {
         width: 100%;
         max-width: 39vw;
@@ -261,6 +331,7 @@ a {
         display: flex;
         padding-bottom: 10%;
     }
+
     /************************ MAIN BLOCK 2 ***************************/
     .article-dog-img {
         width: 100%;
@@ -271,16 +342,18 @@ a {
         padding-right: 10px;
         flex-direction: column;
     }
+
     .article-dog {
         max-width: 96%;
         height: 100%;
         max-height: 55vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding-bottom: 4%;
         margin: 0 0 4% 0;
         border-bottom: 1px solid rgb(241, 241, 241);
     }
+
     .article-dog-txt {
         width: 100%;
         height: 100%;
@@ -289,17 +362,31 @@ a {
         flex-direction: column;
         justify-content: center;
     }
+
+    .block2-1-container {
+        width: 100%;
+        height: 100%;
+        /* max-height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0 3% 5% 3%;
+        
+    }
+
     .block2-2-container {
         width: 100%;
         max-width: 27%;
         height: 100%;
-        
+
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-left: 5%;
-    
+
     }
+
     .publicity-img {
         width: 100%;
         max-width: 100%;
@@ -308,33 +395,78 @@ a {
         justify-content: center;
         align-items: center;
     }
+
     .publicity-img img {
         width: 100%;
         max-width: 100%;
         height: 100%;
         max-height: 100%;
         display: flex;
-    
+
     }
-     /************************ MAIN BLOCK 3 ***************************/
-     .third-block article {
-        width: 96%;
+
+    /************************ MAIN BLOCK 3 ***************************/
+
+    .latest-posts-article-container {
+        width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .third-block article {
+        width: 100%;
+        max-width: 47%;
         height: 100%;
         max-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-    
+
         margin: 0 10px 20px 10px;
-        
+
     }
-    
+
+    /************************ MAIN BLOCK 4 ***************************/
+    .fourth-block {
+        width: 100%;
+        max-width: 95vw;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        margin-bottom: 40px;
+
+    }
+
+    .pagination-block div {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #aaa;
+        color: #aaa;
+    }
+    .pagination-block {
+        width: 145px;
+        max-height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #aaa;
+    }
 }
 
 /********************** From IPAD PRO to above *****************************/
-/* @media only screen and (min-width:769px) {
+@media only screen and (min-width:1024px) {
 
-    
+
     .block-title {
         width: 100%;
         height: 42px;
@@ -346,26 +478,238 @@ a {
         margin: 0 3% 8% 3%;
 
 
+
     }
 
-    .block-title::after {
+    /* .block-title::after {
         content: ' ';
-        width: 45vw;
+        width: 100%;
         max-width: 100%;
         height: 3px;
         background-color: rgb(241, 238, 238);
         position: relative;
-        margin-left: 5%;
+        margin-left: 5%; */
 
-    }
+}
 
-    .latest-posts-excerp>p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-} */
+hr {
+    width: 70%;
+    border: 1px solid rgb(241, 238, 238);
+    display: flex;
+    margin-left: 35px;
+
+}
+
+.latest-posts-excerp>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/************************ MAIN BLOCK 1 ***************************/
+.first-block {
+    width: 100%;
+    max-width: 95vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.first-block-1-1 {
+    width: 100%;
+    max-width: 55%;
+    height: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+    text-align: center;
+    font-family: Open1;
+}
+
+.first-block-1-2 {
+    width: 100%;
+    max-width: 43%;
+    height: 100%;
+    max-height: 130vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    font-family: Open1;
+    padding-left: 10px;
+}
+
+.first-block-1-2 article {
+    width: 100%;
+    max-width: 18vw;
+    height: 100%;
+    max-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1% 20px 1%;
+}
+
+.block1-2-img {
+    width: 100%;
+    max-width: 39vw;
+    height: 100%;
+    max-height: 16vw;
+    display: flex;
+    padding-bottom: 10%;
+}
+
+/************************ MAIN BLOCK 2 ***************************/
+.article-dog-img {
+    width: 100%;
+    max-width: 45vw;
+    height: 100%;
+    max-height: 23vh;
+    display: flex;
+    padding-right: 10px;
+    flex-direction: column;
+}
+
+.article-dog {
+    max-width: 96%;
+    height: 100%;
+    max-height: 55vh;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4%;
+    margin: 0 0 4% 0;
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.article-dog-txt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 10px 0 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block2-1-and-2 {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.block2-1-container {
+    width: 100%;
+    min-width: 60%;
+    height: 100%;
+    /* max-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 3% 5% 3%;
+
+}
+
+.block2-2-container {
+    width: 100%;
+    max-width: 27%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+
+}
+
+.publicity-img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.publicity-img img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+
+}
+
+/************************ MAIN BLOCK 3 ***************************/
+
+.latest-posts-article-container {
+    width: 100%;
+    max-width: 70%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(241, 238, 238);
+
+}
+
+.third-block article {
+    width: 100%;
+    max-width: 45%;
+    height: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 10px 20px 10px;
+
+}
+
+/************************ MAIN BLOCK 4 ***************************/
+.fourth-block {
+    width: 100%;
+    max-width: 100%;
+    height: 44px;
+    display: flex;
+    
+    
+    padding-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.fourth-block-alignement{
+    width: 100%;
+    max-width: 70%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pagination-block div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #aaa;
+    color: #aaa;
+}
+.pagination-block {
+    width: 195px;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #aaa;
+}
 
 /*******************************************************/
 
@@ -390,6 +734,7 @@ body {
 
 
 }
+
 .first-container {
     width: 100%;
     min-width: 95vw;
@@ -399,9 +744,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .first-block-1-1 p {
     padding-bottom: 3%;
 }
+
 .tagName {
     color: #FF8D6A;
     text-decoration: none;
@@ -409,6 +756,7 @@ body {
     font-weight: bold;
     font-size: .85em;
 }
+
 .block1-1-img {
     width: 100%;
     max-width: 100%;
@@ -417,12 +765,14 @@ body {
     display: flex;
     padding-bottom: 4%;
 }
+
 .block1-1-img img {
     width: 100%;
     max-width: 100%;
     height: 100%;
 
 }
+
 .block1-2-img img {
     max-width: 100%;
 }
@@ -430,28 +780,8 @@ body {
 /***************************************/
 /**********************2nd************************/
 
-.second-block {
-    width: 100%;
-    max-width: 92vw;
 
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap:wrap; */
-    justify-content: center;
 
-    padding-bottom: 5%;
-}
-.block2-1-container {
-    width: 100%;
-    height: 100%;
-    /* max-height: 100vh; */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0 3% 5%; 3%;
-}
 .article-dog-img img {
     max-width: 100%;
     height: 100%;
@@ -459,6 +789,7 @@ body {
 
     flex-direction: column;
 }
+
 .article-dog-txt {
     width: 100%;
     height: 100%;
@@ -572,9 +903,11 @@ body {
 /***************************************/
 /*****************3rd******************/
 
+.third-block {
+    width: 96%;
+    height: 100%;
 
-
-
+}
 
 .special-block3-title {
     width: 100%;
@@ -583,13 +916,10 @@ body {
     display: flex;
 }
 
-
 .third-block article>div {
 
     display: flex;
     flex-direction: column;
-
-
 }
 
 .latest-posts-img {
@@ -612,6 +942,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #777;
 
 }
 
@@ -641,37 +972,10 @@ body {
 
 /***************************************/
 /*****************4th****************/
-.fourth-block {
-    width: 100%;
-    max-width: 95vw;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    margin-bottom: 40px;
 
-}
 
-.pagination-block {
-    width: 145px;
-    max-height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: #aaa;
-}
 
-.pagination-block div {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #aaa;
-    color: #aaa;
-}
+
 
 .pagination-block div:hover {
     width: 30px;
@@ -741,7 +1045,7 @@ body {
 
 
 
-.main-section {
+/* .main-section {
     width: 100%;
     height: 120vh;
     display: flex;
@@ -751,295 +1055,10 @@ body {
 .last-section {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap; 
     width: 100%;
     margin-bottom: 10%;
-}
+} */
 
-/*---------------------FOOTER PART1------------------------*/
-footer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-
-    color: white;
-    font-family: Crimson1, sans-serif;
-    background: #3A3E43;
-    /* justify-content: center; */
-    overflow: hidden;
-    font-family: "Open1";
-    padding-top: 30px;
-}
-
-.footer-title {
-    width: 100%;
-    max-width: 436px;
-    height: 30px;
-    display: flex;
-    justify-content: flex-start;
-        justify-content: flex-start; 
-    justify-content: flex-start;
-    color: #AAAAAA;
-    font-size: 12px;
-    padding-left: 20px;
-        padding-left: 20px; 
-    padding-left: 20px;
-    padding-right: 20px;
-
-    font-weight: bolder;
-
-}
-
-footer img {
-    max-width: 100%;
-
-}
-
-.footer-row1 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    align-content: flex-start;
-    justify-content: center;
-
-    /* padding:10px; */
-
-}
-
-.container-row1 {
-    width: 100%;
-    max-width: 436px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 12px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0 20px 0 20px;
-}
-
-/*-----------------zone1----------------*/
-.zone1 {
-    width: 100%;
-    max-width: 436px;
-    height: auto;
-    display: flex;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    flex-direction: column;
-    font-size: 13px;
-}
-
-.container-category {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    /* margin-right:30px; */
-
-}
-
-.container-category li {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #42464B;
-}
-
-#special-one {
-    border-style: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-/*-----------------zone2----------------*/
-.popular-col {
-    width: 100%;
-    max-width: 436px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 13px;
-}
-
-.container-popular {
-
-    display: flex;
-    flex-direction: column;
-    padding-top: -20px;
-    /* padding-right: 20px; */
-
-}
-
-.popular-col img {
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-}
-
-.popular-row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 26px;
-}
-
-.img-rand-foot {
-    width: 100%;
-    max-width: 80px;
-
-    max-height: 60px;
-    margin-right: 20px;
-}
-
-.txt-rand-foot {
-    width: 100%;
-}
-
-/*-----------------zone3----------------*/
-
-.instagram-col {
-    width: 100%;
-    max-width: 446px;
-    height: 100%;
-
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-        align-items: center;       
-    align-items: center;
-    padding-bottom: 10%;
-
-
-}
-
-.instagram-col h3 {
-    padding-left: 20px;
-
-}
-
-.instagram-col div {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-}
-
-.container-instagram {
-    width: 96vw;
-    max-width: 436px;
-    height: 96vw;
-    max-height: 436px;
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-}
-
-.container-instagram div {
-    width: 32.5%;
-    height: 32.5%;
-    display: flex;
-
-}
-
-.container-instagram img {
-    max-width: 100%;
-    height: 100%;
-}
-
-/*---------------------FOOTER PART2------------------------*/
-footer2 {
-    width: 100%;
-    height: 25vh;
-    background: #303336;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    flex-direction: column;
-    margin-top: -1px;
-
-}
-
-.footer-row2-1 {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /*padding: 13px 13px 13px 0;*/
-}
-
-.footer-row2-1 {
-    display: flex;
-}
-
-.container-social {
-    display: flex;
-    max-width: 50vw;
-    height: 37px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.container-social div {
-    width: 10vw;
-    max-width: 52px;
-    height: 10vw;
-    max-height: 52px;
-    border-radius: 50%;
-    background: rgb(65, 70, 75);
-    display: flex;
-    margin: 5px;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-row2-1 img {
-    max-width: 50%;
-    max-height: 50%;
-    border-radius: 50%;
-}
-
-.footer-row2-2 {
-    width: 100%;
-    height: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    font-family: CrimsonText;
-    font-size: 12px;
-    color: #AAAAAA;
-}
-
-.footer-row2-2 div {
-    display: flex;
-    align-items: center;
-    /*padding: 13px 0 13px 0;*/
-}
-
-
-#go-up-icon {
-    width: 10vw;
-    max-width: 52px;
-    height: 10vw;
-    max-height: 52px;
-    z-index: 10;
-    background: url(images/arrowUp.png);
-    background-size: cover;
-    border-radius: 2px;
-    position: fixed;
-    right: 1px;
-    bottom: 1px;
-}
+/* -----------------------------FOOTER --------------------------*/
+/******************* in responsive.css file *****************************/
