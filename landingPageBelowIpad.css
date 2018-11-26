@@ -56,7 +56,7 @@ a {
         margin-left: 5%;
     }
 
-    .latest-posts-excerp {
+    .latest-posts-excerp >p{
         /* SHOULD ONLY APPEARS FROM IPAD RESOLUTION */
         /* DO NOT DISPLAY BELOW IPAD RESOLUTION*/
         display: none;
@@ -127,7 +127,7 @@ a {
         height: 100%;
         max-height: 55vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding-bottom: 4%;
         margin: 0 0 4% 0;
         border-bottom: 1px solid rgb(241, 241, 241);
@@ -205,6 +205,7 @@ a {
         justify-content: space-evenly;
 
     }
+    
 
     /************************ MAIN BLOCK 4 ***************************/
     .fourth-block {
@@ -490,10 +491,10 @@ a {
         position: relative;
         margin-left: 5%; */
 
-}
+
 
 hr {
-    width: 70%;
+    width: 50%;
     border: 1px solid rgb(241, 238, 238);
     display: flex;
     margin-left: 35px;
@@ -710,7 +711,7 @@ hr {
     align-items: center;
     color: #aaa;
 }
-
+}
 /*******************************************************/
 
 /***********TEMPORAIRE***************/
