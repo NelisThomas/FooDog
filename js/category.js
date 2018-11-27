@@ -1,24 +1,25 @@
 const $body = document.querySelector('body');
-const $header = document.createElement('div')
+let url = new URLSearchParams(window.location.search);
+page = url.get('page');
+const $header = document.createElement('div');
 $header.classList.add("menu-header");
 $body.appendChild($header);
 const navBar = document.createElement('h1')
 $header.appendChild(navBar);
 navBar.classList.add("category-navbar");
-let url = new URLSearchParams(window.location.search);
-page = url.get('page');
+
 
 const request = async () => {
     const response = await fetch(`https://foodog.herokuapp.com/articles?page=${page}`);
     const json = await response.json();
     const main = document.querySelector('main');
     json.docs.map(doc => {
-        if (doc.tagForArticle.includes("Healthcare")) {
-            navBar.innerHTML = "HealthCare"
+       // if (doc.tagForArticle.includes("Healthcare")) {
+            navBar.innerHTML = 'Healthcare';
             const el = document.createElement('foo-dog');
             el.doc = doc;
             main.appendChild(el);
-        }
+        //}
     });
 
     const pageContainer = document.querySelector('.category-pagecounter');
