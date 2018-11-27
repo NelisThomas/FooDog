@@ -27,7 +27,7 @@
 
 
 
-@media only screen and (min-device-width:765px ) and (max-device-width: 1024px){
+@media only screen and (min-width:765px ) and (max-width: 1024px){
     /*-------IPAD resolution 768px -------*/
 
     html {
