@@ -371,6 +371,7 @@
         position: fixed;
         right: 1px;
         bottom: 1px;
+
     }
 }
 
@@ -411,6 +412,26 @@
     text-align: center;
     max-width: 200px;
 }
+.category-div {
+    display: grid;
+    grid-template-rows: 40% 40%;
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
+.category-img {
+    width: 50%;
+}
+
+.category-paragraph {
+    width: 100%;
+    height: 23%;
+}
+
+.category-share {
+    display: none;
+}
+
 
 body {
     width: 100%;
@@ -737,11 +758,7 @@ footer2 {
         max-width: 780px;
         max-height: 477px;
     }
-    
-    /* .imageSquare {
-        width: 80% ;
-        height: 80%;
-    }  */
+
 
     .subtitle {
         font-size: .8em;
@@ -1408,4 +1425,5 @@ footer2 {
         right: 40px;
         bottom: 40px;
     }
+
 }
