@@ -41,7 +41,7 @@ a {
         align-items: center;
         font-family: Open1;
         font-weight: bolder;
-        margin: 0 3% 8% 3%;
+        margin: 0 3% 8% 0;
     }
 
     .block-title::after {
@@ -79,7 +79,7 @@ a {
     .first-block-1-1 {
         width: 100%;
         height: 100%;
-        max-height: 60vh;
+        max-height: 100vh;
         display: flex;
         flex-direction: column;
         padding-bottom: 10%;
@@ -255,7 +255,7 @@ a {
         align-items: center;
         font-family: Open1;
         font-weight: bolder;
-        margin: 0 3% 8% 3%;
+        margin: 0 3% 8% 0%;
     }
 
     .block-title::after {
@@ -282,7 +282,7 @@ a {
     .first-block {
         width: 100%;
         max-width: 95vw;
-        height: 100%;
+        max-height: 300vh;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -292,7 +292,7 @@ a {
         width: 100%;
         max-width: 55%;
         height: 100%;
-        max-height: 100vh;
+        /* max-height: 100vh; */
         display: flex;
         flex-direction: column;
         padding-bottom: 10%;
@@ -349,7 +349,7 @@ a {
         height: 100%;
         max-height: 55vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding-bottom: 4%;
         margin: 0 0 4% 0;
         border-bottom: 1px solid rgb(241, 241, 241);
@@ -476,7 +476,7 @@ a {
         align-items: center;
         font-family: Open1;
         font-weight: bolder;
-        margin: 0 3% 8% 3%;
+        margin: 0 0% 8% 0%;
 
 
 
@@ -594,12 +594,7 @@ hr {
     justify-content: center;
 }
 
-.block2-1-and-2 {
 
-    display: flex;
-    flex-wrap: wrap;
-
-}
 
 .block2-1-container {
     width: 100%;
@@ -726,7 +721,7 @@ hr {
 /**********************1st************************/
 body {
     width: 100%;
-    min-width: 96vw;
+    /* max-width: 99vw; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -845,6 +840,13 @@ body {
     height: 50%;
     display: flex;
     opacity: .7;
+
+}
+.block2-1-and-2 {
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
