@@ -59,7 +59,9 @@ class Foodog extends HTMLElement {
                             </div>
                         </div>
                     </div>
+
                 </div> `
+
     }
 }
 
