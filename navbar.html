@@ -1,82 +1,84 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Stylesheets -->
-        <link rel="stylesheet" type="text/css" media="screen" href="navbar_final.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="responsive.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="searchResults.css" />
-        <title>FooDog</title>
-        <!-- CSS -->
-    </head>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="navbar_final.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="responsive.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="searchResults.css" />
+    <title>FooDog</title>
+    <!-- CSS -->
+</head>
 
 <body>
     <header>
         <div class="navbar-container">
-        
-            <div class="hamburger-menu">
-                <ul class="topbarBackground">
-                    <li><a  class="topbarButton" onclick="showExternalLinksClick()"><img src="images/Social-media/header/burger-cheese-dinner-161674.jpg" 
-                        style="height:25px;width:30px;" ></a></li>
-                    <div class="Links">
-                        <ol>
-                            <li class="topbarred"> 
+            <div class="navbar-container-row1">
+                <div class="hamburger-menu">
+
+                    <a class="top-bar-Button" onclick="showExternalLinksClick()"><img src="images/Social-media/header/burger-cheese-dinner-161674.jpg" />
+                    </a>
+                    <!-- <div class="Links"> -->
+
+                    <!-- <li class="topbarred">
                                 <div class="mobileSocialMedia">
-                                    <div><img class="instagram_mobile" src="images/Social-media/header/iconfinder_38-instagram_1161953.png" 
-                                        style="height:25px;width:25px;"/></div>
-                                    <div><img class="twitter_mobile" src="images/Social-media/header/iconfinder_03-twitter_104501.png" 
-                                        style="height:25px;width:25px;"/></div>
-                                    <div><img class="facebook_mobile" src="images/Social-media/header/iconfinder_06-facebook_104498.png" 
-                                        style="height:25px;width:25px;"/></div>
-                                </div>
-                            </li>
-                            <li><a href="" class="topbarred">Categories----</a></li>            
-                            <li><a href="" class="topbarred">Nutrition</a></li>                    
+                                    <div><img class="instagram_mobile" src="images/Social-media/header/iconfinder_38-instagram_1161953.png" /></div>
+                                    <div><img class="twitter_mobile" src="images/Social-media/header/iconfinder_03-twitter_104501.png" /></div>
+                                    <div><img class="facebook_mobile" src="images/Social-media/header/iconfinder_06-facebook_104498.png" /></div>
+                                </div> -->
+                    <!-- </li>
+                            <li><a href="" class="topbarred">Categories----</a></li>
+                            <li><a href="" class="topbarred">Nutrition</a></li>
                             <li><a href="" class="topbarred">Wellness</a></li>
                             <li><a href="" class="topbarred">Community</a></li>
                             <li><a href="" class="topbarred">Featured</a></li>
-                            <li><a href="" class="topbarred">Uncategorized</a></li>
-                        </ol>
-                    </div>
-                </ul>
+                            <li><a href="" class="topbarred">Uncategorized</a></li> -->
+
+                    <!-- </div> -->
+
+                </div>
+                <div class="navbar-title">
+                    <h1>FooDog</h1>
+                </div>
+                <div class="search-and-social-button">
+                    <div><img class="facebook_top" src="images/Social-media/header/iconfinder_06-facebook_104498.png" /></div>
+                    <div><img class="twitter_top" src="images/Social-media/header/iconfinder_03-twitter_104501.png" /></div>
+                    <div><img class="instagram_top" src="images/Social-media/header/iconfinder_38-instagram_1161953.png" /></div>
+                    <div class="searchIcon" onclick="showModal()"><img src="images/Social-media/header/iconfinder_icon-ios7-search-strong_211817.png" /></div>
+
+                </div>
             </div>
-            <div class="navbar-title"><h1>FooDog</h1></div>
-            <div class="search-and-social-button">
-                <div class="searchIcon" onclick="showModal()"><img src="images/Social-media/header/iconfinder_icon-ios7-search-strong_211817.png" /></div>
-                <div><img class="instagram_top" src="images/Social-media/header/iconfinder_38-instagram_1161953.png" /></div>
-                <div><img class="twitter_top" src="images/Social-media/header/iconfinder_03-twitter_104501.png"/></div>
-                <div><img class="facebook_top" src="images/Social-media/header/iconfinder_06-facebook_104498.png"/></div>
+            <div class="navbar-container-row2">
+                <div class="navbar-select-menu">
+                    <a class="nutrition" href="#nutrition.html">NUTRITION</a>
+                    <a href="#wellness.html">WELLNESS</a>
+                    <a href="#lifestyle.html">LIFESTYLE</a>
+                    <a href="#community.html">COMMUNITY</a>
+                </div>
             </div>
-        
-            
         </div>
-        <nav class="navbar-select-menu">
-                <a class="nutrition" href="#nutrition.html">NUTRITION</a>
-                <a href="#wellness.html">WELLNESS</a>
-                <a href="#lifestyle.html">LIFESTYLE</a>
-                <a href="#community.html">COMMUNITY</a>
-        </nav>
     </header>
 
     <script src="script.js"></script>
     <script>
-
         var externalLinks = document.getElementById('Links');
-    function showExternalLinksClick() {
+
+        function showExternalLinksClick() {
             if (externalLinks.style.display === "block") {
                 externalLinks.style.display = "none";
-                topbarBackground.style.marginRight  = "1em";
+                topbarBackground.style.marginRight = "1em";
                 topbarBackground.style.maxHeight = "50px";
             } else {
                 externalLinks.style.display = "block";
                 topbarBackground.style.marginRight = "0em";
                 topbarBackground.style.maxHeight = "300px";
             }
-          }</script>
+        }
+    </script>
 </body>
 
 </html>
