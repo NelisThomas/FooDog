@@ -245,9 +245,26 @@
         height: 100px !important;
     }
     /* ---------------------------YOU-MIGHT-ALSO-LIKE--------------------------------------------------- */
+    .articleYouMightLike{
+        max-width: 33% !important;
+    }
     #youMightAlsoLike{
         flex-direction: row !important;
         flex-wrap: nowrap !important;
+        margin: 0 !important;
+    }
+    #responseFormButtonContainer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .responseInput2{
+        width: 28%;
+        padding: 1%;
+    }
+    #submitResponseButton{
+        height: 44px !important;
+        width: 158px !important;
+        margin-left: 0 !important;
     }
 }
 
@@ -499,7 +516,7 @@
     justify-content: flex-start;
     margin-left: 15px;
     max-height: 100%;
-    width: auto;
+    width: 100%;
 }
 .articleYouMightLike{
     margin-left: 5px;
@@ -511,7 +528,6 @@
 .articleYouMightLikeImg{
     height: 100%;
     width: auto;
-
 }
 .articleYouMightLikeTitle{
     font-size: 15px;
@@ -556,6 +572,7 @@
     border: 1px solid rgba(0,0,0,.05);
     display: block;
     max-width: 100%;
+    resize: none;
 }
 #submitResponseButton{
     background-color: #111;
