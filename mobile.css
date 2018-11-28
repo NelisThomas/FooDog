@@ -158,7 +158,6 @@ nav > a {
 }
 /* nav {
     text-align: center;
-
 } */
 
 nav > a {
@@ -166,10 +165,10 @@ nav > a {
     color: black;
     margin-left: 2em;
 }
-/*a{
+a{
     text-decoration: none !important;
     color: black;
-}*/
+}
 #searchResultDisplay{
     text-align: center;
     margin-top: 3%;
@@ -327,6 +326,9 @@ i {
     background-color: #F7F7F7;
     height: 90px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Category page css*/
 .category-navbar {
@@ -338,14 +340,15 @@ i {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 720px;
-    height: 250px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     margin-left: 7%;
     
 }
 .bottom-line {
     border-bottom: 1px solid #cbcbcb;
-    width: 720px;
+    width: 100%;
     margin-top: 30px;
     margin-left: 7%;
     margin-bottom: 30px;
@@ -357,8 +360,9 @@ i {
 }
 
 .category-img a > img {
-    width: 335px;
-    height: 100%;
+    width: 90%;
+    height: auto;
+    padding: 5%;
 }
 
 .category-img:hover {
@@ -431,7 +435,7 @@ i {
 .round-buttons :nth-child(1) :nth-child(1n) {
     color: white;
     border: 1px solid white;
-    background-color: #4867AA;
+    background-color: #8b9dc3;
     border-radius: 50%;
     font-size: 13px;
     padding: 6px;
@@ -440,7 +444,7 @@ i {
 .round-buttons :nth-child(2) :nth-child(1n) {
     color: white;
     border: 1px solid white;
-    background-color: #1DA1F2;
+    background-color: #1dcaff;
     border-radius: 50%;
     font-size: 13px;
     padding: 6px;
@@ -448,7 +452,7 @@ i {
 
 .round-buttons :nth-child(3) :nth-child(1n) {
     border: 1px solid white;
-    background-color: red;
+    background-color: #F74C53;
     color: white;
     border-radius: 50%;
     font-size: 13px;
@@ -495,4 +499,3 @@ i {
 }
 
 /*category page css*/
-
