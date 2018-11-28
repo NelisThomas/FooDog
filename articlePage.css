@@ -245,13 +245,17 @@
         height: 100px !important;
     }
     /* ---------------------------YOU-MIGHT-ALSO-LIKE--------------------------------------------------- */
-    .articleYouMightLike{
-        max-width: 33% !important;
+    .articleYouMightLikeImg{
+        height: auto !important;
+        width: 100% !important;
     }
     #youMightAlsoLike{
         flex-direction: row !important;
         flex-wrap: nowrap !important;
         margin: 0 !important;
+    }
+    .articleYouMightLike{
+        width: 33% !important;
     }
     #responseFormButtonContainer{
         display: flex;
