@@ -286,20 +286,11 @@
         display: none;
     }
 
-    /* nav > a {
-        display: block;
-        text-decoration: none;
-        color: #242424;
-        padding: 0 20px;
-        
-        height: 60px;
-    } */
-/*
-    nav > a:hover {
+    /* nav > a:hover {
         color: #424242;
         text-decoration: none;
         border-bottom: 4px solid #FFA88E;
-    }
+    } */
     
 }
 
