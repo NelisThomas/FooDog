@@ -274,11 +274,15 @@
         height: 60px;
     }
     .navbar-select-menu  a{
+        height:100%;
         padding: 0 20px;
         color:inherit;
         text-decoration: none;
         opacity: .8;
         font-family: Open1;
+        border-bottom: 2px solid rgb(241, 241, 241, 0);
+        /**ADD THIS TO KEEP ANCHOR TEXT FIXED WHEN SET BORDER EFFECTS ON HOVER (add an invisible border-bottom)**/
+        
     }
 
 
@@ -286,12 +290,17 @@
         display: none;
     }
 
-    /* nav > a:hover {
-        color: #424242;
-        text-decoration: none;
-        border-bottom: 4px solid #FFA88E;
-    } */
+
+   .navbar-select-menu  > a:hover {
     
+    
+        /* color: #424242; */
+        text-decoration: none;
+        border-bottom: 2px solid #FFA88E; 
+        /**ADD THIS TO KEEP ANCHOR TEXT FIXED WHEN SET BORDER EFFECTS ON HOVER**/
+        
+        transition: ease-in-out 200ms;
+    } 
 }
 
 /******************************************* COMMON RULES********************************/
@@ -306,13 +315,6 @@ body{
 }
 
 
-nav {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    /* margin-bottom: 30px; */
-}
-
 .title {
     text-align: center;
     font-style: bold;
@@ -325,6 +327,128 @@ nav {
 .title:hover {
     color: #424242;
 }
+/***************POPUP MENU*************************/
+.popup-menu{
+    width: 314px;
+    height: 757px;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+.popup-menu-close{
+    width: 2.5pc;
+    height: 2.5pc;
+   
+   position: absolute;
+   top:5px;
+   right:5px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+}
+.popup-menu-inner{
+    width: 90%;
+    height: 90%;
+   
+   position: relative;
+    background-color: orange;
+    display: flex;
+    flex-direction: column; 
+    
+    
+
+}
+.popup-menu-social-1{
+    width: 100%;
+    height: 15%;
+   
+   position: relative;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    border-bottom: 2px solid lightgray;
+
+
+}
+.popup-menu-social-1 div{
+    width: 30px;
+    height: 30px;
+   
+   position: relative;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+
+}
+.popup-menu-social-2{
+    width: 100%;
+    height: 20%;
+   
+   position: relative;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    border-bottom: 2px solid lightgray;
+}
+.popup-menu-social-2 div{
+    width: 50px;
+    height: 50px;
+   
+   position: relative;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+
+}
+.popup-menu-search{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-menu-search input{
+    width: 70%;
+    height: 30px;
+}
+::placeholder{
+    padding-left: 10px;
+    font-style: italic;
+}
+.popup-menu-search-button{
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-menu-search-button img{
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+}
+
+/**************************************/
 
 .searchTrigger {
     margin-right: 50px;
