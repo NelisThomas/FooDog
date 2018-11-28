@@ -1,11 +1,20 @@
 @media only screen and (max-width: 765px){
+    body {
+        width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
     #page{
-        max-width: 100% !important;
+        width: 86% !important;
+        padding: 0 7% 0 7% !important;
+        margin: 0% !important;
+    }
+    #sideOfScreen{
+        width: 86% !important;
         padding: 0 7% 0 7% !important;
     }
     #popularArticles{
-        width: 86% !important;
-        padding: 0 7% 0 7% !important;
+        width: 100% !important;
     }
     .articleTop{
         width: 100% !important;
@@ -13,7 +22,7 @@
     .articlePageArticleName{
         font-size: 5vh;
     }
-    #commentButton, .articleAuthorImg, .articleSocialMediaContainer > .shareText{
+    #commentButton, .articleAuthorInfoContainer > .articleAuthorImg, .articleSocialMediaContainer > .shareText{
         display: none !important;
     }
     .articleSocialMediaContainer{
@@ -44,6 +53,16 @@
         height: 26px !important;
         width: 26px !important;
     }
+    .authorContainer > .articleAuthorImg{
+        height: 85px !important;
+        width: 85px !important;
+    }
+    #youMightAlsoLike{
+        margin: 0 !important;
+    }
+    .articleYouMightLikeImg{
+        width: 100% !important;
+    }
 }
 @media only screen and (min-width: 766px) and (max-width: 999px){
     body{
@@ -64,7 +83,7 @@
         margin-bottom: 2%;
         font-size: 11px;
     }
-    .articleDivider .articleAuthorImg {
+    .articleDivider > .articleAuthorImg {
         height: 32px !important;
         width: 32px !important;
     }
@@ -234,12 +253,6 @@
 
 
 /* ----------------UNIVERSAL-STYLES------------ */
-#page{
-    transition: 1s;
-}
-#sideOfScreen{
-    transition: 1s;
-}
 #mobileAd{
     display: flex;
     justify-content: center;
