@@ -2,6 +2,9 @@
 let popupButton = document.querySelector(".top-bar-button");
 let popupButtonClose = document.querySelector(".popup-menu-close");
 let popupMenu = document.querySelector(".popup-menu");
+const shareCollection = document.getElementsByClassName(`article-dog-share`);
+const socialMediaShare = document.getElementsByClassName(`social-media-share`);
+const socialIMG0 = shareCollection[0].getElementsByClassName('article-dog-share-img');
 
 
 // Get the modal
@@ -43,7 +46,21 @@ let closeMenu = () => {
     } 
 }
 
+function displaySocialMediaIcons() {
+    if (socialMediaShare[0].style.display===`none`) {
+        socialMediaShare[0].style.display=`flex`
+    }
+};
+
 
 
 popupButton.addEventListener("click", displayMenu);
 popupButtonClose.addEventListener("click", closeMenu);
+
+console.log(`test +`);
+socialIMG0.addEventListener("click", (event)=>displaySocialMediaIcons());
+
+
+/* ========================================================*/ 
+/* INSERTING-SOCIAL-SHARE-ICONS*/
+
