@@ -26,19 +26,7 @@
 
 @media only screen and (max-width:480px) {
 
-    /* .instagram_top, .twitter_top, .facebook_top {
-        display: none;
-    }
-
-    .navbar > a {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: inline-block;
-        visibility: visible;
-    } */
-
+  
     #sideposts1 {
         max-width: 45% !important;
     }
@@ -79,7 +67,7 @@
         width: 100%;
         height: auto;
         /* background: lightblue; */
-        display: flex;
+        /* display: flex; */
 
     }
 
