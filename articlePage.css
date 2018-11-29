@@ -1,11 +1,20 @@
 @media only screen and (max-width: 765px){
+    body {
+        width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
     #page{
-        max-width: 100% !important;
+        width: 86% !important;
+        padding: 0 7% 0 7% !important;
+        margin: 0% !important;
+    }
+    #sideOfScreen{
+        width: 86% !important;
         padding: 0 7% 0 7% !important;
     }
     #popularArticles{
-        width: 86% !important;
-        padding: 0 7% 0 7% !important;
+        width: 100% !important;
     }
     .articleTop{
         width: 100% !important;
@@ -13,7 +22,7 @@
     .articlePageArticleName{
         font-size: 5vh;
     }
-    #commentButton, .articleAuthorImg, .articleSocialMediaContainer > .shareText{
+    #commentButton, .articleAuthorInfoContainer > .articleAuthorImg, .articleSocialMediaContainer > .shareText{
         display: none !important;
     }
     .articleSocialMediaContainer{
@@ -44,6 +53,16 @@
         height: 26px !important;
         width: 26px !important;
     }
+    .authorContainer > .articleAuthorImg{
+        height: 85px !important;
+        width: 85px !important;
+    }
+    #youMightAlsoLike{
+        margin: 0 !important;
+    }
+    .articleYouMightLikeImg{
+        width: 100% !important;
+    }
 }
 @media only screen and (min-width: 766px) and (max-width: 999px){
     body{
@@ -58,13 +77,13 @@
         padding-right: 5%;
     }
     #page{
-        width: 60%;
+        margin: 0 29px 0 29px;
     }
     .tagName{
         margin-bottom: 2%;
         font-size: 11px;
     }
-    .articleDivider .articleAuthorImg {
+    .articleDivider > .articleAuthorImg {
         height: 32px !important;
         width: 32px !important;
     }
@@ -76,7 +95,7 @@
         width: 26px !important;
     }
     #articleFooter{
-        justify-content: center !important;
+        justify-content: space-around !important;
     }
     .articleFooterSocialButton{
         padding: 1%;
@@ -102,33 +121,53 @@
         height: 26px !important;
         width: 26px !important;
     }
+    #youMightAlsoLike{
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+    }
 }
 @media only screen and (min-width:1000px){
     body{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        width: 100%;
+    }
+    .desktopHide{
+        display: none;
     }
     #page{
-        width: 615px;
+        width: 60%;
         float: left;
         margin-left: 5%;
     }
     #sideOfScreen{
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         height: 100%;
-        margin: 0 5% 0 5%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .desktopAd{
         height: 100vh;
     }
     #firstDesktopAd{
+        height: 200vh;
+    }
+    #firstDesktopAd > img{
         position: -webkit-sticky;
         position: sticky;
-        top: 50;
+        top: 70px;
+    }
+    #secondDesktopAd{
+        margin: 50px 0 0 0;
     }
     #popularArticles{
         position: relative;
+    }
+    #popularTag{
+        margin: 0 !important;
     }
     #commentButton{
         display: flex;
@@ -206,14 +245,40 @@
         height: 100px !important;
     }
     /* ---------------------------YOU-MIGHT-ALSO-LIKE--------------------------------------------------- */
+    .articleYouMightLikeImg{
+        height: auto !important;
+        width: 100% !important;
+    }
     #youMightAlsoLike{
         flex-direction: row !important;
         flex-wrap: nowrap !important;
+        margin: 0 !important;
+    }
+    .articleYouMightLike{
+        width: 33% !important;
+    }
+    #responseFormButtonContainer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .responseInput2{
+        width: 28%;
+        padding: 1%;
+    }
+    #submitResponseButton{
+        height: 44px !important;
+        width: 158px !important;
+        margin-left: 0 !important;
     }
 }
 
 
 /* ----------------UNIVERSAL-STYLES------------ */
+#mobileAd{
+    display: flex;
+    justify-content: center;
+    padding: 15% 0 0 0;
+}
 .articleSocialMediaContainer{
     margin-right: 20%;
 }
@@ -454,7 +519,8 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-left: 15px;
-    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
 }
 .articleYouMightLike{
     margin-left: 5px;
@@ -463,11 +529,11 @@
     width: 45%;
     height: 167px;
 }
-#articleYouMightLikeImg{
-    width: 100%;
-    height: auto;
+.articleYouMightLikeImg{
+    height: 100%;
+    width: auto;
 }
-#articleYouMightLikeTitle{
+.articleYouMightLikeTitle{
     font-size: 15px;
     margin-bottom: 12px;
     text-transform: uppercase;
@@ -484,7 +550,7 @@
     font-weight: 900;
     font-size: 17px;
     color: #111;
-    margin-bottom: 30px;
+    margin: 10% 0 30px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -510,6 +576,7 @@
     border: 1px solid rgba(0,0,0,.05);
     display: block;
     max-width: 100%;
+    resize: none;
 }
 #submitResponseButton{
     background-color: #111;
@@ -540,6 +607,9 @@
     }
 }
 /* ---------------------------POPULAR-ARTICLES--------------------------------------------------- */
+#popularArticlesContainer{
+    width: 100%;
+}
 #popularArticles{
     display: flex;
     flex-direction: column;
