@@ -83,6 +83,7 @@
         margin-bottom: 2%;
         font-size: 11px;
     }
+  
     .articleAuthorInfoContainer > .articleAuthorImg {
         height: 32px !important;
         width: 32px !important;
@@ -153,8 +154,8 @@
         margin-right: auto;
     }
     .articleMainImage{
-        height: 615px;
-        width: 615px;
+        height: 400px;
+        width: 740px;
     }
     .desktopAd{
         height: 100vh;
@@ -675,3 +676,8 @@
     padding: 5px 0px 0px 0px;
     color: #4b4f54;
 }
+
+    .articleAuthorInfoContainer > .articleAuthorImg {
+        height: 32px !important;	        height: 32px !important;
+        width: 32px !important;	        width: 32px !important;
+    }	    }
