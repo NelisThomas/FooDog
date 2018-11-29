@@ -1,18 +1,31 @@
-let url = new URLSearchParams(window.location.search);
-cat = url.get('cat');
+let scrollButton = document.querySelector('#go-up-icon');
+window.onscroll = () => {scrollFunction()};
+const scrollFunction = () => {
+    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        scrollButton.style.opacity = 1;
+    } else {
+        scrollButton.style.opacity = 0;
+    }
+}
 
-const request = async () => {
+const toTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
+const request2 = async () => {
     const response = await fetch(`https://foodog.herokuapp.com/articles`);
     const json = await response.json();
     const mainShadow = document.createElement('foodog-footer')
     const mainDiv = document.querySelector('.main-footer');
     mainDiv.appendChild(mainShadow);
     let jsonDocs = json.docs;
-    console.log(jsonDocs)
     mainShadow.jsonDocs = jsonDocs;
 }
 
-request();
+request2();
 
 class Footer extends HTMLElement {
     set jsonDocs(jsonDocs) {
@@ -38,16 +51,16 @@ class Footer extends HTMLElement {
             <div class="container-popular">
 
                 <article class="popular-row">
-                    <div class="img-rand-foot"><a href="#"><img src=${jsonDocs[0].imgUrl} /></a></div>
-                    <div class="txt-rand-foot"><a href="#">${jsonDocs[0].title}</a></div>
+                    <div class="img-rand-foot"><a href=ArticlePage.html?id=${jsonDocs[0]._id}><img src=${jsonDocs[0].imgUrl} /></a></div>
+                    <div class="txt-rand-foot"><a href=ArticlePage.html?id=${jsonDocs[0]._id}>${jsonDocs[0].title}</a></div>
                 </article>
                 <article class="popular-row">
-                    <div class="img-rand-foot"><a href="#"><img src=${jsonDocs[1].imgUrl} /></a></div>
-                    <div class="txt-rand-foot"><a href="#">${jsonDocs[1].title}</a></div>
+                    <div class="img-rand-foot"><a href=ArticlePage.html?id=${jsonDocs[1]._id}><img src=${jsonDocs[1].imgUrl} /></a></div>
+                    <div class="txt-rand-foot"><a href=ArticlePage.html?id=${jsonDocs[1]._id}>${jsonDocs[1].title}</a></div>
                 </article>
                 <article class="popular-row">
-                    <div class="img-rand-foot"><a href="#"><img src=${jsonDocs[2].imgUrl} /></a></div>
-                    <div class="txt-rand-foot"><a href="#">${jsonDocs[2].title}</a></div>
+                    <div class="img-rand-foot"><a href=ArticlePage.html?id=${jsonDocs[2]._id}><img src=${jsonDocs[2].imgUrl} /></a></div>
+                    <div class="txt-rand-foot"><a href=ArticlePage.html?id=${jsonDocs[2]._id}>${jsonDocs[2].title}</a></div>
                 </article>
             </div>
         </div>
@@ -86,5 +99,5 @@ class Footer extends HTMLElement {
 }
 
 customElements.define('foodog-footer', Footer);
-
+scrollButton.addEventListener('click', toTop);
 
