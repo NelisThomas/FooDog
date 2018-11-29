@@ -65,7 +65,7 @@
     }
 }
 @media only screen and (min-width: 766px) and (max-width: 999px){
-    body{
+    .mainContainer{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -128,10 +128,12 @@
 }
 @media only screen and (min-width:1000px){
     body{
+        width: 100%;
+    }
+    .mainContainer{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        width: 100%;
     }
     .desktopHide{
         display: none;
@@ -284,6 +286,14 @@
 
 
 /* ----------------UNIVERSAL-STYLES------------ */
+.tagName{
+    font-size: 2vh;
+    color: #FF835E;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 5%;
+    text-align: center;
+}
 #mobileAd{
     display: flex;
     justify-content: center;
