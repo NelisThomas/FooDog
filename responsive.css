@@ -27,7 +27,7 @@
 }
 
 
-
+/******************** MOBILE RESOLUTION *********************/
 @media only screen and (max-width:764px) {
 
  
@@ -46,7 +46,7 @@ body {
     flex-direction: column;
 }
     /*----------category page-------*/
-/* .category-div {
+.category-div {
     display: grid;
     grid-template-rows: 40% 40%;
     margin-right: 40%;
@@ -61,7 +61,7 @@ body {
 
 .category-share {
     display: none;
-} */
+}
 
 
 /*---------------------FOOTER PART1------------------------*/
@@ -346,10 +346,28 @@ footer2 {
 }
 }
 
-/*<---------------------fin media screen pour mobile---------*/
+/******************** IPAD RESOLUTION *********************/
 
-@media only screen and (min-width:765px) and (max-width:1024px) {
-
+@media only screen and (min-width:765px) and (max-width:1023px) {
+ 
+/*  (mahmoud lines)   
+    
+        .category-div {
+        display: grid;
+        grid-template-rows: 40% 40%;
+        margin-right: 40%;
+        margin-left: 40%;
+    }
+    .category-img {
+        width: 50%;
+    }
+    .category-paragraph {
+        width: 100%;
+        height: 23%;
+    }
+    .category-share {
+        display: none;
+    } */
 
     
     /*-------IPAD resolution 768px -------*/
@@ -662,12 +680,45 @@ footer2 {
     }
 }
 
-/* --- vv DESKTOP RESOLUTION vv --- */
+/******************* IPAD PRO TO DESKTOP RESOLUTION *******************/
 @media only screen and (min-width:1024px) {
 
 
+       /*--------category page (mahmoud zone)----------------*/
+       .category-div {
+        display: flex;
+        flex-direction: row;
+        margin: 0 5% 0 5%;
+        width: 90%;
+        height: 248px;
+        padding: 0 0 4% 0;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .category-title{
+        font-size: 11px;
+    }
+    .category-header{
+        font-size: 15px;
+    }
+    .category-img {
+        width: 45%;
+    }
+    .category-img > a > img {
+        max-height: 100%;
+    }
+    .category-subject{
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .share-icon{
+        width:70px;
+    }
+    /* ------------------category page end-------------------------- */
 
-    /*-------IPAD PRO resolution 1024px and above -------*/
+
    
 
     html {
