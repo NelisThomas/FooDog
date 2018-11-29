@@ -3,6 +3,8 @@ let popupButton = document.querySelector(".top-bar-button");
 let popupButtonClose = document.querySelector(".popup-menu-close");
 let popupMenu = document.querySelector(".popup-menu");
 
+let goUpButton = document.querySelector("#go-up-icon");
+
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -44,6 +46,28 @@ let closeMenu = () => {
 }
 
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        goUpButton.style.display = "block";
+    } else {
+        goUpButton.style.display = "none";
+        
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function toTopPage() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 popupButton.addEventListener("click", displayMenu);
 popupButtonClose.addEventListener("click", closeMenu);
+
+goUpButton.addEventListener("click", toTopPage);
+
