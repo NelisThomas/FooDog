@@ -140,6 +140,11 @@
         border-bottom: 1px solid #42464B;
     }
 
+    .container-category a {
+        text-decoration: none;
+        color: white;
+    }
+
     #special-one {
         border-style: none;
     }
@@ -181,6 +186,11 @@
         display: flex;
         flex-direction: row;
         margin-bottom: 26px;
+    }
+
+    .popular-row a {
+        text-decoration: none;
+        color: white;
     }
 
     .img-rand-foot {
