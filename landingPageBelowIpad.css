@@ -44,7 +44,7 @@ a {
         margin: 0 3% 8% 0;
     }
 
-    .block-title::after {
+/*     .block-title::after {
         content: ' ';
         width: 45vw;
         max-width: 100%;
@@ -52,8 +52,13 @@ a {
         background-color: rgb(241, 238, 238);
         position: relative;
         margin-left: 5%;
-        margin-left: 5%;
-        margin-left: 5%;
+    } */
+    hr {
+        width: 50%;
+        border: 1px solid rgb(241, 238, 238);
+        display: flex;
+        margin-left: 35px;
+    
     }
 
     .latest-posts-excerp >p{
@@ -64,6 +69,7 @@ a {
 
     .article-dog-text-exerp {
         display: none;
+        color:#7F7F7F;
     }
 
     /*********MAIN BLOCK 1**********/
@@ -91,7 +97,7 @@ a {
         width: 100%;
 
         height: 100%;
-        max-height: 130vh;
+        max-height: 150vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -103,7 +109,7 @@ a {
     .first-block-1-2 article {
         width: 45vw;
         height: 100%;
-        max-height: 45vh;
+        max-height: 85vh;
         display: flex;
         flex-direction: column;
 
@@ -112,10 +118,8 @@ a {
     }
 
     .block1-2-img {
-        width: 100%;
-        max-width: 45vw;
-        height: 100%;
-        max-height: 38vw;
+        width: 45vw;
+        height: 38vw;
         display: flex;
         padding-bottom: 2%;
 
@@ -258,7 +262,7 @@ a {
         margin: 0 3% 8% 0%;
     }
 
-    .block-title::after {
+    /* .block-title::after {
         content: ' ';
         width: 65vw;
         max-width: 100%;
@@ -266,8 +270,14 @@ a {
         background-color: rgb(241, 238, 238);
         position: relative;
         margin-left: 5%;
+    } */
+    hr {
+        width: 50%;
+        border: 1px solid rgb(241, 238, 238);
+        display: flex;
+        margin-left: 35px;
+    
     }
-
     .latest-posts-excerp {
         /* SHOULD ONLY APPEARS FROM IPAD RESOLUTION */
         /* DO NOT DISPLAY BELOW IPAD RESOLUTION*/
@@ -276,6 +286,10 @@ a {
         align-items: center;
 
         text-align: center;
+    }
+    .article-dog-text-exerp {
+        
+        color:#7F7F7F;
     }
 
     /************************ MAIN BLOCK 1 ***************************/
@@ -317,7 +331,7 @@ a {
         width: 100%;
         max-width: 18vw;
         height: 100%;
-        max-height: 30vh;
+        max-height: 130vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -327,18 +341,16 @@ a {
     .block1-2-img {
         width: 100%;
         max-width: 39vw;
-        height: 100%;
-        max-height: 16vw;
+        height: 16vw;
         display: flex;
         padding-bottom: 10%;
     }
 
     /************************ MAIN BLOCK 2 ***************************/
+    
     .article-dog-img {
-        width: 100%;
-        max-width: 45vw;
-        height: 100%;
-        max-height: 23vh;
+        min-width: 21pc;
+        height: 15pc;
         display: flex;
         padding-right: 10px;
         flex-direction: column;
@@ -347,7 +359,7 @@ a {
     .article-dog {
         max-width: 96%;
         height: 100%;
-        max-height: 55vh;
+        max-height: 155vh;
         display: flex;
         flex-direction: row;
         padding-bottom: 4%;
@@ -367,10 +379,10 @@ a {
     .block2-1-container {
         width: 100%;
         height: 100%;
-        /* max-height: 100vh; */
+        max-height: 150vh; 
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        
         justify-content: space-evenly;
         margin: 0 3% 5% 3%;
         
@@ -507,6 +519,10 @@ hr {
     align-items: center;
     text-align: center;
 }
+.article-dog-text-exerp {
+    
+    color:#7F7F7F;
+}
 
 /************************ MAIN BLOCK 1 ***************************/
 .first-block {
@@ -547,7 +563,7 @@ hr {
     width: 100%;
     max-width: 18vw;
     height: 100%;
-    max-height: 40vh;
+    max-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -555,20 +571,17 @@ hr {
 }
 
 .block1-2-img {
-    width: 100%;
-    max-width: 39vw;
-    height: 100%;
-    max-height: 16vw;
+    width: 19vw;
+    
+    height: 16vw;
     display: flex;
     padding-bottom: 10%;
 }
 
 /************************ MAIN BLOCK 2 ***************************/
 .article-dog-img {
-    width: 100%;
-    max-width: 45vw;
-    height: 100%;
-    max-height: 23vh;
+    width: 50vw;
+    height: 18vw;
     display: flex;
     padding-right: 10px;
     flex-direction: column;
@@ -577,7 +590,7 @@ hr {
 .article-dog {
     max-width: 96%;
     height: 100%;
-    max-height: 55vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: row;
     padding-bottom: 4%;
@@ -598,7 +611,7 @@ hr {
 
 .block2-1-container {
     width: 100%;
-    min-width: 60%;
+    max-width: 60%;
     height: 100%;
     /* max-height: 100vh; */
     display: flex;
@@ -611,7 +624,7 @@ hr {
 
 .block2-2-container {
     width: 100%;
-    max-width: 27%;
+    max-width: 22%;
     height: 100%;
 
     display: flex;
@@ -776,7 +789,10 @@ body {
 /***************************************/
 /**********************2nd************************/
 
-
+.second-block {
+    width: 96%;
+    height: 100%;
+}
 
 .article-dog-img img {
     max-width: 100%;
@@ -845,8 +861,10 @@ body {
 .block2-1-and-2 {
     width: 100%;
     height:100%;
+    max-height: 300vh;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 5%;
 
 }
 
