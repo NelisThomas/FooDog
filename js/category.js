@@ -1,6 +1,7 @@
 const $body = document.querySelector('body');
 let url = new URLSearchParams(window.location.search);
-page = url.get('page');
+pageUrl = url.get('page');
+cat = url.get('cat');
 const $header = document.createElement('div');
 $header.classList.add("menu-header");
 $body.appendChild($header);
@@ -10,27 +11,29 @@ navBar.classList.add("category-navbar");
 
 
 const request = async () => {
-    const response = await fetch(`https://foodog.herokuapp.com/articles?page=${page}`);
+    const response = await fetch(`https://foodog.herokuapp.com/articles?page=${pageUrl}`);
     const json = await response.json();
     const main = document.querySelector('main');
     json.docs.map(doc => {
-       // if (doc.tagForArticle.includes("Healthcare")) {
-            navBar.innerHTML = 'Healthcare';
-            const el = document.createElement('foo-dog');
-            el.doc = doc;
-            main.appendChild(el);
-        //}
+        doc.tagForArticle.map(y => {
+            if(y.toLowerCase() === cat.toLowerCase()) {
+                const el = document.createElement('foo-dog');
+                el.doc = doc;
+                main.appendChild(el);
+                navBar.innerHTML = cat;
+            }
+        })
     });
 
     const pageContainer = document.querySelector('.category-pagecounter');
     for (let i = 1; i <= json.pages; i++) {
         const pageNumber = document.createElement('page-number');
-        const test = document.createElement('a');
+        const pageation = document.createElement('a');
         pageContainer.appendChild(pageNumber);
-        pageNumber.appendChild(test);
-        test.classList.add('page-num')
-        test.href = `CategoryPage.html?page=${i}`
-        test.innerHTML = i;
+        pageNumber.appendChild(pageation);
+        pageation.classList.add('page-num')
+        pageation.href = `CategoryPage.html?page=${i}`
+        pageation.innerHTML = i;
     }
 }
 
@@ -56,8 +59,9 @@ class Foodog extends HTMLElement {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="bottom-line"></div> `
+
+                </div> `
+
     }
 }
 

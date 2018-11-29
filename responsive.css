@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "Crimson1";
     src: url("fonts/CrimsonText-Regular.ttf") format('truetype');
@@ -22,6 +23,7 @@
 * {
     margin: 0;
     padding: 0;
+    transition: 1s;
 }
 
 
@@ -50,14 +52,11 @@ body {
     margin-right: 40%;
     margin-left: 40%;
 }
-
 .category-img {
-    width: 50%;
+    width: 45%;
 }
-
-.category-paragraph {
-    width: 100%;
-    height: 23%;
+.category-img > a > img {
+    max-height: 100%;
 }
 
 .category-share {
@@ -351,28 +350,7 @@ footer2 {
 
 @media only screen and (min-width:765px) and (max-width:1024px) {
 
-    
-   
-/*     
-    
-        .category-div {
-        display: grid;
-        grid-template-rows: 40% 40%;
-        margin-right: 40%;
-        margin-left: 40%;
-    }
-    .category-img {
-        width: 50%;
-    }
 
-    .category-paragraph {
-        width: 100%;
-        height: 23%;
-    }
-
-    .category-share {
-        display: none;
-    } */
     
     /*-------IPAD resolution 768px -------*/
 
@@ -381,7 +359,7 @@ footer2 {
         height: auto;
     }
 
-    .main-section {
+    /* .main-section {
         width: 100%;
         height: 120vh;
         display: flex;
@@ -390,7 +368,7 @@ footer2 {
 
     .searchResultContainer_big {
         display: flex;
-    }
+    } */
 
 
     /*---------------------FOOTER PART1------------------------*/
@@ -684,8 +662,42 @@ footer2 {
     }
 }
 
+/* --- vv DESKTOP RESOLUTION vv --- */
 @media only screen and (min-width:1024px) {
 
+    /*--------category page----------------*/
+.category-div {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5% 0 5%;
+    width: 90%;
+    height: 248px;
+    padding: 0 0 4% 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+.category-title{
+    font-size: 11px;
+}
+.category-header{
+    font-size: 15px;
+}
+.category-img {
+    width: 45%;
+}
+.category-img > a > img {
+    max-height: 100%;
+}
+.category-subject{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.share-icon{
+    width:70px;
+}
+/* -------------------------------------------- */
 
 
     /*-------IPAD PRO resolution 1024px and above -------*/

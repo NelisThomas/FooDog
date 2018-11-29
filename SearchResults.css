@@ -12,7 +12,6 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
     background-color: #eeeeeeee; /* Fallback color */
 }
 
@@ -21,7 +20,7 @@
         z-index: 2;
         font-size: 22px;
         line-height: 30px;
-        border: 4px solid rgb(107, 107, 107);
+        border: 3px solid #aaa !important;
         color: rgb(107, 107, 107);
         width: 50%;
         height: 5%;
@@ -39,11 +38,18 @@
     outline: none;
     font-size: 3vh;
 }
-.modal-content:hover, .modal-content:focus{
-    border: 4px solid black;
+.modal-content:hover, .modal-content:focus, .gsc-results-wrapper-overlay:hover, .gsc-results-wrapper-overlay:focus{
+    border: 3px solid black !important;
     transition: 0.7s;
     color: black;
 }
 .modal-content i{
     float: right;
+}
+.gsc-control-cse{
+    padding: 0 !important;
+}
+.gsc-results-wrapper-overlay{
+    border: 3px solid #aaa !important;
+    border-radius: 5% 0 0 5% !important;
 }
