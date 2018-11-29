@@ -109,6 +109,10 @@ html{
     height: auto;
 }
 
+/* img{
+    height: auto;
+    width: 90%;    
+} */
 nav {
     text-align: center;
 
@@ -168,8 +172,8 @@ nav > a {
 }
 a{
     text-decoration: none !important;
-    color: black;
-}
+    color: black !important;
+} */
 #searchResultDisplay{
     text-align: center;
     margin-top: 3%;
@@ -286,9 +290,9 @@ a{
     border-bottom: 4px solid #FFA88E;
 }
 
-i {
+/* i {
     font-size: 20px;
-}
+} */
 .left-articles {
     width: 35%;
 }
@@ -300,10 +304,21 @@ i {
     width: 100%;
     margin-bottom: 10%;
 }
+
 .latestPost{
     max-width: 45vw;
     text-align: center;
     min-width: 327px;
+}
+.latestPost div {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    padding: 0 15px 0 15px; 
+}
+.latestPost img {
+    max-width: 100%;
+    height: 100%;
 }
 
 .split-line {
@@ -498,5 +513,3 @@ i {
     color: white;
     transition: background-color 1s ease;
 }
-
-/*category page css*/
