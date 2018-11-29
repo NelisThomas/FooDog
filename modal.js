@@ -3,8 +3,8 @@ var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
 var btn = document.getElementById("searchTrigger");
-
 // When the user clicks the button, open the modal 
+btn.addEventListener("click", showModal);
 function showModal () {
     modal.style.display = "block";
 }
