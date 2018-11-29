@@ -150,6 +150,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .articleMainImage{
+        height: 615px;
+        width: 615px;
+    }
     .desktopAd{
         height: 100vh;
     }
@@ -247,8 +251,8 @@
     }
     /* ---------------------------YOU-MIGHT-ALSO-LIKE--------------------------------------------------- */
     .articleYouMightLikeImg{
-        height: auto !important;
-        width: 100% !important;
+        height: 172px !important;
+        width: 191px !important;
     }
     #youMightAlsoLike{
         flex-direction: row !important;
@@ -270,6 +274,11 @@
         height: 44px !important;
         width: 158px !important;
         margin-left: 0 !important;
+    }
+    /* ----------POPULAR ARTICLES---------------- */
+    .popularArticleImg{
+        height: 65px;
+        width: 65px;
     }
 }
 
