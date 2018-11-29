@@ -6,27 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
     <!-- Stylesheets -->
-    <!-- <link rel="stylesheet" href="mobile.css"> -->
-    <!-- <link rel="stylesheet" href="landingTemp.css"> -->
+    
     <link rel="stylesheet" href="landingPageBelowIpad.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous"> -->
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="header.css" /> -->
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="navbar_main.css" /> 
     <link rel="stylesheet" type="text/css" media="screen" href="responsive.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="searchResults.css" />
     <!-- External Fonts -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+
     <title>FooDog</title>
     <!-- CSS -->
 </head>
 
-<body>
+<body><header>
+    <div class="navbar-container">
+        <div class="navbar-container-row1">
+            <div class="hamburger-menu">
+
+                <a class="top-bar-button" >
+                    <img src="images/Social-media/header/burger1.jpg" />
+                </a>
+
+            </div>
+            <div class="navbar-title" id="mainpage-title">
+                <h1>FooDog</h1>
+            </div>
+            <div class="search-and-social-button">
+                <div><img class="facebook_top" src="images/Social-media/header/iconfinder_06-facebook_104498.png" /></div>
+                <div><img class="twitter_top" src="images/Social-media/header/iconfinder_03-twitter_104501.png" /></div>
+                <div><img class="instagram_top" src="images/Social-media/header/iconfinder_38-instagram_1161953.png" /></div>
+                <div class="searchIcon" onclick="showModal()"><img src="images/Social-media/header/iconfinder_icon-ios7-search-strong_211817.png" /></div>
+
+            </div>
+        </div>
+        <div class="navbar-container-row2">
+            <div class="navbar-select-menu">
+                <a class="nutrition" href="#nutrition.html">NUTRITION</a>
+                <a href="#wellness.html">WELLNESS</a>
+                <a href="#lifestyle.html">LIFESTYLE</a>
+                <a href="#community.html">COMMUNITY</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Popup block-->
+    <section class="popup-menu">
+        <div class="popup-menu-close" style="color:white">X
+
+        </div>
+        <div class="popup-menu-inner">
+            <div class="popup-menu-social-1">
+                <div><img src="images/Social-media/header/iconfinder_06-facebook_104498.png" /></div>
+                <div><img src="images/Social-media/header/iconfinder_03-twitter_104501.png" /></div>
+                <div><img src="images/Social-media/header/iconfinder_38-instagram_1161953.png" /></div>
+
+            </div>
+            <div class="popup-menu-social-2">
+                <div><img src="images/Social-media/facebook1.png" /></div>
+                <div><img src="images/Social-media/twitter1.png" /></div>
+                <div><img src="images/Social-media/instagram2.png" /></div>
+
+            </div>
+            <div class="popup-zone1">
+                <div class="popup-zone1-title">CATAGORIES</div>
+                <div class="popup-zone1-category">
+                    <ul>
+                        <li><b>Community</b></li>
+                        <li><b>Featured</b></li>
+                        <li><b>Lifestyle</b></li>
+                        <li><b>Nutrition</b></li>
+                        <li id="popup-zone1-special-one"><b>Wellness</b></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="popup-menu-search">
+
+                <input type="text" placeholder="Search and hit enter... ">
+                <div class="popup-menu-search-button"><img src="images/Social-media/header/iconfinder_icon-ios7-search-strong_211817.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END popup block-->
     <section class="first-container">
         <!-------------------------FIRST BLOCK MAIN PAGE (main)----------------------->
         <section class="first-block">
