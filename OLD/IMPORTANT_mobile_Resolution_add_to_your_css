@@ -7,7 +7,7 @@ Add to your .css files
 Little mobile devices
 ==========================
 
-@media only screen and (max-width:765px) {
+@media only screen and (max-width:764px) {
     html {
         
         /* background: yellow; */
@@ -18,7 +18,7 @@ Big mobile devices
 ===========================
 
 
-@media only screen and (min-device-width:765px ) and (max-device-width: 1024px){
+@media only screen and (min-device-width:765px ) and (max-device-width: 1023px){
     /*-------IPAD resolution 768px -------*/
 
 ================
@@ -26,6 +26,6 @@ Desktop
 ==========
 
 
-@media only screen and (min-width:1025px) {
+@media only screen and (min-width:1024px) {
     /*-------IPAD PRO resolution 1024px and above -------*/
    

@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="searchResults.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="modal.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="mobile.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="header.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="responsive.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     
-    <script src="main.js"></script>
+  
 </head>
 <body>
 
@@ -162,25 +163,18 @@
     </section>
 
 </main>
+    
 
-<script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-        
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-        
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modalContainer) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+<div id="myModal" class="modal">
+    <div id=modalContainer class="modalContainer">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <input placeholder="Search and hit enter...">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+    
+</div>
+<script src="modal.js"></script>
 </body>
 </html>
