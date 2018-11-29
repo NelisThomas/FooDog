@@ -1,0 +1,587 @@
+@media only screen and (max-width: 765px){
+    #page{
+        max-width: 100% !important;
+        padding: 0 7% 0 7% !important;
+    }
+    #popularArticles{
+        width: 86% !important;
+        padding: 0 7% 0 7% !important;
+    }
+    .articleTop{
+        width: 100% !important;
+    }
+    .articlePageArticleName{
+        font-size: 5vh;
+    }
+    #commentButton, .articleAuthorImg, .articleSocialMediaContainer > .shareText{
+        display: none !important;
+    }
+    .articleSocialMediaContainer{
+        margin-right: 20%;
+    }
+    .articleSocialBall{
+        height: 26px !important;
+        width: 26px !important;
+    }
+    .articleSocialBall > i{
+        font-size: 12px !important;
+    }
+    .mobileHide{
+        display: none;
+    }
+    #articleSubscribeHeader{
+        font-size: 25px;
+    }
+    .articleFooterSocialButton{
+        width: 70px;
+        height: 35px;
+        line-height: 35px;
+    }
+    #commentButton2 > i{
+        font-size: 12px;
+    }
+    .articleSocialBall{
+        height: 26px !important;
+        width: 26px !important;
+    }
+}
+@media only screen and (min-width: 766px) and (max-width: 999px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #commentButton{
+        display: none;
+    }
+    .shareText{
+        padding-right: 5%;
+    }
+    #page{
+        width: 60%;
+    }
+    .tagName{
+        margin-bottom: 2%;
+        font-size: 11px;
+    }
+    .articleDivider .articleAuthorImg {
+        height: 32px !important;
+        width: 32px !important;
+    }
+    .articlePageArticleName{
+        font-size: 1.8em;
+    }
+    .articleSocialBall{
+        height: 26px !important;
+        width: 26px !important;
+    }
+    #articleFooter{
+        justify-content: center !important;
+    }
+    .articleFooterSocialButton{
+        padding: 1%;
+    }
+    #articleSubscribeHeader{
+        font-size: 25px!important;
+        line-height: 25px;
+    }
+    #subscribeInputContainer{
+        height: 45px !important;
+    }
+    .articleAuthorImg{
+        height: 85px !important;
+        width: 85px !important;
+    }
+    #authorName{
+        font-size: 16px !important;
+    }
+    #authorDescription{
+        margin: 0 5% 8% 5% !important;
+    }
+    .articleSocialBall{
+        height: 26px !important;
+        width: 26px !important;
+    }
+}
+@media only screen and (min-width:1000px){
+    body{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    #page{
+        width: 615px;
+        float: left;
+        margin-left: 5%;
+    }
+    #sideOfScreen{
+        width: 100%;
+        height: 100%;
+        margin: 0 5% 0 5%;
+    }
+    .desktopAd{
+        height: 100vh;
+    }
+    #firstDesktopAd{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50;
+    }
+    #popularArticles{
+        position: relative;
+    }
+    #commentButton{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        padding: 2px 5px 2px 5px;
+        background-color: #555;
+        color: white;
+        font-size: 12px;
+    }
+    .articleSocialMediaContainer{
+        margin-right: 0 !important;
+    }
+    .articleSocialBall{
+        height: 32px !important;
+        width: 32px !important;
+    }
+    .shareText{
+        padding-right: 10%;
+    }
+    #commentButton{
+        margin-left: 20%;
+        padding: 0 3% 0 3%;
+    }
+    #articleFooter{
+        margin: 15vh 0 0 0 !important;
+        justify-content: space-between !important;
+        flex-wrap: nowrap !important;
+    }
+    #articleFooter > .shareText{
+        padding: 0; 
+    }
+    .articleFooterSocialButton{
+        font-size: 20px;
+        height: 35px;
+        width: 120px;;
+    }
+    #articleSubscribeHeader{
+        font-size: 35px!important;
+        letter-spacing: 1px;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: center;
+    }
+    /* ---------------------------ARTICLE-NEXT-PREVIOUS--------------------------------------------------- */
+    .articleNextPrevContainer{
+        flex-direction: row !important;
+    }
+    .articleNextPrevButton{
+        width: 50%;
+    }
+    #previousArticle{
+        text-align: left !important;
+        border-right: 1px solid #f2f2f2;
+        margin-right: -1px;
+    }
+    #nextArticle{
+        text-align: right !important;
+        border-left: 1px solid #f2f2f2;
+        margin-left: -1px;
+    }
+    /* ---------------------------AUTHOR-CONTAINER--------------------------------------------------- */
+    .authorContainer{
+        justify-content: flex-start !important;
+        flex-direction: row !important;
+        text-align: left !important;
+        padding-bottom: 10%;
+    }
+    .articleAuthorText{
+        align-self: center !important;
+    }
+    .authorContainer > .articleAuthorImg{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    /* ---------------------------YOU-MIGHT-ALSO-LIKE--------------------------------------------------- */
+    #youMightAlsoLike{
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+    }
+}
+
+
+/* ----------------UNIVERSAL-STYLES------------ */
+.articleSocialMediaContainer{
+    margin-right: 20%;
+}
+
+
+
+.articlePageArticleName{
+    text-align: center;
+    max-width: 100%;
+    color: #4b4f54;
+    margin-bottom: 10vh;
+}
+.articleMainImage{
+    max-width: 100%;
+}
+/* ---------------ARTICLE-DIVIDER----------------------------------------- */
+.articleDivider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6vh;
+    padding: 1% 0 1% 0;
+    border-top: 1px solid rgb(219, 219, 219);
+    border-bottom: 1px solid rgb(219, 219, 219);
+    max-width: 100%;
+}
+.articleAuthorInfoContainer{
+    display: flex;
+    align-items: flex-start;
+    margin-right: 0%;
+    font-size: 11px;
+    color: #aaa;
+}
+.articleAuthorImg{
+    border-radius: 50%;
+    height:4vw;
+    width: 4vw;
+    margin-right: 10px;
+}
+#commentButton:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+#commentButton > .fa-comment{
+    padding-right: 10%;
+    font-size: 12px;
+}
+.articleSocialMediaContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.shareText{
+    color: #242424;
+    font-size: 12px;
+    font-weight: bold;
+}
+.articleSocialBall{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.articleSocialBall > i{
+    font-size: 80%;
+}
+#articleFBButton{
+    background-color: #8b9dc3;
+}
+#articleTwitterButton{
+    background-color: #1dcaff;
+}
+#articlePinterestButton{
+    background-color: #F74C53;
+}
+#articleFBButton, #articleTwitterButton, #articlePinterestButton, #shareButton{
+    margin-right: 5px;
+}
+#articleFBButton:hover, #articleTwitterButton:hover, #articlePinterestButton:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+/* ------------------------ARTICLE-FOOTER----------------------------------------------- */
+#articleFooter{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 15vh 5% 0 5%;
+}
+#articleFooter div{
+    margin: 2px;
+}
+.articleFooterSocialButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+#commentButton2{
+    background-color: #555;
+    width: 120px;
+    height: 34px;
+}
+/* ---------------------------ARTICLE-SUBSCRIBE--------------------------------------------------- */
+#articleSubscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+    height: 240px;
+}
+#articleSubscribeHeader{
+    font-weight: bold;
+}
+#subscribeInputContainer{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 12px!important;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #ff8c70;
+    line-height: 12px!important;
+    float: left;
+}
+#emailInput{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding:  0 0 0 3%;
+    font-size: 14px;
+}
+#signUpButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100%;
+    float: right;
+    vertical-align: middle;
+    background-color: #ff8c70;
+    font-size: 12px !important;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 12px;
+}
+/* ---------------------------ARTICLE-NEXT-PREVIOUS--------------------------------------------------- */
+.articleNextPrevContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    color: #242424;
+    margin: 5% 0 5% 0;
+}
+#previousArticle, #nextArticle{
+    text-align: center;
+}
+.articleNextPrevButton{
+    padding: 3% 0 5% 0;
+}
+.articleNextPrevContainer p{
+    font-size: 11px;
+    color: #aaa;
+    text-transform: uppercase;
+}
+#previousArticleName, #nextArticleName{
+    font-weight: 900;
+    font-size: 12px;
+    color: #4b4f54;
+}
+.articleNextPrevButton{
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+@media only screen and (max-width: 767px){
+    .articleNextPrevButton{
+        width: 100%;
+    }
+    .articleNextPrevContainer{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #previousArticle, #nextArticle{
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+}
+/* ---------------------------AUTHOR-CONTAINER--------------------------------------------------- */
+.authorContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+#articleAuthorImg{
+    border-radius: 50%;
+}
+#authorName{
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+#authorDescription{
+    color: #aaa;
+    font-size: 0.85em;
+    margin: 0 5% 0 5%;
+}
+@media only screen and (max-width: 767px){
+    .authorContainer{
+        height: 360px;
+    }
+    #articleAuthorImg{
+        height: 85px !important;
+        width: 85px !important;
+    }
+}
+/* ---------------------------YOU-MIGHT-ALSO-LIKE--------------------------------------------------- */
+#youMightAlsoLike{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 15px;
+    max-width: 100%;
+}
+.articleYouMightLike{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    width: 45%;
+    height: 167px;
+}
+#articleYouMightLikeImg{
+    width: 100%;
+    height: auto;
+}
+#articleYouMightLikeTitle{
+    font-size: 15px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4b4f54;
+}
+/* ---------------------------RESPONSE-FORM--------------------------------------------------- */
+#responseForm{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#leaveAResponse{
+    font-weight: 900;
+    font-size: 17px;
+    color: #111;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#responseInput{
+    margin-bottom: 15px;
+    font-size: 14px!important;
+    color: #111;
+    font-weight: 400;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    outline: none!important;
+    border: 1px solid rgba(0,0,0,.05);
+    transition: all .3s linear;
+    height: 30vh;
+}
+.responseInput2{
+    margin-bottom: 15px;
+    font-size: 14px!important;
+    color: #111;
+    font-weight: 400;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid rgba(0,0,0,.05);
+    display: block;
+    max-width: 100%;
+}
+#submitResponseButton{
+    background-color: #111;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    font-size: 10px!important;
+    cursor: pointer!important;
+    -webkit-appearance: button;
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width: 767px){
+    .responseInput2{
+        width: 100%;
+    }
+    #submitResponseButton{
+        width: 100%;
+    }
+}
+/* ---------------------------POPULAR-ARTICLES--------------------------------------------------- */
+#popularArticles{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+#popularTag{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #555;
+    color: #fff;
+    margin: 10vh 0 0 0;
+}
+.popularArticle{
+    height: 78px;
+    width: 90%;
+    padding: 15px 5% 15px 5%;
+    border: 1px solid #e4e4e4;
+    display: flex;
+    justify-items: first baseline;
+}
+.popularArticle > a{
+    color: #444;
+}
+.popularArticleImg{
+    height: 100%;
+    width: auto;
+    margin-right: 12px;
+    padding-top: 4px;
+}
+#popularArticlesNextButton{
+    height: 30px;
+    background-color: #eee;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 0px 0px 0px;
+    color: #4b4f54;
+}
