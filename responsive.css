@@ -383,7 +383,6 @@ footer2 {
         display: flex;
         flex-direction: column;
     }
-
     .searchResultContainer_big {
         display: flex;
     } */
@@ -729,7 +728,7 @@ footer2 {
         width: 100%;
         height: auto;
         /* background: lightblue; */
-        display:flex;
+        /* display:flex; */
     }
 
     .main-section {
@@ -832,6 +831,11 @@ footer2 {
         border-bottom: 1px solid #42464B;
     }
 
+    .container-category a {
+        text-decoration: none;
+        color: white;
+    }
+
     #special-one {
         border-style: none;
     }
@@ -885,6 +889,11 @@ footer2 {
 
     .txt-rand-foot {
         width: 100%;
+    }
+
+    .txt-rand-foot a {
+        color: white;
+        text-decoration: none;
     }
 
     /*-----------------zone3----------------*/
