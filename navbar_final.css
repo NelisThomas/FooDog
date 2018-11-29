@@ -305,12 +305,6 @@
 
     }
 
-
-    .Links {
-        display: none;
-    }
-
-
     .navbar-select-menu>a:hover {
 
 
@@ -564,35 +558,6 @@ body {
     display: flex;
 }
 
-/* .Links {
-    display: none;
-    position: absolute;
-
-    margin-left: -1em;
-    width: 100%;
-    background-color: white;
-}
-
-.Links > ol > li {
-    list-style: none;
-    text-align: left;
-
-}
-
-.Links > ol > li > a {
-    text-decoration: none;
-    color: black;
-}
-
-.nutrition {
-    margin-left: -5em ;
-}
-
-
-
-.navbar-select-menu {
-    border-bottom: 1px solid grey;
-} */
 
 /* nav > a {
     text-decoration: none;
