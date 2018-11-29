@@ -10,7 +10,7 @@ const request3 = async () => {
   const firstSection = document.querySelector('#page')
   firstSection.appendChild(articleShadow);
   firstSection.appendChild(articleShadow2);
-  const mainArticle = document.querySelector("single-page");
+  const mainArticle = document.querySelector(".mainContainer");
   mainArticle.appendChild(firstSection);
   mainArticle.appendChild(articleShadow3);
   let jsonDocs = json.docs;
