@@ -345,7 +345,17 @@ body {
 
 /***************POPUP MENU*************************/
 
+@keyframes poppin {
+
+    0% { width: 0%; }
+   
+   100% {
+        
+   } 
+}
+
 .popup-menu {
+    animation : poppin 220ms linear;
     width: 314px;
     height: 120vh;
     position: fixed;
@@ -358,7 +368,7 @@ body {
     overflow-y: auto;
     z-index: 5;
     /* filter: blur(1px); */
-    opacity: 0; /***DEFAULT STATE \/ SET TO 1 TO SEE MENU BLOCK **/
+    opacity: 1; /***DEFAULT STATE \/ SET TO 1 TO SEE MENU BLOCK **/
 }
 
 .popup-menu-close {
