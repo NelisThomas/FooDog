@@ -269,6 +269,9 @@
     .articleYouMightLike{
         width: 33% !important;
     }
+    .articleYouMightLike a{
+        text-decoration: none;
+    }
     #responseFormButtonContainer{
         display: flex;
         justify-content: space-between;
@@ -581,6 +584,7 @@ html, body {
     text-transform: uppercase;
     font-weight: 700;
     color: #4b4f54;
+    text-decoration: none !important;
 }
 /* ---------------------------RESPONSE-FORM--------------------------------------------------- */
 #responseForm{
@@ -679,9 +683,6 @@ html, body {
     display: flex;
     justify-content: space-between;
     text-transform: capitalize;
-}
-.popularArticle > a{
-    text-decoration: none !important;
 }
 .popularArticle > a{
     color: #444;
