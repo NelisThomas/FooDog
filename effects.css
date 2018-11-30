@@ -168,8 +168,12 @@ class names:*/
 /* ========================================== */
 /* FOOTER? */
 
-#container-category >ul > li > b:hover {
-    border-bottom: 2px solid orangered !important;
+.container-category li:hover {
+    border-bottom: 2px solid orangered;
+}
+
+#special-one:hover {
+    border-bottom: 2px solid orangered;
 }
 
 /* ========================================== */
@@ -185,6 +189,18 @@ class names:*/
 
 .articleYouMightLikeTitle:hover {
     border-bottom: 2px solid orangered;
+}
+
+#nextArticleName:hover {
+    border-bottom: 2px solid orangered;
+}
+
+#previousArticleName:hover {
+    border-bottom: 2px solid orangered;
+}
+
+#signUpButton:hover {
+    background-color: black;
 }
 
 #tagtitle:hover:before {
