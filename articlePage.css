@@ -271,6 +271,7 @@
     }
     .articleYouMightLike{
         width: 33% !important;
+        height: auto;
     }
     .articleYouMightLike a{
         text-decoration: none;
@@ -308,7 +309,7 @@ html, body {
 }
 .mainContainer{
     width: 100%;
-    padding: 10vh 0 10vh 0;
+    padding: 0vh 0 10vh 0;
 }
 .tagName{
     font-size: 2vh;
