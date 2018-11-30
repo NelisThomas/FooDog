@@ -21,6 +21,7 @@
     }
     .articlePageArticleName{
         font-size: 5vh;
+        text-transform: capitalize;
     }
     #commentButton, .articleAuthorInfoContainer > .articleAuthorImg, .articleSocialMediaContainer > .shareText{
         display: none !important;
@@ -89,6 +90,7 @@
     }
     .articlePageArticleName{
         font-size: 1.8em;
+        text-transform: capitalize;
     }
     .articleSocialBall{
         height: 26px !important;
@@ -287,7 +289,7 @@
 
 /* ----------------UNIVERSAL-STYLES------------ */
 .tagName{
-    font-size: 2vh;
+    font-size: 3vh;
     color: #FF835E;
     text-transform: uppercase;
     font-weight: bolder;
@@ -310,6 +312,7 @@
     max-width: 100%;
     color: #4b4f54;
     margin-bottom: 10vh;
+    text-transform: capitalize;
 }
 .articleMainImage{
     max-width: 100%;
@@ -661,8 +664,8 @@
     color: #444;
 }
 .popularArticleImg{
-    height: 100%;
-    width: auto;
+    height: 80px;
+    width: 80px;
     margin-right: 12px;
     padding-top: 4px;
 }

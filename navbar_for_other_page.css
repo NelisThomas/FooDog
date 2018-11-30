@@ -56,6 +56,11 @@
         opacity: .8;
     }
 
+    .navbar-title a{
+        text-decoration: none;
+        color: black;
+    }
+
     .navbar-select-menu {
         display: none;
     }
@@ -106,10 +111,11 @@
         display: flex;
     } */
 
-    .instagram_top,
-    .twitter_top,
-    .facebook_top {
-        display: none !important;
+    .navbar-email{
+        display: none;
+    }
+    #doggy-menu{
+        display: none;
     }
 }
 
@@ -144,9 +150,15 @@
     }
 
     .navbar-title {
+        font-family: "Crimson1";
         font-size: .8em;
         font-style: bold;
         opacity: .8;
+    }
+
+    .navbar-title a {
+        text-decoration: none;
+        color: black;
     }
 
     .navbar-select-menu {
@@ -193,10 +205,12 @@
         max-height: 50px;
     }
 
-    .instagram_top,
-    .twitter_top,
-    .facebook_top {
-        display: none !important;
+    
+    .navbar-email{
+        display: none;
+    }
+    #doggy-menu{
+        display: none;
     }
 }
 
@@ -205,12 +219,12 @@
 
     header {
         width: 100%;
-        max-width: 90vw;
+        max-width: 100vw;
         height: 100px;
 
         display: flex;
-        margin: auto;
-        margin: 20px 20px;
+        /* margin: auto; */
+        /* margin: 20px 20px; */
     }
 
     .navbar-container {
@@ -219,7 +233,6 @@
 
         width: 100%;
         height: 100%;
-
     }
 
     /**ROW1**/
@@ -231,7 +244,7 @@
         width: 100%;
         height: 50%;
         padding: 20px 0;
-        border-bottom: 1px solid rgb(212, 210, 210);
+        /* border-bottom: 1px solid rgb(212, 210, 210); */
     }
 
     
@@ -247,19 +260,25 @@
     }
 
     .hamburger-menu img {
-        width: 60px;
-        height: 55px;
+        width: 50px;
+        height: 45px;
 
     }
 
-
     .navbar-title {
+        font-family: "Crimson1";
         display: flex;
+        
         /* flex-grow: 5; */
         /* justify-content: flex-end; */
-        margin: 0 40% 0 40%;
-        font-size: 34px;
-        opacity: .8;
+        margin: 0 2% 0 4%;
+        font-size: 20px;
+        opacity: .6;
+    }
+
+    .navbar-title a {
+        text-decoration: none;
+        color: black;
     }
 
     .search-and-social-button {
@@ -267,21 +286,18 @@
         /* flex-grow: 1; */
         flex-direction: row;
         position: absolute;
-        right: 5%;
-
-
+        right: 5px;
     }
-    
     
     .search-and-social-button div {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 95px;
-        height: 95px;
+        width: 75px;
+        height: 75px;
         margin-right: 2px;
-        border-radius: 50%;
+       
     }
 
     .search-and-social-button img {
@@ -289,89 +305,68 @@
         height: 40%;
         border-radius: 50%;
     }
-    
-    #doggy-menu img{
-        width: 80%;
-        height: 80%;
-        display: flex;
-    }
-    /**ROW2**/
-    .navbar-container-row2 {
-        display:none;
-    }
-    
-    /* .navbar-container-row2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 20%;
-        border-bottom: 1px solid rgb(241, 241, 241);
-    } */
-
-    .navbar-select-menu {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: #242424;
-        padding: 0 20px;
-
-        height: 60px;
-    }
-
-    .navbar-select-menu a {
-        height: 100%;
-        padding: 0 20px;
-        color: inherit;
-        text-decoration: none;
-        opacity: .8;
+    /********ESPECIALLY FOR THIS NAVBAR**********/
+    .navbar-email{
+        width: 50%;
         font-family: Open1;
-        border-bottom: 2px solid rgb(241, 241, 241, 0);
-        /**ADD THIS TO KEEP ANCHOR TEXT FIXED WHEN SET BORDER EFFECTS ON HOVER (add an invisible border-bottom)**/
-
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin : 0 2%;
+        opacity: .7;
     }
-
-    .navbar-select-menu>a:hover {
-
-
-        /* color: #424242; */
-        text-decoration: none;
-        border-bottom: 2px solid #FFA88E;
-        /**ADD THIS TO KEEP ANCHOR TEXT FIXED WHEN SET BORDER EFFECTS ON HOVER**/
-
-        transition: ease-in-out 300ms;
+    .navbar-email p{
         
+        margin : 0 2%;
+       
     }
+    .navbar-email input {
+        font-size: 12px;
+        width: 150px;
+        height:30px;
+        display: flex;
+        text-indent: 5%;
+        border: 1px solid black;
+    }
+    .navbar-email-sign-up{
+        width: 90px;
+        height:30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color:white;
+        font-size: 12px;
+        border: 1px solid black;
+    }
+    #doggy-menu img{
+        width: 95%;
+        height: 95%;
+        display: flex;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .searchIcon {
+        border-left: 1px solid rgb(243, 241, 241);
+    }
+    /************END SPECIAL ADD*****************/
+    /**ROW2**/
+    /**NOT NEEDED HERE**/
 }
 
 /******************************************* COMMON RULES********************************/
 
 body {
-    width: 100vw;
+    width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
 
 }
 
-
-.title {
-    text-align: center;
-    font-style: bold;
-    margin-left: 70px;
-    font-size: 3.25em;
-    color: #242424;
-    font-family: 'Crimson Text', serif;
-}
-
-.title:hover {
-    color: #424242;
-}
-
-/***************POPUP MENU*************************/
+/*********************POPUP MENU*************************/
 
 @keyframes poppin {
 
@@ -508,6 +503,12 @@ body {
     color: dimgray;
     border-bottom: 1px solid  lightgray;
 }
+
+.popup-zone1-category a{
+    text-decoration: none;
+    color:dimgray;
+}
+
 #popup-zone1-special-one{
     border-bottom: none;
 }
@@ -552,11 +553,11 @@ body {
     opacity:.4;
 }
 
-/**************************************/
+/************************************************/
 
-.searchTrigger {
+/* .searchTrigger {
     margin-right: 50px;
-}
+} */
 
 .modal {
     display: none;
