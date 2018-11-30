@@ -8,21 +8,17 @@
 [Thomas Nelis](https://github.com/NelisThomas)
 
 ## What is it?
-A blog for doog food.
+A blog for dog food.
 
 ## When did you work on it?
-We started working on the project on the 6th of November, 2018.
+We started working on the project on the 6th of November, 2018. The deadline was the 30th of November.
 
 ## What does it look like?
-SCREENSHOTS WILL GO HERE
-
+ SCREENSHOTS
 ## What's in it?
-Its a website that makes requests to an external server in order to fetch information for articles and images displayed on the site.
+* AJAX requests to fetch information for articles and images displayed on the site.
+* Responsive web design with fitting layout for mobile, tablet and desktop.
 
-credit social media svg/img: 
-twitter: https://www.flaticon.com/free-icon/twitter-logo-silhouette_8800
-facebook and instagram: from wikipedia
-search logo / magnifying glass: from wikipedia
 
 ## Where did it come from? A client or an exercise to do in class... Specify!
-An exercise in class.
+The project was assigned to us as an exercise at BeCode. The goal of the project was to recreate [this](http://digest.thefarmersdog.com/) website.
