@@ -166,7 +166,14 @@ class names:*/
 }
 
 /* ========================================== */
-/* ARTICLE PAGE? */
+/* FOOTER? */
+
+#container-category >ul > li > b:hover {
+    border-bottom: 2px solid orangered !important;
+}
+
+/* ========================================== */
+/* ARTICLE PAGE */
 
 #commentButton:hover {
     background-color: black;
