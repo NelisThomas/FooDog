@@ -6,8 +6,8 @@
     }
     #page{
         width: 86% !important;
-        padding: 0 7% 0 7% !important;
-        margin: 0% !important;
+        padding: 0 7vw 0 7vw !important;
+        margin: 0 !important;
     }
     #sideOfScreen{
         width: 86% !important;
@@ -127,14 +127,19 @@
         flex-wrap: nowrap !important;
     }
 }
+
 @media only screen and (min-width:1000px){
     body{
-        width: 100%;
+        width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden;
     }
     .mainContainer{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        width: 100vw !important;
     }
     .desktopHide{
         display: none;
@@ -142,16 +147,15 @@
     #page{
         width: 60%;
         float: left;
-        margin-left: 5%;
+        margin-left: 5vw;
     }
     #sideOfScreen{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         height: 100%;
-        padding-left: 3%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 25vw;
+        margin: 0 auto 0 5vw;
     }
     .articleMainImage{
         height: 400px;
@@ -173,6 +177,7 @@
     }
     #popularArticles{
         position: relative;
+        width: 100%;
     }
     #popularTag{
         margin: 0 !important;
@@ -287,6 +292,19 @@
 
 
 /* ----------------UNIVERSAL-STYLES------------ */
+body{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.mainContainer{
+    width: 100%;
+    padding: 10vh 0 10vh 0;
+}
 .tagName{
     font-size: 2vh;
     color: #FF835E;
@@ -300,6 +318,9 @@
     justify-content: center;
     padding: 15% 0 0 0;
 }
+#articleContent{
+    text-transform: capitalize;
+}
 .articleSocialMediaContainer{
     margin-right: 20%;
 }
@@ -311,6 +332,7 @@
     max-width: 100%;
     color: #4b4f54;
     margin-bottom: 10vh;
+    text-transform: uppercase;
 }
 .articleMainImage{
     max-width: 100%;
@@ -656,7 +678,11 @@
     padding: 15px 5% 15px 5%;
     border: 1px solid #e4e4e4;
     display: flex;
-    justify-items: first baseline;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.popularArticle > a{
+    text-decoration: none !important;
 }
 .popularArticle > a{
     color: #444;
