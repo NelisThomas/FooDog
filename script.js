@@ -5,6 +5,27 @@ let popupMenu = document.querySelector(".popup-menu");
 
 let goUpButton = document.querySelector("#go-up-icon");
 
+// Fonctionallity open and close side menu
+
+popupMenu.style.display = 'none';
+let menuButton = false;
+let menuButtonClose = false;
+
+let displayMenu = () => {
+    if (menuButton === false) {
+        popupMenu.style.display = 'flex';
+        popupMenu.style.zIndex = '10';
+    }
+}
+let closeMenu = () => {
+    if (menuButtonClose === false) {
+        popupMenu.style.display = 'none';
+        popupMenu.style.zIndex = '-1';
+    } 
+}
+popupButton.addEventListener("click", displayMenu);
+popupButtonClose.addEventListener("click", closeMenu);
+
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -26,24 +47,6 @@ window.onclick = function(event) {
 }
 
 
-// Fonctionallity open and close side menu
-
-popupMenu.style.display = 'none';
-let menuButton = false;
-let menuButtonClose = false;
-
-let displayMenu = () => {
-    if (menuButton === false) {
-        popupMenu.style.display = 'flex';
-        popupMenu.style.zIndex = '10';
-    }
-}
-let closeMenu = () => {
-    if (menuButtonClose === false) {
-        popupMenu.style.display = 'none';
-        popupMenu.style.zIndex = '-1';
-    } 
-}
 
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -66,8 +69,7 @@ function toTopPage() {
     document.documentElement.scrollTop = 0;
 }
 
-popupButton.addEventListener("click", displayMenu);
-popupButtonClose.addEventListener("click", closeMenu);
+
 
 goUpButton.addEventListener("click", toTopPage);
 
