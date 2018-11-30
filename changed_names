@@ -1,0 +1,5 @@
+responsive.css --> footer_all.css  (contains ONLY footer rules)
+landingPageBelowIpad.css --> landing_page.css (contains landingPageV2.html rules)
+
+TO DO :
+landingPageV2.html --> index.html
