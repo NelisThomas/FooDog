@@ -688,7 +688,7 @@ footer2 {
         width: 100%;
         height: auto;
         /* background: lightblue; */
-        display:flex;
+        /* display:flex; */
     }
 
     .main-section {
