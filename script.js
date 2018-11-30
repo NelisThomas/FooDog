@@ -5,7 +5,7 @@ let popupMenu = document.querySelector(".popup-menu");
 
 let goUpButton = document.querySelector("#go-up-icon");
 
-
+//PLEASE GIVE ME A COOKIE
 // Get the modal
 var modal = document.getElementById("myModal");
 
