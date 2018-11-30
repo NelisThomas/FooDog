@@ -47,8 +47,8 @@ class Foodog extends HTMLElement {
                         <a href="#"><img src=${doc.imgUrl}></a>
                     </div>
                     <div class="category-subject">
-                        <a href="#" class="category-title"> ${doc.tagForArticle} |</a>
-                        <h3 class="category-header"><a href="#">${doc.title}</a></h3>
+                        <a href="CategoryPage.html?cat=${doc.tagForArticle[0]}" class="category-title"> ${doc.tagForArticle} |</a>
+                        <h3 class="category-header"><a href="ArticlePage.html?id=${doc._id}">${doc.title}</a></h3>
                         <p class="category-paragraph">${doc.text}</p>
                         <div class="category-share">
                             <div class="share-icon"><a href="#"><i class="fas fa-share"></i> Share</a></div>

@@ -3,6 +3,8 @@ let popupButton = document.querySelector(".top-bar-button");
 let popupButtonClose = document.querySelector(".popup-menu-close");
 let popupMenu = document.querySelector(".popup-menu");
 
+let goUpButton = document.querySelector("#go-up-icon");
+
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -51,72 +53,28 @@ console.log(`test +`);
 /* ========================================================*/ 
 /* INSERTING-SOCIAL-SHARE-ICONS*/
 
-const socialMediaShare = document.getElementsByClassName(`social-media-share`);
-
-function displaySocialMediaIcons0() {
-    if (socialMediaShare[0].style.display===`none`) {
-        socialMediaShare[0].style.display=`flex`
-        console.log('aaaa');
-    }
-    console.log('bbbb');
-    socialMediaShare[0].style.display=`flex`;
-};
-function hideSocialMediaIcons0() {
-    if (socialMediaShare[0].style.display===`none`) {
-        socialMediaShare[0].style.display=`flex`
-        console.log('aaaa');
-    }
-    console.log('bbbb');
-    socialMediaShare[0].style.display=`none`;
-};
-function displaySocialMediaIcons1() {
-    if (socialMediaShare[1].style.display===`none`) {
-        socialMediaShare[1].style.display=`flex`
-        console.log('aaaa');
-    }
-    console.log('bbbb');
-    socialMediaShare[1].style.display=`flex`;
-};
-function hideSocialMediaIcons1() {
-    if (socialMediaShare[1].style.display===`none`) {
-        socialMediaShare[1].style.display=`flex`
-        console.log('aaaa');
-    }
-    console.log('bbbb');
-    socialMediaShare[1].style.display=`none`;
-};
-function displaySocialMediaIcons2() {
-    if (socialMediaShare[2].style.display===`none`) {
-        socialMediaShare[2].style.display=`flex`
-        console.log('aaaa');
-    }
-    console.log('bbbb');
-    socialMediaShare[2].style.display=`flex`;
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    scrollFunction()
 };
 
-function hideSocialMediaIcons2() {
-    if (socialMediaShare[2].style.display===`none`) {
-        socialMediaShare[2].style.display=`flex`
-        console.log('aaaa');
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        goUpButton.style.display = "block";
+    } else {
+        goUpButton.style.display = "none";
+        
     }
-    console.log('bbbb');
-    socialMediaShare[2].style.display=`none`;
-};
+}
 
-document.getElementsByClassName('article-dog-share-img')[0].addEventListener("mouseover", (event)=>displaySocialMediaIcons0());
-document.getElementsByClassName('article-dog-share-img')[1].addEventListener("mouseover", (event)=>displaySocialMediaIcons1());
-document.getElementsByClassName('article-dog-share-img')[2].addEventListener("mouseover", (event)=>displaySocialMediaIcons2());
+// When the user clicks on the button, scroll to the top of the document
+function toTopPage() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
-document.getElementsByClassName('article-dog-share-img')[0].addEventListener("mouseout", (event)=>hideSocialMediaIcons0());
-document.getElementsByClassName('article-dog-share-img')[1].addEventListener("mouseout", (event)=>hideSocialMediaIcons1());
-document.getElementsByClassName('article-dog-share-img')[2].addEventListener("mouseout", (event)=>hideSocialMediaIcons2());
+popupButton.addEventListener("click", displayMenu);
+popupButtonClose.addEventListener("click", closeMenu);
 
-// class="article-dog-share-share"
+goUpButton.addEventListener("click", toTopPage);
 
-document.getElementsByClassName("article-dog-share-share")[0].addEventListener("mouseover", (event)=>displaySocialMediaIcons0());
-document.getElementsByClassName("article-dog-share-share")[1].addEventListener("mouseover", (event)=>displaySocialMediaIcons1());
-document.getElementsByClassName("article-dog-share-share")[2].addEventListener("mouseover", (event)=>displaySocialMediaIcons2());
-
-document.getElementsByClassName("article-dog-share-share")[0].addEventListener("mouseout", (event)=>hideSocialMediaIcons0());
-document.getElementsByClassName("article-dog-share-share")[1].addEventListener("mouseout", (event)=>hideSocialMediaIcons1());
-document.getElementsByClassName("article-dog-share-share")[2].addEventListener("mouseout", (event)=>hideSocialMediaIcons2());
