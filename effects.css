@@ -164,3 +164,42 @@ class names:*/
     height: 50%;
 
 }
+
+/* ========================================== */
+/* ARTICLE PAGE? */
+
+#commentButton:hover {
+    background-color: black;
+}
+
+.articleYouMightLike > a {
+    text-decoration: none;
+}
+
+.articleYouMightLikeTitle:hover {
+    border-bottom: 2px solid orangered;
+}
+
+#tagtitle:hover:before {
+    visibility: hidden !important;
+}
+
+.articleAuthorImg, .articleMainImage:hover {
+    opacity: 1 !important;
+}
+
+#responseInput:hover {
+    border:1.5px solid black;    
+}
+
+#responseFormButtonContainer > textarea:hover {
+    border:1.5px solid black;
+}
+
+#submitResponseButton {
+    margin-bottom: 5%;
+}
+
+#submitResponseButton:hover {
+    opacity: .6;
+}

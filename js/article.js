@@ -30,7 +30,7 @@ class Article extends HTMLElement {
   set x(x) {
     this.innerHTML = /*html*/ `
             <div class="articleTop">
-                <p class="tagName">${x.tagForArticle}</p>
+                <p id="tagtitle" class="tagName">${x.tagForArticle}</p>
                 <h1 class="articlePageArticleName">${x.title}</h1>
                 <img class="articleMainImage" src=${x.imgUrl}>
                 <div class="articleDivider">
