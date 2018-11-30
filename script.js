@@ -2,9 +2,6 @@
 let popupButton = document.querySelector(".top-bar-button");
 let popupButtonClose = document.querySelector(".popup-menu-close");
 let popupMenu = document.querySelector(".popup-menu");
-const shareCollection = document.getElementsByClassName(`article-dog-share`);
-const socialMediaShare = document.getElementsByClassName(`social-media-share`);
-const socialIMG0 = shareCollection[0].getElementsByClassName('article-dog-share-img');
 
 
 // Get the modal
@@ -46,21 +43,80 @@ let closeMenu = () => {
     } 
 }
 
-function displaySocialMediaIcons() {
-    if (socialMediaShare[0].style.display===`none`) {
-        socialMediaShare[0].style.display=`flex`
-    }
-};
-
-
-
 popupButton.addEventListener("click", displayMenu);
 popupButtonClose.addEventListener("click", closeMenu);
 
 console.log(`test +`);
-socialIMG0.addEventListener("click", (event)=>displaySocialMediaIcons());
-
 
 /* ========================================================*/ 
 /* INSERTING-SOCIAL-SHARE-ICONS*/
 
+const socialMediaShare = document.getElementsByClassName(`social-media-share`);
+
+function displaySocialMediaIcons0() {
+    if (socialMediaShare[0].style.display===`none`) {
+        socialMediaShare[0].style.display=`flex`
+        console.log('aaaa');
+    }
+    console.log('bbbb');
+    socialMediaShare[0].style.display=`flex`;
+};
+function hideSocialMediaIcons0() {
+    if (socialMediaShare[0].style.display===`none`) {
+        socialMediaShare[0].style.display=`flex`
+        console.log('aaaa');
+    }
+    console.log('bbbb');
+    socialMediaShare[0].style.display=`none`;
+};
+function displaySocialMediaIcons1() {
+    if (socialMediaShare[1].style.display===`none`) {
+        socialMediaShare[1].style.display=`flex`
+        console.log('aaaa');
+    }
+    console.log('bbbb');
+    socialMediaShare[1].style.display=`flex`;
+};
+function hideSocialMediaIcons1() {
+    if (socialMediaShare[1].style.display===`none`) {
+        socialMediaShare[1].style.display=`flex`
+        console.log('aaaa');
+    }
+    console.log('bbbb');
+    socialMediaShare[1].style.display=`none`;
+};
+function displaySocialMediaIcons2() {
+    if (socialMediaShare[2].style.display===`none`) {
+        socialMediaShare[2].style.display=`flex`
+        console.log('aaaa');
+    }
+    console.log('bbbb');
+    socialMediaShare[2].style.display=`flex`;
+};
+
+function hideSocialMediaIcons2() {
+    if (socialMediaShare[2].style.display===`none`) {
+        socialMediaShare[2].style.display=`flex`
+        console.log('aaaa');
+    }
+    console.log('bbbb');
+    socialMediaShare[2].style.display=`none`;
+};
+
+document.getElementsByClassName('article-dog-share-img')[0].addEventListener("mouseover", (event)=>displaySocialMediaIcons0());
+document.getElementsByClassName('article-dog-share-img')[1].addEventListener("mouseover", (event)=>displaySocialMediaIcons1());
+document.getElementsByClassName('article-dog-share-img')[2].addEventListener("mouseover", (event)=>displaySocialMediaIcons2());
+
+document.getElementsByClassName('article-dog-share-img')[0].addEventListener("mouseout", (event)=>hideSocialMediaIcons0());
+document.getElementsByClassName('article-dog-share-img')[1].addEventListener("mouseout", (event)=>hideSocialMediaIcons1());
+document.getElementsByClassName('article-dog-share-img')[2].addEventListener("mouseout", (event)=>hideSocialMediaIcons2());
+
+// class="article-dog-share-share"
+
+document.getElementsByClassName("article-dog-share-share")[0].addEventListener("mouseover", (event)=>displaySocialMediaIcons0());
+document.getElementsByClassName("article-dog-share-share")[1].addEventListener("mouseover", (event)=>displaySocialMediaIcons1());
+document.getElementsByClassName("article-dog-share-share")[2].addEventListener("mouseover", (event)=>displaySocialMediaIcons2());
+
+document.getElementsByClassName("article-dog-share-share")[0].addEventListener("mouseout", (event)=>hideSocialMediaIcons0());
+document.getElementsByClassName("article-dog-share-share")[1].addEventListener("mouseout", (event)=>hideSocialMediaIcons1());
+document.getElementsByClassName("article-dog-share-share")[2].addEventListener("mouseout", (event)=>hideSocialMediaIcons2());
