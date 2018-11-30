@@ -83,8 +83,7 @@
         margin-bottom: 2%;
         font-size: 11px;
     }
-  
-    .articleAuthorInfoContainer > .articleAuthorImg {
+    .articleDivider > .articleAuthorImg {
         height: 32px !important;
         width: 32px !important;
     }
@@ -706,4 +705,4 @@ html, body {
     .articleAuthorInfoContainer > .articleAuthorImg {
         height: 32px !important;	        height: 32px !important;
         width: 32px !important;	        width: 32px !important;
-    }	    }
+    }	    
