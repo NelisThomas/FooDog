@@ -6,6 +6,7 @@ const request5 = async () => {
     mainSection.appendChild(landingShadow);
     let jsonDocs = json.docs;
     landingShadow.jsonDocs = jsonDocs;
+    console.log(jsonDocs.pages);
 }
 
 request5();
@@ -19,45 +20,45 @@ class Landing extends HTMLElement {
 
     <div class="first-block-1-1">
         <div class="block1-1-img">
-            <a href=""><img src="images/dog3.jpg"></a>
+            <a href="ArticlePage.html?id=${jsonDocs[0]._id}"><img src=${jsonDocs[0].imgUrl}></a>
         </div>
         <div class="block1-1-txt">
-            <div><a href="" class="tagName">WELLNESS</a></div>
-            <div><a href="" class="mainArticleTitle">5 REASONS YOUR DOG IS VOMITING</a></div>
+            <div><a href=CategoryPage.html?cat=${jsonDocs[0].tagForArticle[0]} class="tagName">${jsonDocs[0].tagForArticle}</a></div>
+            <div><a href="ArticlePage.html?id=${jsonDocs[0]._id}" class="mainArticleTitle">${jsonDocs[0].title}</a></div>
         </div>
     </div>
     <div class="first-block-1-2">
         <article>
             <div class="block1-2-img">
-                <a href="" ><img src="images/sample.jpeg"></a>
+                <a href="ArticlePage.html?id=${jsonDocs[4]._id}"><img src=${jsonDocs[4].imgUrl}></a>
             </div>
             <div class="block1-2-txt">
-                <a href="" class="subtitle">TOP 14 FRESH SNACKS FOR DOGS</a>
+                <a href="ArticlePage.html?id=${jsonDocs[4]._id}" class="subtitle">${jsonDocs[4].title}</a>
             </div>
         </article>
         <article>
             <div class="block1-2-img">
-                <a href="" ><img src="images/sample.jpeg"></a>
+                <a href="ArticlePage.html?id=${jsonDocs[5]._id}"><img src=${jsonDocs[5].imgUrl}></a>
             </div>
             <div class="block1-2-txt">
-                <a href="" class="subtitle">WHY SKINNY DOGS LIVE LONGER</a>
+                <a href="ArticlePage.html?id=${jsonDocs[5]._id}" class="subtitle">${jsonDocs[5].title}</a>
             </div>
 
         </article>
         <article>
             <div class="block1-2-img">
-                <a href="" ><img src="images/sample.jpeg" /></a>
+                <a href="ArticlePage.html?id=${jsonDocs[6]._id} "><img src=${jsonDocs[6].imgUrl}/></a>
             </div>
             <div class="block1-2-txt">
-                <a href="" class="subtitle">THE 10 MOST DANGEROUS FOODS FOR DOGS</a>
+                <a href="ArticlePage.html?id=${jsonDocs[6]._id} "class="subtitle">${jsonDocs[6].title}</a>
             </div>
         </article>
         <article>
             <div class="block1-2-img">
-                <a href="" ><img src="images/sample.jpeg" /></a>
+                <a href="ArticlePage.html?id=${jsonDocs[2]._id}" ><img src=${jsonDocs[2].imgUrl} /></a>
             </div>
             <div class="block1-2-txt">
-                <a href="" class="subtitle">THE HISTORY OF COMMERCIAL PET FOOD: A GREAT AMERICAN MARKETING STORY</a>
+                <a href="ArticlePage.html?id=${jsonDocs[2]._id}" class="subtitle">${jsonDocs[2].title}</a>
             </div>
         </article>
     </div>
@@ -70,14 +71,14 @@ class Landing extends HTMLElement {
         <div class="block2-1-container">
             <article class="article-dog">
                 <div class="article-dog-img">
-                    <a href=""><img src="images/dog4.jpg" /></a>
+                    <a href="ArticlePage.html?id=${jsonDocs[1]._id}"><img src=${jsonDocs[1].imgUrl}/></a>
                 </div>
                 <div class="article-dog-txt">
                     <div class="article-dog-tags">
-                        <a href="#">FEATURED</a> <a href="#">NUTRITION</a>
+                        <a href="CategoryPage.html?cat=${jsonDocs[0].tagForArticle[1]}">${jsonDocs[1].tagForArticle}</a>
                     </div>
                     <div class="article-dog-title">
-                        <a href="#">THE TRUTH ABOUT TABLE SCRAPS FOR DOGS</a>
+                        <a href="ArticlePage.html?id=${jsonDocs[1]._id}">${jsonDocs[1].title}</a>
                     </div>
                     <div class="article-dog-text-exerp">
                         <p>
@@ -98,14 +99,14 @@ class Landing extends HTMLElement {
             </article>
             <article class="article-dog">
                 <div class="article-dog-img">
-                    <a href="" ><img src="images/dog4.jpg" /></a>
+                    <a href="ArticlePage.html?id=${jsonDocs[2]._id}"><img src=${jsonDocs[2].imgUrl} /></a>
                 </div>
                 <div class="article-dog-txt">
                     <div class="article-dog-tags">
-                        <a href="#">FEATURED</a> <a href="#">NUTRITION</a>
+                        <a href="CategoryPage.html?cat=${jsonDocs[2].tagForArticle[2]}">${jsonDocs[2].tagForArticle}</a>
                     </div>
                     <div class="article-dog-title">
-                        <a href="#">DOES YOUR DOG NEED PROBIOTICS, TOO?</a>
+                        <a href="ArticlePage.html?id=${jsonDocs[2]._id}">${jsonDocs[2].title}</a>
                     </div>
                     <div class="article-dog-text-exerp">
                         <p>
@@ -114,22 +115,26 @@ class Landing extends HTMLElement {
                         </p>
                     </div>
                   
-                    <div class="article-dog-share">
-                        <div class="article-dog-share-img"><img src="images/Social-media/Arrow5.jpg" /></div>
-                        <span class="article-dog-share-share">SHARE</span>
-                    </div>
+                    <div class="category-share">
+                            <div class="share-icon"><a href="#"><i class="fas fa-share"></i> Share</a></div>
+                            <div class="round-buttons">
+                                <a href="www.facebook.com"><i class="fab fa-facebook"></i></i></a>
+                                <a href="https://twitter.com/intent/tweet?text=Superfoods+in+Your+Kitchen%3A+Carrots+for+Dogs&url=http%3A%2F%2Fdigest.thefarmersdog.com%2Fsuperfoods-kitchen-carrots-dogs%2F&via=farmersdog"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.pinterest.com/pin/24980972918988287/?showsignup=1"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
                 </div>
             </article>
             <article class="article-dog">
                 <div class="article-dog-img">
-                    <a href="" ><img src="images/dog4.jpg" /></a>
+                    <a href="ArticlePage.html?id=${jsonDocs[3]._id}"><img src=${jsonDocs[3].imgUrl} /></a>
                 </div>
                 <div class="article-dog-txt">
                     <div class="article-dog-tags">
-                        <a href="#">FEATURED</a> <a href="#">NUTRITION</a>
+                        <a href="CategoryPage.html?cat=${jsonDocs[3].tagForArticle[3]}">${jsonDocs[3].tagForArticle}</a>
                     </div>
                     <div class="article-dog-title">
-                        <a href="#">COOKING FOR YOUR DOG?<br> WATCH OUT FOR THESE NUTRIENT DEFICIENCIES</a>
+                        <a href="ArticlePage.html?id=${jsonDocs[3]._id}">${jsonDocs[3].title}</a>
                     </div>
                     <div class="article-dog-text-exerp">
                         <p>
@@ -137,12 +142,15 @@ class Landing extends HTMLElement {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
                     </div>
-                    
-                    <div class="article-dog-share">
-                        <div class="article-dog-share-img"><img src="images/Social-media/Arrow5.jpg" />
+                  
+                    <div class="category-share">
+                            <div class="share-icon"><a href="#"><i class="fas fa-share"></i> Share</a></div>
+                            <div class="round-buttons">
+                                <a href="www.facebook.com"><i class="fab fa-facebook"></i></i></a>
+                                <a href="https://twitter.com/intent/tweet?text=Superfoods+in+Your+Kitchen%3A+Carrots+for+Dogs&url=http%3A%2F%2Fdigest.thefarmersdog.com%2Fsuperfoods-kitchen-carrots-dogs%2F&via=farmersdog"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.pinterest.com/pin/24980972918988287/?showsignup=1"><i class="fab fa-pinterest"></i></a>
+                            </div>
                         </div>
-                        <span class="article-dog-share-share">SHARE</span>                                
-                    </div>
                 </div>
             </article>
 
@@ -177,128 +185,114 @@ class Landing extends HTMLElement {
     <div class="latest-posts-article-container">
         <article>
             <div class="latest-posts-img">
-                <a href="#"><img src="images/dog2.jpg" /></a>
+                <a href="ArticlePage.html?id=${jsonDocs[4]._id}"><img src=${jsonDocs[4].imgUrl} /></a>
             </div>
             <div class="latest-posts-txt-zone">
                 <div class="latest-posts-tags">
-                    <a href="#" value="tags">link for tags here</a>
+                    <a href=CategoryPage.html?cat=${jsonDocs[4].tagForArticle[0]} value="tags">${jsonDocs[4].tagForArticle}</a>
                 </div>
                 <div class="latest-posts-title">
-                    <a href="#" value="title">link title here</a>
+                    <a href="ArticlePage.html?id=${jsonDocs[4]._id}" value="title">${jsonDocs[4].title}</a>
                 </div>
 
                 <div class="latest-posts-excerp">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        ${jsonDocs[4].text}
                     </p>
                 </div>
             </div>
         </article>
         <article>
             <div class="latest-posts-img">
-                <a href="#"><img src="images/dog2.jpg" /></a>
+                <a href="ArticlePage.html?id=${jsonDocs[5]._id}"><img src=${jsonDocs[5].imgUrl} /></a>
             </div>
             <div class="latest-posts-txt-zone">
                 <div class="latest-posts-tags">
-                    <a href="#" value="tags">link for tags here</a>
+                    <a href=CategoryPage.html?cat=${jsonDocs[5].tagForArticle[0]} value="tags">${jsonDocs[5].tagForArticle}</a>
                 </div>
                 <div class="latest-posts-title">
-                    <a href="#" value="title">link title here</a>
+                    <a href="ArticlePage.html?id=${jsonDocs[5]._id}" value="title">${jsonDocs[5].title}</a>
                 </div>
+
                 <div class="latest-posts-excerp">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        ${jsonDocs[5].text}
                     </p>
                 </div>
             </div>
         </article>
         <article>
             <div class="latest-posts-img">
-                <a href="#"><img src="images/dog2.jpg" /></a>
+                <a href="ArticlePage.html?id=${jsonDocs[6]._id}"><img src=${jsonDocs[6].imgUrl} /></a>
             </div>
             <div class="latest-posts-txt-zone">
                 <div class="latest-posts-tags">
-                    <a href="#" value="tags">link for tags here</a>
+                    <a href=CategoryPage.html?cat=${jsonDocs[6].tagForArticle[0]} value="tags">${jsonDocs[6].tagForArticle}</a>
                 </div>
                 <div class="latest-posts-title">
-                    <a href="#" value="title">link title here</a>
+                    <a href="ArticlePage.html?id=${jsonDocs[6]._id}" value="title">${jsonDocs[6].title}</a>
                 </div>
+
                 <div class="latest-posts-excerp">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        ${jsonDocs[6].text}
                     </p>
                 </div>
             </div>
         </article>
         <article>
             <div class="latest-posts-img">
-                <a href="#"><img src="images/dog2.jpg" /></a>
+                <a href="ArticlePage.html?id=${jsonDocs[7]._id}"><img src=${jsonDocs[7].imgUrl} /></a>
             </div>
             <div class="latest-posts-txt-zone">
                 <div class="latest-posts-tags">
-                    <a href="#" value="tags">COMMUNITY</a>
+                    <a href=CategoryPage.html?cat=${jsonDocs[7].tagForArticle[0]} value="tags">${jsonDocs[7].tagForArticle}</a>
                 </div>
                 <div class="latest-posts-title">
-                    <a href="#" value="title">WHY NATIONAL PET IS MORE THAN JUST A HOLIDAY</a>
+                    <a href="ArticlePage.html?id=${jsonDocs[7]._id}" value="title">${jsonDocs[7].title}</a>
                 </div>
+
                 <div class="latest-posts-excerp">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        ${jsonDocs[7].text}
                     </p>
                 </div>
             </div>
         </article>
         <article>
             <div class="latest-posts-img">
-                <a href="#"><img src="images/dog2.jpg" /></a>
+                <a href="ArticlePage.html?id=${jsonDocs[8]._id}"><img src=${jsonDocs[8].imgUrl} /></a>
             </div>
             <div class="latest-posts-txt-zone">
                 <div class="latest-posts-tags">
-                    <a href="#" value="tags">link for tags here</a>
+                    <a href=CategoryPage.html?cat=${jsonDocs[8].tagForArticle[0]} value="tags">${jsonDocs[8].tagForArticle}</a>
                 </div>
                 <div class="latest-posts-title">
-                    <a href="#" value="title">link title here</a>
+                    <a href="ArticlePage.html?id=${jsonDocs[8]._id}" value="title">${jsonDocs[8].title}</a>
                 </div>
-               
+
                 <div class="latest-posts-excerp">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        ${jsonDocs[8].text}
                     </p>
                 </div>
             </div>
         </article>
         <article>
             <div class="latest-posts-img">
-                <a href="#"><img src="images/dog2.jpg" /></a>
+                <a href="ArticlePage.html?id=${jsonDocs[9]._id}"><img src=${jsonDocs[9].imgUrl} /></a>
             </div>
             <div class="latest-posts-txt-zone">
                 <div class="latest-posts-tags">
-                    <a href="#" value="tags">COMMUNITY</a>
+                    <a href=CategoryPage.html?cat=${jsonDocs[9].tagForArticle[0]} value="tags">${jsonDocs[9].tagForArticle}</a>
                 </div>
                 <div class="latest-posts-title">
-                    <a href="#" value="title">WHY NATIONAL PET IS MORE THAN JUST A HOLIDAY</a>
+                    <a href="ArticlePage.html?id=${jsonDocs[9]._id}" value="title">${jsonDocs[9].title}</a>
                 </div>
+
                 <div class="latest-posts-excerp">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        ${jsonDocs[9].text}
                     </p>
                 </div>
             </div>

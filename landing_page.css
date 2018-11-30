@@ -339,7 +339,7 @@ a {
     }
 
     .block1-2-img {
-        width: 100%;
+        width: 259px;
         max-width: 39vw;
         height: 16vw;
         display: flex;
@@ -514,10 +514,12 @@ hr {
 }
 
 .latest-posts-excerp>p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+    font-family: "CrimsonText";
+    color: #4B4F54;
+}
 }
 .article-dog-text-exerp {
     
@@ -777,15 +779,21 @@ body {
 }
 
 .block1-1-img img {
-    width: 100%;
+    width: 713px;
     max-width: 100%;
-    height: 100%;
+    height: 300px;
 
 }
 
-.block1-2-img img {
-    max-width: 100%;
+.block1-2-img {
+    width: 45vw;
+    height: 38vw;
+    display: flex;
+    padding-bottom: 2%;
 }
+
+
+
 
 /***************************************/
 /**********************2nd************************/
@@ -953,8 +961,8 @@ body {
 
 .latest-posts-img img {
     max-width: 100%;
-
-
+    width: 413px;
+    height: 309px;
 }
 
 .latest-posts-txt-zone {
