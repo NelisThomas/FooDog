@@ -85,7 +85,7 @@ a {
     .first-block-1-1 {
         width: 100%;
         height: 100%;
-        /* max-height: 100vh; */
+        max-height: 100vh;
         display: flex;
         flex-direction: column;
         padding-bottom: 10%;
@@ -97,7 +97,7 @@ a {
         width: 100%;
 
         height: 100%;
-       /*  max-height: 150vh; */
+        max-height: 150vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -109,7 +109,7 @@ a {
     .first-block-1-2 article {
         width: 45vw;
         height: 100%;
-        /* max-height: 85vh; */
+        max-height: 85vh;
         display: flex;
         flex-direction: column;
 
@@ -191,7 +191,7 @@ a {
     .third-block article {
         width: 96%;
         height: 100%;
-        /* max-height: 100vh; */
+        max-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -318,7 +318,7 @@ a {
         width: 100%;
         max-width: 43%;
         height: 100%;
-        /* max-height: 130vh; */
+        max-height: 130vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -359,7 +359,7 @@ a {
     .article-dog {
         max-width: 96%;
         height: 100%;
-        /* max-height: 155vh; */
+        max-height: 155vh;
         display: flex;
         flex-direction: row;
         padding-bottom: 4%;
@@ -379,7 +379,7 @@ a {
     .block2-1-container {
         width: 100%;
         height: 100%;
-        /* max-height: 150vh;  */
+        max-height: 150vh; 
         display: flex;
         flex-direction: column;
         
@@ -434,7 +434,7 @@ a {
         width: 100%;
         max-width: 47%;
         height: 100%;
-        /* max-height: 100vh; */
+        max-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -518,7 +518,6 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* font-size: 15px; */
 }
 .article-dog-text-exerp {
     
@@ -539,7 +538,7 @@ hr {
     width: 100%;
     max-width: 55%;
     height: 100%;
-   /*  max-height: 100vh; */
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     padding-bottom: 10%;
@@ -551,7 +550,7 @@ hr {
     width: 100%;
     max-width: 43%;
     height: 100%;
-    /* max-height: 130vh; */
+    max-height: 130vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -585,8 +584,7 @@ hr {
     height: 18vw;
     display: flex;
     padding-right: 10px;
-    
-    overflow: hidden;
+    flex-direction: column;
 }
 
 .article-dog {
@@ -672,7 +670,7 @@ hr {
     width: 100%;
     max-width: 45%;
     height: 100%;
-    /* max-height: 100vh; */
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -738,7 +736,7 @@ body {
     width: 100%;
     /* max-width: 99vw; */
     height: 100%;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
@@ -799,8 +797,9 @@ body {
 .article-dog-img img {
     max-width: 100%;
     height: 100%;
+    display: flex;
 
-
+    flex-direction: column;
 }
 
 .article-dog-txt {
@@ -862,7 +861,7 @@ body {
 .block2-1-and-2 {
     width: 100%;
     height:100%;
-    /* max-height: 300vh; */
+    max-height: 300vh;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 5%;
@@ -954,7 +953,6 @@ body {
 
 .latest-posts-img img {
     max-width: 100%;
-    
 
 
 }
@@ -966,17 +964,6 @@ body {
     align-items: center;
     justify-content: center;
     color: #777;
-    
-
-}
-.latest-posts-txt-zone p{
-    width: 100%;
-    max-height: 15vh;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    color: #777;
-    overflow:hidden;
 
 }
 

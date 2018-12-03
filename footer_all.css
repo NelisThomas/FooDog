@@ -930,3 +930,13 @@ footer2 {
     }
 
 }
+
+/**********GLOBAL***********/
+.txt-rand-foot a {
+    color: white;
+    text-decoration: none;
+}
+.container-category a {
+    text-decoration: none;
+    color: white;
+}
