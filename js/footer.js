@@ -1,4 +1,4 @@
-let scrollButton = document.querySelector('#go-up-icon');
+/* let scrollButton = document.querySelector('#go-up-icon');
 window.onscroll = () => {scrollFunction()};
 const scrollFunction = () => {
     if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -6,13 +6,13 @@ const scrollFunction = () => {
     } else {
         scrollButton.style.opacity = 0;
     }
-}
+} */
 
-const toTop = () => {
+/* const toTop = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
+ */
 
 
 const request2 = async () => {
@@ -99,5 +99,5 @@ class Footer extends HTMLElement {
 }
 
 customElements.define('foodog-footer', Footer);
-scrollButton.addEventListener('click', toTop);
+/* scrollButton.addEventListener('click', toTop); */
 
