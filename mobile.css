@@ -96,10 +96,6 @@ body{
     height: auto;
 }
 
-img{
-    height: auto;
-    width: 90%;    
-}
 nav {
     text-align: center;
 
@@ -110,10 +106,54 @@ nav > a {
     color: black;
     margin-left: 2em;
 }
-a{
-    text-decoration: none !important;
-    color: black !important;
+
+#searchResultDisplay{
+    text-align: center;
+    margin-top: 3%;
 }
+#nutrition {
+    margin-left: -5em ;
+}
+
+#title {
+    display: flex;
+    justify-content:space-between;
+    font-size: 3.25em;
+    color: #242424;
+    font-family: 'Crimson Text', serif;
+}
+
+/* #titleOfThePage {
+    margin-right: 30%;
+} */
+
+#topSocialDiv {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 15px;
+}
+
+#topSocialDiv > div {
+    margin-right: 15px;
+}
+
+#searchIcon {
+    margin-right: 0px;
+    width: 100px;
+    max-width: 100px;
+}
+/* nav {
+    text-align: center;
+} */
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 2em;
+}
+
 #searchResultDisplay{
     text-align: center;
     margin-top: 3%;
@@ -254,3 +294,183 @@ i {
     margin: 1px 30% 5px 8px;
     flex: 1 0 20px;
 }
+
+.menu-header {
+    margin-bottom: 6%;
+    margin-top: 30px;
+    background-color: #F7F7F7;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Category page css*/
+.category-navbar {
+    display: inline-block;
+}
+
+
+.category-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 7%;
+    
+}
+.bottom-line {
+    border-bottom: 1px solid #cbcbcb;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 7%;
+    margin-bottom: 30px;
+}
+
+.category-img {
+    width: 50%;
+    max-height: 250px;
+}
+
+.category-img a > img {
+    width: 90%;
+    height: auto;
+    padding: 5%;
+}
+
+.category-img:hover {
+    opacity: .5;
+    transition: opacity 2s ease;
+}
+
+.category-subject {
+    width: 50%;
+    max-height: 250px;
+    font-family: "Crimson1";
+}
+
+.category-paragraph{
+    height:60px;
+    line-height:20px;
+    overflow:hidden;
+    font-family: "CrimsonText";
+    color: #4B4F54;
+}
+
+
+.share-icon i {
+    border: 1px solid #cbcbcb;
+    border-radius:50%;
+    padding:5px;
+    font-size: 13px;
+}
+
+.category-header { 
+    font-family: "Open1";
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    
+}
+
+.category-header:hover {
+    border-bottom: 3px solid #FF8D6A;
+}
+
+.category-header a {
+    color: #4B4F54;
+    text-decoration: none;
+}
+
+.category-title {
+    color: #FF8D6A;
+    text-decoration: none;
+    font-family: "Open1";
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.category-title:hover {
+    border-bottom: 1px solid #4B4F54;
+}
+
+.share-icon a {
+    text-decoration: none;
+    color: #4B4F54;
+}
+
+.category-share {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.round-buttons :nth-child(1) :nth-child(1n) {
+    color: white;
+    border: 1px solid white;
+    background-color: #8b9dc3;
+    border-radius: 50%;
+    font-size: 13px;
+    padding: 6px;
+}
+
+.round-buttons :nth-child(2) :nth-child(1n) {
+    color: white;
+    border: 1px solid white;
+    background-color: #1dcaff;
+    border-radius: 50%;
+    font-size: 13px;
+    padding: 6px;
+}
+
+.round-buttons :nth-child(3) :nth-child(1n) {
+    border: 1px solid white;
+    background-color: #F74C53;
+    color: white;
+    border-radius: 50%;
+    font-size: 13px;
+    padding: 6px;
+}
+
+.category-share .round-buttons {
+    opacity: 0;
+}
+
+.category-share:hover :nth-child(2n)  {
+    opacity: 1;
+    transition: opacity 3s ease;
+}
+
+.category-pagecounter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.category-pagecounter a {
+    border: 1px solid black;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    height: 3vw;
+    width: 3vw;
+    justify-content: center;
+    align-items: center;
+    color: #4B4F54;
+}
+
+.category-pagecounter a:hover {
+    background-color: #4B4F54;
+    color: white;
+    transition: background-color 1s ease;
+}
+
+/*category page css*/
