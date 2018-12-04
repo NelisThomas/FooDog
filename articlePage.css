@@ -162,7 +162,13 @@
     .articleMainImage{
         height: 400px;
         width: 740px;
+        overflow: hidden;
     }
+    .articleMainImage{
+       
+        width: 100%;
+    }
+
     .desktopAd{
         height: 100vh;
     }
