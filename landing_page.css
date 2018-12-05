@@ -101,7 +101,7 @@ a {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items: baseline;
+        /* align-items: baseline; */
         font-family: Open1;
 
     }
@@ -115,6 +115,7 @@ a {
 
         align-items: center;
         margin: 0 1% 20px 1%;
+
     }
 
     .block1-2-img {
@@ -122,7 +123,7 @@ a {
         height: 38vw;
         display: flex;
         padding-bottom: 2%;
-
+        overflow: hidden;
     }
 
     /*********MAIN BLOCK 2**********/
@@ -322,7 +323,7 @@ a {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items: baseline;
+        /* align-items: baseline; */
         font-family: Open1;
         padding-left: 10px;
     }
@@ -344,6 +345,7 @@ a {
         height: 16vw;
         display: flex;
         padding-bottom: 10%;
+        overflow: hidden;
     }
 
     /************************ MAIN BLOCK 2 ***************************/
@@ -555,7 +557,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: baseline;
+    /* align-items: baseline; */
     font-family: Open1;
     padding-left: 10px;
 }
@@ -573,10 +575,9 @@ hr {
 
 .block1-2-img {
     width: 19vw;
-    
     height: 16vw;
-    display: flex;
     padding-bottom: 10%;
+    overflow: hidden;
 }
 
 /************************ MAIN BLOCK 2 ***************************/
@@ -599,6 +600,8 @@ hr {
     margin: 0 0 4% 0;
     border-bottom: 1px solid rgb(241, 241, 241);
 }
+
+
 
 .article-dog-txt {
     width: 100%;
@@ -759,6 +762,10 @@ body {
 .first-block-1-1 p {
     padding-bottom: 3%;
 }
+.first-block-1-2 {
+    display: flex;
+    /* justify-content: baseline; */
+}
 
 .tagName {
     color: #FF8D6A;
@@ -770,22 +777,26 @@ body {
 
 .block1-1-img {
     width: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    
+    max-height: 90%;
 
     display: flex;
     padding-bottom: 4%;
 }
 
 .block1-1-img img {
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-
+    /* width: 100%;
+    max-width: 100%; 
+    height: 100%; */
+    object-fit: cover;
+    display: flex;
 }
 
 .block1-2-img img {
-    max-width: 100%;
+   /* width: 100%; */
+   height: 100%;
+    object-fit: cover;
+   
 }
 
 /***************************************/
@@ -796,9 +807,14 @@ body {
     height: 100%;
 }
 
+.article-dog-img {
+    display: flex;
+    overflow: hidden;
+}
 .article-dog-img img {
-    max-width: 100%;
-    height: 100%;
+    
+   object-fit: cover;
+   
 
 
 }
@@ -950,12 +966,14 @@ body {
     max-height: 80%;
     display: flex;
     padding-bottom: 5%;
+    overflow: hidden;
 }
 
 .latest-posts-img img {
-    max-width: 100%;
-    
-
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    object-fit: fill;
 
 }
 
@@ -972,6 +990,7 @@ body {
 .latest-posts-txt-zone p{
     width: 100%;
     line-height: 20px;
+    max-height: 100px;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -1032,67 +1051,5 @@ body {
 
 }
 
-/* #instagram_top, #twitter_top, #facebook_top, #navbar {
-        display: none !important;
-    }
-
-    #mobileMenu {
-        display: inline-block;
-        visibility: visible;
-    }
-
-    #sideposts1 {
-        max-width: 45% !important;
-    }
-
-    #sideposts2 {
-        max-width: 45% !important;
-    }
-    #topContainer{
-        margin-bottom: 15px;
-    }
-    
-    #latestposts{
-        max-width: 90% !important;
-    }
-    
-    .imageMain {
-        max-width: 90% ;
-        max-height: 90%;
-    }  
-
-    .imagesContainer{
-        max-width: 90%;
-        overflow: hidden;
-    }
-
-    .para {
-        max-width: 90%;
-    }
-
-    .subtitle {
-        font-size: .8em;
-        line-height: 16px;
-        text-align: center;
-        max-width: 200px;
-    } */
-
-
-
-/* .main-section {
-    width: 100%;
-    height: 120vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.last-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; 
-    width: 100%;
-    margin-bottom: 10%;
-} */
 
 /* -----------------------------FOOTER --------------------------*/
-/******************* in responsive.css file *****************************/

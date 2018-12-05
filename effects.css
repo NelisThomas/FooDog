@@ -19,6 +19,7 @@ img:hover {
 .tagName {
     position: relative !important;
     transition: width 0.3s linear;
+    text-transform: uppercase;
 }
 
 .tagName:before {    
@@ -44,11 +45,13 @@ img:hover {
 .article-dog-tags a {
     position: relative;
     transition: width 0.3s linear;
+    text-transform: uppercase;
 }
 
 .latest-posts-tags a {
       position: relative;
       transition: width 0.3s linear;
+      text-transform: uppercase;
 }
 .latest-posts-tags a:before {
     content: "";

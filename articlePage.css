@@ -163,12 +163,9 @@
         height: 400px;
         width: 740px;
         overflow: hidden;
+        object-fit: cover;
     }
-    .articleMainImage{
-       
-        width: 100%;
-    }
-
+    
     .desktopAd{
         height: 100vh;
     }

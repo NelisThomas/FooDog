@@ -20,7 +20,7 @@ class Landing extends HTMLElement {
 
     <div class="first-block-1-1">
         <div class="block1-1-img">
-            <a href="ArticlePage.html?id=${jsonDocs[0]._id}"><img src=${jsonDocs[0].imgUrl}></a>
+            <a href="ArticlePage.html?id=${jsonDocs[0]._id}"><img src=${jsonDocs[0].imgUrl} ></a>
         </div>
         <div class="block1-1-txt">
             <div><a href=CategoryPage.html?cat=${jsonDocs[0].tagForArticle[0]} class="tagName">${jsonDocs[0].tagForArticle}</a></div>
@@ -30,7 +30,7 @@ class Landing extends HTMLElement {
     <div class="first-block-1-2">
         <article>
             <div class="block1-2-img">
-                <a href="ArticlePage.html?id=${jsonDocs[4]._id}"><img src=${jsonDocs[4].imgUrl}></a>
+                <a href="ArticlePage.html?id=${jsonDocs[4]._id}"><img src=${jsonDocs[4].imgUrl} alt="images/dog3.jpg" /></a>
             </div>
             <div class="block1-2-txt">
                 <a href="ArticlePage.html?id=${jsonDocs[4]._id}" class="subtitle">${jsonDocs[4].title}</a>
@@ -38,7 +38,7 @@ class Landing extends HTMLElement {
         </article>
         <article>
             <div class="block1-2-img">
-                <a href="ArticlePage.html?id=${jsonDocs[5]._id}"><img src=${jsonDocs[5].imgUrl}></a>
+                <a href="ArticlePage.html?id=${jsonDocs[5]._id}"><img src=${jsonDocs[5].imgUrl} alt="images/dog3.jpg" /></a>
             </div>
             <div class="block1-2-txt">
                 <a href="ArticlePage.html?id=${jsonDocs[5]._id}" class="subtitle">${jsonDocs[5].title}</a>
@@ -47,7 +47,7 @@ class Landing extends HTMLElement {
         </article>
         <article>
             <div class="block1-2-img">
-                <a href="ArticlePage.html?id=${jsonDocs[6]._id} "><img src=${jsonDocs[6].imgUrl}/></a>
+                <a href="ArticlePage.html?id=${jsonDocs[6]._id} "><img src=${jsonDocs[6].imgUrl}  alt="images/dog3.jpg" /></a>
             </div>
             <div class="block1-2-txt">
                 <a href="ArticlePage.html?id=${jsonDocs[6]._id} "class="subtitle">${jsonDocs[6].title}</a>
@@ -55,7 +55,7 @@ class Landing extends HTMLElement {
         </article>
         <article>
             <div class="block1-2-img">
-                <a href="ArticlePage.html?id=${jsonDocs[2]._id}" ><img src=${jsonDocs[2].imgUrl} /></a>
+                <a href="ArticlePage.html?id=${jsonDocs[2]._id}" ><img src=${jsonDocs[2].imgUrl} alt="images/dog3.jpg" /></a>
             </div>
             <div class="block1-2-txt">
                 <a href="ArticlePage.html?id=${jsonDocs[2]._id}" class="subtitle">${jsonDocs[2].title}</a>
@@ -71,7 +71,7 @@ class Landing extends HTMLElement {
         <div class="block2-1-container">
             <article class="article-dog">
                 <div class="article-dog-img">
-                    <a href="ArticlePage.html?id=${jsonDocs[1]._id}"><img src=${jsonDocs[1].imgUrl}/></a>
+                    <a href="ArticlePage.html?id=${jsonDocs[1]._id}"><img src=${jsonDocs[1].imgUrl} alt="images/dog3.jpg" /></a>
                 </div>
                 <div class="article-dog-txt">
                     <div class="article-dog-tags">
@@ -99,7 +99,7 @@ class Landing extends HTMLElement {
             </article>
             <article class="article-dog">
                 <div class="article-dog-img">
-                    <a href="ArticlePage.html?id=${jsonDocs[2]._id}"><img src=${jsonDocs[2].imgUrl} /></a>
+                    <a href="ArticlePage.html?id=${jsonDocs[2]._id}"><img src=${jsonDocs[2].imgUrl} alt="images/dog3.jpg" /></a>
                 </div>
                 <div class="article-dog-txt">
                     <div class="article-dog-tags">
@@ -127,7 +127,7 @@ class Landing extends HTMLElement {
             </article>
             <article class="article-dog">
                 <div class="article-dog-img">
-                    <a href="ArticlePage.html?id=${jsonDocs[3]._id}"><img src=${jsonDocs[3].imgUrl} /></a>
+                    <a href="ArticlePage.html?id=${jsonDocs[3]._id}"><img src=${jsonDocs[3].imgUrl} alt="images/dog3.jpg" /></a>
                 </div>
                 <div class="article-dog-txt">
                     <div class="article-dog-tags">
