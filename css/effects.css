@@ -1,3 +1,228 @@
-*{
-    transition: 1s;
+#mainpage-title > h1 {
+    opacity: .8;
+}
+
+#mainpage-title > h1:hover {
+    opacity: .55;
+}
+
+img:hover {
+    opacity: .6;
+}
+/* exception imgs */
+#advertising, .block2-2-social-zone > div > img:hover {
+    opacity: 1;
+}
+
+/* =================================================================================== */
+/* tags */
+.tagName {
+    position: relative !important;
+    transition: width 0.3s linear;
+}
+
+.tagName:before {    
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: width 0.3s linear;
+    transition: width 0.3s linear;  
+}
+
+.tagName:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.article-dog-tags a {
+    position: relative;
+    transition: width 0.3s linear;
+}
+
+.latest-posts-tags a {
+      position: relative;
+      transition: width 0.3s linear;
+}
+.latest-posts-tags a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: width 0.3s linear;
+    transition: width 0.3s linear;
+}
+
+.article-dog-tags a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: width 0.3s linear;
+    transition: width 0.3s linear;  
+}
+
+.latest-posts-tags a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  
+.article-dog-tags a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* ======================================================================*/ 
+/* Other links*/ 
+/* title-classes: 
+latest-posts-title > a
+txt-rand-foot > b
+article-dog-title > a
+subtitle
+mainArticleTitle
+*/
+
+.latest-posts-title > a:hover {
+    border-bottom: 2px solid orangered;
+}
+
+.txt-rand-foot:hover {
+    border-bottom: 2px solid orangered;
+    display: inline;
+}
+
+.article-dog-title:hover {
+    border-bottom: 2px solid orangered;
+}
+
+.subtitle:hover {
+    border-bottom: 2px solid orangered;
+}
+
+.mainArticleTitle {
+    display: block !important;
+    margin-top: 1% !important;
+}
+.mainArticleTitle:hover {
+    display: block;
+    border-bottom: 2px solid orangered;
+}
+
+/* ========================================================== */
+/* social-media-big-rectangles
+class names:*/
+
+.facebook-rectangle:hover {
+    background-color: black;
+}
+.twitter-rectangle:hover {
+    background-color: black;
+}
+.instagram-rectangle:hover {
+    background-color: black;
+}
+
+.social-media-share {
+    display:none;
+    width: 55px;
+    max-height: 50px;
+    margin-left: -2em;
+}
+
+.social-media-share div {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin-right: 2px;
+}
+
+.social-media-share img {
+    width: 50%;
+    height: 50%;
+
+}
+
+/* ========================================== */
+/* FOOTER? */
+
+.container-category li:hover {
+    border-bottom: 2px solid orangered;
+}
+
+#special-one:hover {
+    border-bottom: 2px solid orangered;
+}
+
+/* ========================================== */
+/* ARTICLE PAGE */
+
+#commentButton:hover {
+    background-color: black;
+}
+
+.articleYouMightLike > a {
+    text-decoration: none;
+}
+
+.articleYouMightLikeTitle:hover {
+    border-bottom: 2px solid orangered;
+}
+
+#nextArticleName:hover {
+    border-bottom: 2px solid orangered;
+}
+
+#previousArticleName:hover {
+    border-bottom: 2px solid orangered;
+}
+
+#signUpButton:hover {
+    background-color: black;
+}
+
+#tagtitle:hover:before {
+    visibility: hidden !important;
+}
+
+.articleAuthorImg, .articleMainImage:hover {
+    opacity: 1 !important;
+}
+
+#responseInput:hover {
+    border:1.5px solid black;    
+}
+
+#responseFormButtonContainer > textarea:hover {
+    border:1.5px solid black;
+}
+
+#submitResponseButton {
+    margin-bottom: 5%;
+}
+
+#submitResponseButton:hover {
+    opacity: .6;
 }
